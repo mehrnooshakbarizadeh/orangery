@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script src="resources/loader.js"></script>
+    <script src="resources/base.js"></script>
+    <script src="resources/api.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+    <style>
+        body,
+        html,
+        * {
+            border: none;
+            margin: 0px;
+            padding: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        html,
+        body {
+            width: 100% !important;
+            height: 100% !important;
+            overflow: hidden;
+        }
+
+        .main3dContainer,
+        .main3dContainer canvas {
+            width: 100% !important;
+            height: 100% !important;
+            outline: none !important;
+        }
+    </style>
+</head>
+
+<body onresize="window.onresize" ondblclick="location = location.toString().split('?')[0]+'?'+new Date().getTime() ">
+    <div>
+        <div class="fx t-00 testOffice hdn-i  fs-03 l-00  c-twgray z10">[v 0.173]</div>
+        <div>
+            <div class="fx z09  w-full h-full f-center     ">
+
+                <img src='../os3d/3dimages/loading3d.gif' class="w-06 h-06" />
+            </div>
+        </div>
+        <script>
+
+            window.onload = function () {
+
+                if (location.toString().indexOf('localhost') != -1) {
+                    first('.testOffice').classList.remove('hdn-i')
+                }
+
+                dn({
+                    url: window.baseURL + '/resources/screen.css',
+                    success: function (d) {
+                        dn({
+                            url: window.baseURL + '/resources/anim.css',
+                            success: function (d2) {
+                                var sty = document.createElement('style');
+                                d += d2 + `
+                    
+                    .icon {
+                        font-family: Material Icons !important;
+                    }
+                    
+                    `;
+                                sty.innerHTML = d;
+                                document.body.appendChild(sty)
+                            }
+                        });
+                    }
+                });
+            }
+            /*
+            {token:'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoic3RhZ2luZyIsInV1aWQiOiIzNzNlN2M4OS0yOTU5LTRhYjMtODY4OS03ODdmMGNlNDI2MmYifQ.YbeFuKpjxr6MuoXI9PdPMpEycqNCTpKr1K-K6nsqsVM', api:'https://staging.api.orangeryos.de/', office:'b9422b7d-8b28-4341-8a51-a246e17e9dec', uuid:'2c320950-3131-477e-aeb1-7289333068a8', action:''}
+            */
+
+            function start3D(js) {
+                js = def(js,{
+                    token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoic3RhZ2luZyIsInV1aWQiOiIyNDM5NDE0Ny0xMzFhLTQyMDQtOTJhYS0wNzhmNGNjNDNhNDUifQ.WAfZG2SKwN3tmJxGWwY27TPKBt7r3CiB7wSY_kxh_0Q",
+                    api: 'https://staging.api.orangeryos.de/',
+                    office: '0de651df-8056-47f3-9de6-95a32f3e250a',
+                    uuid: 'ab31c7f9-b2cc-49e7-bf74-fff152520fcf',action: ''
+                });
+
+                var acc = 1;
+
+                if (location.toString().indexOf('space-dev.orangeryos') != -1) {
+                    first('.testOffice').classList.remove('hdn-i')
+                }
+
+                if (acc) {
+
+                    const TOKEN_KEY = "__token__";
+
+                    localStorage[TOKEN_KEY] = js.token;
+                    localStorage["NEXT_PUBLIC_BASE_URL"] = js.api;
+                    localStorage['POST_MOBILE_UUID'] = js.uuid;
+
+                    if (!localStorage['ORANGERY_FirstTest']) {
+                        localStorage['ORANGERY_FirstTest'] = js.office;
+
+                        setTimeout(function () { location = location.toString().split('?')[0] + '?' + new Date().getTime() },500)
+                    }
+
+                    new entity('mapitem',new entity('office').id(js.office)).list().then(function (d) {
+
+
+                        if (d.map_items.length > 0) {
+                            setTimeout(function () {
+                                location = 'index.htm?' + js.office + '#mobileView';
+                            },500);
+
+                        } else {
+
+                            first('.wait').innerHTML = 'this office dont have any 3D design yet ! <br/> contact with office admin for fix thi part.';
+                            first('.icon').innerHTML = 'warning';
+                            first('.icon').classList.remove('rotating');
+                            first('.icon').classList.add('c-t-iorg');
+
+                        }
+                    });
+
+                }
+
+            }
+
+            if (localStorage['ORANGERY_FirstTest']) {
+
+
+                new entity('mapitem',new entity('office').id(localStorage['ORANGERY_FirstTest'])).list().then(function (d) {
+
+
+                    if (d.map_items.length > 0) {
+
+                        setTimeout(function () {
+                            location = 'index.htm?' + localStorage['ORANGERY_FirstTest'] + '#mobileView';
+                        },500);
+
+                    } else {
+
+                        first('.wait').innerHTML = 'this office dont have any 3D design yet ! <br/> contact with office admin for fix thi part.';
+                        first('.icon').innerHTML = 'warning';
+                        first('.icon').classList.remove('rotating');
+                        first('.icon').classList.add('c-t-iorg');
+
+                    }
+                });
+            }
+
+
+            window.addEventListener("message",(event) => {
+
+                if (event.data && event.data.token && event.data.api) {
+                    start3D(event.data);
+                }
+
+            },false);
+        </script>
+</body>
+
+</html>

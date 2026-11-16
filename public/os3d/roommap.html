@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="resources/loader.js"></script>
+  <script src="resources/base.js"></script>
+  <script src="resources/api.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <style>
+    body,
+    html,
+    * {
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    input,
+    select {
+      outline: none !important;
+    }
+
+    html,
+    body {
+      background-color: #ffffff;
+      width: 100% !important;
+      height: 100% !important;
+      overflow: hidden;
+    }
+
+    .icon {
+      font-family: Material Icons !important;
+    }
+  </style>
+</head>
+
+<body onresize="window.onresize">
+  <div class="waitPanel fx w-full h-full f-center l-00 t-00 ">
+    please wait ...
+  </div>
+  <div class="f-center h-full w-full">
+    <div class="mainPanel hdn-i w-p80   f-c f-at f-ct f-jc  ">
+
+      <h2>Rooms/Department Setting:</h2>
+
+      <div class="ns  mt-005   rad-05 p-0025 h-mx-01 mr-00125 rt cwhite p-0005 ba-i-01 co-gry2-b-i ">
+
+        <select id='type' onchange='changeType(this)'>
+          <option value="-1">Choose Room's type</option>
+          <option>Room</option>
+          <option>Department</option>
+          <option>Area</option>
+          <option>Remote Area</option>
+        </select>
+
+        <div class="  cwhite ab co-gry2-t t-n0025 fs-03 pl-0025 pr-005 f-center ">Type : <span
+            title="Choose your area type." class=" sub-d fs-03 co-gry2-t co-secd-t-h  material-icons-round icon"
+            onclick=";alert(this.title);">
+            info
+          </span> </div>
+      </div>
+
+      <div class="ns mt-005 roomtype hdn-i rad-05 p-0025 h-mx-01 mr-00125 rt cwhite p-0005 ba-i-01 co-gry2-b-i ">
+
+        <select id='romtype' onchange=";
+        if(this.value == 'Meeting Room') { 
+          first('.meetroom').classList.remove('hdn-i');
+            first('#genroom').value =  '' ; 
+            
+          }
+        else { 
+           first('.meetroom').classList.add('hdn-i'); 
+        }
+        
+        if(this.value == 'General Room') { 
+           first('#meetroom').value =  '' ; 
+          first('.genroom').classList.remove('hdn-i');
+          }
+        else {
+           first('.genroom').classList.add('hdn-i'); 
+           } ">
+          <option value="-1">choose room type</option>
+          <option>General Room</option>
+          <option>Meeting Room</option>
+          <option>Mailing Room</option>
+          <option>Private Office</option>
+          <option>Warehouse</option>
+          <option>Kitchen</option>
+          <option>WC</option>
+        </select>
+
+        <div class="  cwhite ab co-gry2-t t-n0025 fs-03 pl-0025 pr-005 f-center ">Room Types : <span
+            title="Choose your room type." class=" sub-d fs-03 co-gry2-t co-secd-t-h  material-icons-round icon"
+            onclick=";alert(this.title);">
+            info
+          </span> </div>
+      </div>
+
+      <div class="ns mt-005 meetroom hdn-i rad-05 p-0025 h-mx-025 mr-00125 rt cwhite p-0005 ba-i-01 co-gry2-b-i ">
+
+        <div class="  cwhite ab co-gry2-t t-n0025 fs-03 pl-0025 pr-005 f-center ">Meeting Rooms : <span
+            title="Choose your meeting." class=" sub-d fs-03 co-gry2-t co-secd-t-h  material-icons-round icon"
+            onclick=";alert(this.title);">
+            info
+          </span> </div>
+
+        <div> <select id="meetroom" onchange="first('#deps').value = this.value" class="">
+            <option value="-1">Choose MeetingRoom</option>
+          </select></div>
+
+      </div>
+
+      <div class="ns mt-005 genroom hdn-i rad-05 p-0025 h-mx-025 mr-00125 rt cwhite p-0005 ba-i-01 co-gry2-b-i ">
+
+        <div class="  cwhite ab co-gry2-t t-n0025 fs-03 pl-0025 pr-005 f-center ">Rooms : <span
+            title="Choose your room  ." class=" sub-d fs-03 co-gry2-t co-secd-t-h  material-icons-round icon"
+            onclick=";alert(this.title);">
+            info
+          </span> </div>
+
+        <div> <select id="genroom" onchange="first('#deps').value = this.value" class="">
+            <option value="-1">Choose Room</option>
+          </select></div>
+
+      </div>
+
+
+
+      <div class="ns mt-005 Department hdn-i rad-05 p-0025 h-mx-025 mr-00125 rt cwhite p-0005 ba-i-01 co-gry2-b-i ">
+
+        <div class="  cwhite ab co-gry2-t t-n0025 fs-03 pl-0025 pr-005 f-center ">Departments : <span
+            title="Choose your room Department." class=" sub-d fs-03 co-gry2-t co-secd-t-h  material-icons-round icon"
+            onclick=";alert(this.title);">
+            info
+          </span> </div>
+
+        <div><span class="fs-03 c-tgray">Departments:</span><select id="Departments"
+            onchange="first('#deps').value = this.value" class="">
+            <option value="-1">Choose Department</option>
+          </select></div>
+
+
+        <input id="deps" title="set new Department" placeholder="Department name"
+          class="inp mt-0025 w-full ba-i-01 c-b-itrans fs-04 " value="">
+
+      </div>
+
+      <div class="ns mt-005  rad-05 p-0025 h-mx-02 mr-00125 rt cwhite p-0005 ba-i-01 co-gry2-b-i ">
+
+
+        <div class="  cwhite ab co-gry2-t t-n0025 fs-03 pl-0025 pr-005 f-center ">Title : <span
+            title="Choose your area type." class=" sub-d fs-03 co-gry2-t co-secd-t-h  material-icons-round icon"
+            onclick=";alert(this.title);">
+            info
+          </span> </div>
+        <input id="title" placeholder="title" class="inp w-full ba-i-01 c-b-itrans fs-04 " value="">
+      </div>
+
+      <div class="ns mt-005  rad-05 p-0025 h-mx-02 mr-00125 rt cwhite p-0005 ba-i-01 co-gry2-b-i ">
+
+
+        <div class="  cwhite ab co-gry2-t t-n0025 fs-03 pl-0025 pr-005 f-center ">status : <span
+            title="Choose your area type." class=" sub-d fs-03 co-gry2-t co-secd-t-h  material-icons-round icon"
+            onclick=";alert(this.title);">
+            info
+          </span> </div>
+        <select id='romstat'>
+          <option>UnLocked</option>
+          <option>Locked</option>
+        </select>
+      </div>
+
+      <div class="m-005 f f-r  f-as f-cs f-je">
+
+        <input type="button" class="p-005 m-00125  pl-01 pr-01 rad-05 co-sec-h co-gry2 c-tblack co-prm-t-h"
+          onclick="  window.postMessage('close', location.origin ) " class="fs-04" value="Cancel" />
+        <input type="button" class="p-005 m-00125 pl-01 pr-01 rad-05 co-sec-h co-prm c-twhite co-prm-t-h"
+          onclick=" save() " class="fs-04" value="Save" />
+      </div>
+
+    </div>
+  </div>
+  <script>
+
+    function changeType(th) {
+
+      first('.Department').classList.add('hdn-i');
+      first('.roomtype').classList.add('hdn-i');
+      first('.meetroom').classList.add('hdn-i');
+
+      if (first('#type').value == "Department") {
+        first('.Department').classList.remove('hdn-i');
+
+      } else if (first('#type').value == "Room") {
+        first('.roomtype').classList.remove('hdn-i');
+      }  else if (first('#type').value == "Area") {
+          first('#meetroom').value =  '' ;
+          first('#genroom').value =  '' ;
+      }
+
+    }
+
+    var param = JSON.parse(location.search.replace('&','","').replace('?','{"').replace(/=/g,'":"') + '"}');
+    var getParam = {};
+    new entity("department",new entity('office').id(param.office)).list().then(function (d) {
+
+      for (var i in d.departments) {
+
+        i = d.departments[i];
+        first('#Departments').appendChild(new Option(i[0],i[0]));
+
+      }
+
+      new entity("office").id(param.office).get().then(function (d) {
+
+        for (var i in d.meeting_rooms) {
+
+          i = d.meeting_rooms[i];
+          console.log(i);
+          first('#meetroom').appendChild(new Option(i.name,i.uuid));
+
+        }
+
+        new entity("room",new entity('office').id(param.office)).list(function (d) {
+          console.log(d);
+
+          for (var i in d.rooms) {
+
+            i = d.rooms[i];
+
+            first('#genroom').appendChild(new Option(i.name,i.uuid));
+
+          }
+
+          new entity("mapitem",new entity('office').id(param.office)).id(param.id).get().then(function (d) {
+
+            console.log(d);
+
+            first('.mainPanel').classList.remove('hdn-i');
+            first('.waitPanel').classList.add('hdn-i');
+
+
+            getParam = d.map_item;
+
+            first('#title').value = d.map_item.name;
+            first('#deps').value = def(d.map_item.data.deps,'');
+            first('#type').value = def(d.map_item.data.type,'');
+            first('#romtype').value = def(d.map_item.data.roomType,'');
+            first('#meetroom').value = def(d.map_item.data.meetRoom,'');
+            first('#genroom').value = def(d.map_item.data.genRoom,'');
+            first('#romstat').value = def(d.map_item.data.roomStatus,'');
+
+            if (first('#romtype').value == 'Meeting Room') first('.meetroom').classList.remove('hdn-i');
+            else first('.meetroom').classList.add('hdn-i');
+
+            if (first('#romtype').value == 'General Room') first('.genroom').classList.remove('hdn-i');
+            else first('.genroom').classList.add('hdn-i');
+
+            changeType();
+
+
+          });
+
+        });
+
+      });
+
+    });
+
+    var save = function () {
+
+
+      getParam.name = first('#title').value;
+
+      getParam.data.deps = first('#deps').value;
+      if (getParam.data.deps == -1) getParam.data.deps = '';
+
+      getParam.data.type = first('#type').value;
+
+      if (first('#type').selectedIndex == -1) getParam.data.type = '';
+
+      getParam.data.roomType = first('#romtype').value;
+      if (first('#romtype').selectedIndex == -1) getParam.data.roomType = '';
+
+      getParam.data.meetRoom = first('#meetroom').value;
+      if (first('#meetroom').selectedIndex == -1) getParam.data.meetRoom = '';
+
+      getParam.data.genRoom = first('#genroom').value;
+      if (first('#genroom').selectedIndex == -1) getParam.data.genRoom = '';
+
+
+      getParam.data.roomStatus = first('#romstat').value;
+
+      new entity("mapitem",new entity('office').id(param.office)).id(param.id).set(getParam).then(function (d) {
+        console.log(d);
+        window.postMessage('close',location.origin)
+      });
+
+    }
+
+
+
+
+
+    var baseURL = location.pathname.split("/os3d");
+
+    window.baseURL = baseURL[0] + "/os3d";
+
+    dn({
+      url: window.baseURL + '/resources/screen.css',
+      success: function (d) {
+        var sty = document.createElement('style');
+
+        function makeColor(n,c) {
+          return `.xxx ,.xxx-h:hover ,.xxx-a:active {  background-color: #yyy;   }
+        .xxx-h:hover,.xxx-t-h:hover{ cursor: pointer;}
+        .xxx-t,.xxx-t-h:hover{ color: #yyy ;}
+        .xxx-b,.xxx-b-h:hover{ border-color: #yyy ;}
+        .xxx-i ,.xxx-h-i:hover ,.xxx-a-i:active {  background-color: #yyy !important;   }
+        .xxx-h-i:hover,.xxx-t-h-i:hover{ cursor: pointer !important; }
+        .xxx-t-i,.xxx-t-h-i:hover{ color: #yyy !important;}
+        .xxx-b-i,.xxx-b-h-i:hover{ border-color: #yyy !important;} 
+        
+        `.replaceAll('xxx',n).replaceAll('#yyy',c);
+        }
+
+        d +=
+          makeColor('co-prm','#2B2E33') +
+          makeColor('co-prm9','#55585c') +
+
+          makeColor('co-secd','#EAAD38') +
+          makeColor('co-sec','#FFBE41') +
+          makeColor('cotr-sec','#FFBE4166') +
+          makeColor('co-secl','#ffd27a') +
+
+          makeColor('co-inf','#09ACD0') +
+          makeColor('co-err','#FFE600') +
+          makeColor('co-suc','#56CA29') +
+          makeColor('co-wrn','#BD5A42') +
+
+          makeColor('co-gryd','#374C6B') +
+          makeColor('co-gry','#5F7089') +
+          makeColor('co-gry1','#8794A6') +
+          makeColor('co-gry2','#D7DBE1') +
+          makeColor('co-gry3','#EBEDF0') +
+          makeColor('co-gry4','#FAFBFC') +
+
+          makeColor('co-grnd','#218377') +
+          makeColor('co-grn','#4D9C92') +
+          makeColor('co-grn1','#7AB5AD') +
+          makeColor('co-grn2','#A6CDC9') +
+          makeColor('co-grn3','#D3E6E4') +
+          makeColor('co-grn4','#E9F3F1');
+
+        sty.innerHTML = d;
+        document.body.appendChild(sty)
+      }
+    })
+  </script>
+</body>
+
+</html>

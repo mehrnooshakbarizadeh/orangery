@@ -1,0 +1,11 @@
+{
+  "Desk": {
+    "Desk name *": "Schreibtischname *",
+    "Assigned user name *": "Zugewiesener Benutzername",
+    "Flex": "Flex",
+    "Active": "aktiv"
+  },
+  "Floor": {
+    "Floor name *": "Etagenname *"
+  }
+}

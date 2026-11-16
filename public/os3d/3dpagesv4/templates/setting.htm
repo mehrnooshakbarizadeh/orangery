@@ -1,0 +1,35 @@
+<div class="p-005 f f-c f-at f-ct f-jc">
+  <input type="file" onchange=";
+  
+ 
+  const [file] = this.files
+  if (file) {
+
+      canvas_scene.getBase64(file).then(d=>{
+
+          var img = document.getElementById('groundFloor') ;
+          img.src = d
+      }); 
+  }
+  " />
+  <img id='groundFloor' onload=";
+  var gs = document.getElementById('gr_scale');
+  var ga = document.getElementById('gr_trans');
+  var img = document.getElementById('groundFloor') ;
+  if(canvas_scene)canvas_scene.updateGroundMat(img,{sc:gs.value*0.1,a:ga.value*0.01});" [#src]='[#images]/[#icon]'
+    class="w-02 h-02">
+
+  <input onchange=";
+      var gs = document.getElementById('gr_scale');
+    var ga = document.getElementById('gr_trans');
+    var img = document.getElementById('groundFloor') ;
+    if(canvas_scene)canvas_scene.updateGroundMat(img,{sc:gs.value*0.1,a:ga.value*0.01})
+    " type="range" id="gr_scale" name="scale" min="10" max="100">
+
+  <input onchange=";
+    var gs = document.getElementById('gr_scale');
+  var ga = document.getElementById('gr_trans');
+  var img = document.getElementById('groundFloor') ;
+  if(canvas_scene)canvas_scene.updateGroundMat(img,{sc:gs.value*0.1,a:ga.value*0.01})
+  " type="range" id="gr_trans" value=30 name="alpha" min="0" max="100">
+</div>

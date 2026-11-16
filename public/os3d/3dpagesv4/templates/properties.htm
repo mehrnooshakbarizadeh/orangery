@@ -1,0 +1,150 @@
+<div id="properties" class="cwhite ba-i-02 c-b-iwgray rad-05 p-005 ">
+    <div class="p-0025 f f-c f-at f-ct f-js">
+        <div class='inp-prptemp hdn-i   w-full '>
+            <div title='[#desk]' class=' mb-00125   w-full  f f-r f-at f-ct f-ja'>
+                <div class='c-tgray  fl f-r f-ac f-cc f-js fs-03 w-p40'>
+                    [#name]:
+                </div>
+                <input type="text" id="[#prp]" onkeyup="if(event.keyCode == 13) applyProperties()" value="[#value]" class="[#css] ba-i-01 c-b-iwgray2 p-0005 rad-02 pl-0025 pl-0025 w-p60" />
+            </div>
+        </div>
+        <div class='mul-prptemp   hdn-i   w-full '>
+            <div title='[#desk]' class=' mb-00125   w-full  f f-c f-at f-ct f-js'>
+                <div class='c-tgray fl f-r f-ac f-cc f-js fs-03 pb-0025 '>
+                    [#name]:
+                </div>
+                <input type="text" id="[#prp]" onkeyup="if(event.keyCode == 13) applyProperties()" value="[#value]" class="[#css] ba-i-01 c-b-iwgray2 p-0005 rad-02 pl-0025 pl-0025 " />
+            </div>
+        </div>
+        <div class='chk-prptemp mb-00125  hdn-i   w-full '>
+            <div title='[#desk]' class='   w-full  f f-r f-at f-ct f-ja'>
+                <div class='c-tgray  fl f-r f-ac f-cc f-js fs-03 w-p40'>
+                    [#name] :
+                </div>
+                <input type="checkbox" id="[#prp]" value="[#value]" class="[#css] ba-i-01 c-b-iwgray2 p-00125 rad-02 pl-0025 pl-0025 w-p60" />
+                <div class=' c-tgray p-0005 fs-03 rad-02 pr-0025   w-p50'>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="adv-properties" class="  p-0025 f f-c f-at f-ct f-js">
+        <div class='exp-prptemp d3nasted hdn-i  w-full f f-c f-at f-ct f-js'>
+            <div title='[#desk]' onclick="this.parentNode.classList.toggle('d3nasted')" class='  mb-00125 fs-0f  c-tgray c-t-hblack  w-full '>
+                # [#title]
+            </div>
+            <div class='sub-items ns-sub  mb-00125  pl-005 p-0025 f f-c f-at f-ct f-js'>
+                [#content]
+            </div>
+        </div>
+    </div>
+    <div class="  rad-05 p-0025 f f-r f-at f-ct f-ja">
+        <input type="button" value="apply" onclick="applyProperties(this)" class="ctrblack w-full m-0005 c-hblack rad-05 pl-005 pr-005 p-0025 ctrans c-b-itrans ba-i-01 c-twgray c-t-hnavy " />
+        <input type="button" value="reset" onclick="resetProperties(this)" class="  rad-05  w-full m-0005 c-hblack pl-005 pr-005 p-0025 ctrans c-b-itrans ba-i-01 c-twgray c-t-hnavy " />
+    </div>
+</div>
+
+/// live script
+<script>
+    var json = {};
+    var currRefParams = {};
+    var updateProperties = function(jsn, ref, fun) {
+
+        var pref = canvas_scene.items[ref.id];
+
+        jsn.tst_pos_x = floor(pref.mesh.position.x * 1000) / 1000;
+        jsn.tst_pos_y = floor(pref.mesh.position.y * 1000) / 1000;
+        jsn.tst_pos_z = floor(pref.mesh.position.z * 1000) / 1000;
+        jsn.tst_rotation = floor(rad * pref.mesh.rotation.y * 100) / 100.;
+
+        currRefParams = pref;
+
+        pref.data.currParams = jsn;
+        pref.data.afterReady = fun;
+
+        var items = document.querySelectorAll('#properties .genPropItem');
+
+        for (var im in items) {
+
+            if (items[im] && items[im].remove) items[im].remove();
+        }
+
+        var more = createTempElement('.exp-prptemp', {
+            title: 'advance options',
+            content: ''
+        });
+        more.className += ' genPropItem';
+
+        var ts = createTempElement('.exp-prptemp', {
+            title: 'transition',
+            content: ''
+        });
+        ts.className += ' genPropItem';
+
+
+        for (var itm in jsn) {
+
+            if (itm.indexOf('sys_') == -1 && itm.indexOf('undefine') == -1) {
+
+                var item = itm;
+                var isMore = 0;
+                var isTransition = 0;
+                if (item.indexOf('exp_') != -1) {
+                    item = itm.replaceAll('exp_', '');
+                    isMore = 1;
+                }
+
+                if (item.indexOf('tst_') != -1) {
+                    item = itm.replaceAll('tst_', '');
+                    isTransition = 1;
+                }
+
+                if (item.indexOf('mul_') == -1 &&
+                    item.indexOf('chk_') == -1 &&
+                    item.indexOf('tst_') == -1 &&
+                    item.indexOf('sys_') == -1 &&
+                    item.indexOf('exp_') == -1) item = 'inp_' + item;
+
+                var elm = createTempElement('.' + item.split('_')[0] + '-prptemp', {
+
+                    name: item.replaceAll(item.split('_')[0] + '_', '').replaceAll('_s_', '\'s').replaceAll('_', ' '),
+                    value: jsn[itm],
+                    prp: itm,
+                    css: ' inpProp ',
+                    desk: '..'
+
+                }, (isMore ? more.querySelector('.sub-items') : (isTransition ? ts.querySelector('.sub-items') : null)));
+
+                elm.className += ' genPropItem';
+            }
+        }
+    }
+
+    function applyProperties() {
+
+        var js = {};
+
+        var items = document.querySelectorAll('#properties .genPropItem .inpProp');
+
+        for (var im in items) {
+            if (items[im]) {
+                var val = items[im].value;
+                try {
+                    val = JSON.parse(val);
+                } catch (e) {}
+                js[items[im].id] = val;
+            }
+        }
+
+        currRefParams.data.params = js;
+
+        canvas_scene.createModel(currRefParams.data);
+
+        canvas_scene.items[currRefParams.data.id].mesh.position.x = js.tst_pos_x;
+        canvas_scene.items[currRefParams.data.id].mesh.position.y = js.tst_pos_y;
+        canvas_scene.items[currRefParams.data.id].mesh.position.z = js.tst_pos_z;
+        canvas_scene.items[currRefParams.data.id].mesh.rotation.y = js.tst_rotation * deg;
+
+        currRefParams.data.afterReady(currRefParams.data.id);
+
+    }
+</script>

@@ -1,0 +1,436 @@
+<div class="main3dContainer">
+    <canvas class=" m-00  f-i11  " id="renderCanvas">
+    </canvas>
+</div>
+
+
+<div class='fx z08 t-00 l-00 w-full  f f-r f-as f-cs f-js '>
+    <div class='   f f-r f-je'>
+        <span
+            class=" m-005 p-0005 rad-02 co-prm co-gry3-t co-sec-t-h shadow2 fs-07 c-tblack cwhite c-t-hblack material-icons-round icon"
+            onclick="selectTab(this)">
+            add
+        </span>
+    </div>
+
+    <div class='hdn-i d3tab  f f-r f-je'>
+        <select id='office_items' onmouseup="canvas_scene.redrawOffice(this.value)" title="offices"
+            onclick="selectTab(this)"
+            class="pl-005 pr-005 pb-0025 pt-0005 mt-0005 ctrans c-b-itrans ba-i-01 fs-04 c-tnavy c-t-hblack ">
+            <option> --- --- </option>
+        </select>
+    </div>
+    <div class='hdn-i d3tab  f f-r f-je'>
+        <select id='building_items' onmouseup="canvas_scene.buildingCamera(this.key)" title="buildings"
+            onclick="selectTab(this)"
+            class="pl-005 w-mx-07 pr-005 pb-0025 pt-0005 mt-0005 ctrans c-b-itrans ba-i-01 fs-04 c-tnavy c-t-hblack ">
+            <option> unassigned floors </option>
+        </select>
+    </div>
+    <div class='hdn-i d3tab   f f-r f-je'>
+        <select id='floor_items' title="stages" onclick="selectTab(this)"
+            class="pl-005 pr-005 pb-0025 pt-0005 mt-0005 ctrans c-b-itrans ba-i-01 fs-04 c-tnavy c-t-hblack ">
+            <option> --- </option>
+        </select>
+    </div>
+    <div class='w-full fs-03 op3 op-h5 ' id='status'>
+        ...
+    </div>
+    <div class='hdn-i d3tab w-full f f-r f-je'>
+        <div class="d3sub ab   p-0025 r-00 w-08 h-full h-mn-32 ">
+            <loader>templates/properties</loader>
+        </div>
+    </div>
+
+    <div class='d3tab_panel hdn-i'>
+        <div class="d3sub ab cwgray2 r-00 w-08 h-full h-mn-32 ">
+            <loader>templates/viewMode</loader>
+        </div>
+    </div>
+    <div class='d3tab_panel hdn-i'>
+        <div class="d3sub ab cwgray r-00 w-08 h-full h-mn-32  ">
+            <loader>templates/currentItems</loader>
+        </div>
+    </div>
+</div>
+
+<div class='fx z08 t-06 l-0025 f f-c f-as f-cs f-js '>
+    <div class='d3tab mt-00125 mb-0005  '>
+        <div class="f-center f-c co-sec-t-h-i  co-prm-t" onclick="selectTab(this)">
+            <span class="m-0025 p-0025 rad-50   shadow2 fs-08   cwhite   material-icons-round icon">
+                apartment
+            </span>
+            <span class='fs-03'>templates</span>
+        </div>
+        <div class="d3pop ab t-n02 pb-005 rad-10 cwhite shadow1 l-full w-08 ">
+            <loader>templates/building</loader>
+        </div>
+    </div>
+    <div id='floorTmp' class='d3tab mt-00125 mb-0005  '>
+        <div class="f-center f-c co-sec-t-h-i  co-prm-t" onclick="selectTab(this)">
+            <span class="m-0025 p-0025 rad-50   shadow2 fs-08   cwhite   material-icons-round icon">
+                add_task
+            </span>
+            <span class='fs-03'>assets</span>
+        </div>
+        <div class="d3pop ab t-n02 pb-005 rad-05 cwhite shadow1 l-full w-08 ">
+            <loader>templates/floor</loader>
+        </div>
+    </div>
+    <div class='d3tab mt-00125 mb-0005  '>
+        <div class="f-center f-c co-sec-t-h-i  co-prm-t" onclick="selectTab(this)">
+            <span class="m-0025 p-0025 rad-50   shadow2 fs-08   cwhite   material-icons-round icon">
+                add
+            </span>
+            <span class='fs-03'>add</span>
+        </div>
+        <div class="d3pop ab t-n02 pb-005 rad-10 cwhite shadow1 l-full w-08 ">
+            <loader>templates/add</loader>
+        </div>
+    </div>
+
+</div>
+
+<div class='rad-02 p-00125 cwhite shadow1 fx z08 b-005 l-005 w-auto  f f-r f-as f-cs f-js '>
+    <div id="vw_free" class=' vwitm  co-gry3-h rad-02  p-00125 pl-00125 pr-00125 mr-00125 fs-03'
+        onclick="canvas_scene.changeCameraMode({cameraMode:'free'})">Free 3D View</div>
+    <div id="vw_floor" class='vwitm  co-gry3-h rad-02 p-00125 pl-00125 pr-00125  mr-00125  fs-03'
+        onclick="canvas_scene.changeCameraMode({cameraMode:'floor'})">FLOOR
+    </div>
+    <div id="vw_walk" class=' vwitm  co-gry3-h rad-02 p-00125 pl-00125 pr-00125  fs-03'
+        onclick="canvas_scene.changeCameraMode({cameraMode:'walk'})">
+        Walk</div>
+    <div id="vw_2d" class=' vwitm  co-gry3-h rad-02 p-00125 pl-00125 pr-00125  fs-03'
+        onclick="canvas_scene.changeCameraMode({cameraMode:'2d'})">
+        2D</div>
+    <div id="vw_desk" class='hdn-i vwitm  co-gry3-h rad-02 p-00125 pl-00125 pr-00125  fs-03'
+        onclick="canvas_scene.changeCameraMode({cameraMode:'desk'})">
+        DESK</div>
+</div>
+
+<div class="hdn-i">
+    <loader>templates/worker</loader>
+</div>
+
+
+
+
+/// live script
+<script>
+    var prop;
+
+    window.stat = function (st,p3,p,p2) {
+        document.getElementById('status').innerHTML = '<span class="c-tgray">' + st + ' </span><span class="c-tblue">' + (p || '') + ' </span><span class="c-tgray">' + (p2 || '') + ' </span><br/><span class="c-tgray2">' + (p3 || '') + '</span>';
+    }
+
+    function addEventHandler(obj,evt,handler) {
+        if (obj.addEventListener) {
+            // W3C method
+            obj.addEventListener(evt,handler,false);
+        } else if (obj.attachEvent) {
+            // IE method.
+            obj.attachEvent('on' + evt,handler);
+        } else {
+            // Old school method.
+            obj['on' + evt] = handler;
+        }
+    }
+
+    var defDrag = function (dragdiv,str) {
+
+        dragdiv.setAttribute('draggable','true');
+        dragdiv.addEventListener('dragstart',function (event) {
+            var th = this;
+            th.classList.add('op0');
+
+            event.dataTransfer.effectAllowed = "copyMove";
+
+            canvas_scene.dragState = true;
+            canvas_scene.dragedItem = str;
+            event.dataTransfer.setData("text",JSON.stringify(str));
+
+        });
+
+        dragdiv.addEventListener('dragend',function (event) {
+            canvas_scene.drop()
+
+        });
+
+    }
+
+    var clearTempList = function (name,item) {
+        all('.' + item,function (at) {
+            if (at.className.indexOf(name) == -1) at.remove();
+        },function () { },null,first('.' + name).parent);
+    }
+
+
+
+    function createTempElement(name,op,par) {
+        var temp = document.querySelector(name);
+        var div = document.createElement('div');
+
+        var sTemp = temp.innerHTML;
+        div.className = temp.className.replace('hdn-i','').replace(name.replace('.',''),'');
+
+        for (var item in op) {
+            sTemp = sTemp.replaceAll('[#' + item + ']',op[item]);
+        }
+
+        sTemp = sTemp.replaceAll('[#src]','src');
+        sTemp = sTemp.replaceAll('[#href]','href');
+
+        div.innerHTML = sTemp;
+
+        if (op.dragable) {
+
+            div.className += ' rt';
+            var dg = document.createElement('div');
+            dg.className = 'ab t-00 l-00 h-full w-full  z10';
+            dg.innerHTML = ' ';
+            div.appendChild(dg);
+            defDrag(dg,op.dragable);
+
+        } else if (op.click) {
+            div.className += ' rt';
+            div.onclick = op.click;
+        }
+
+        if (par) par.appendChild(div)
+
+        else temp.parentNode.appendChild(div);
+        return div;
+    }
+
+
+    var selectTab = function (th) {
+
+        var showTab = th.parentNode.className.indexOf('d3tabselected') != -1;
+
+        var items = document.querySelectorAll('.d3tabselected');
+        if (items.length > 0)
+            for (var item in items) {
+                if (items[item] && items[item].classList)
+                    items[item].classList.remove('d3tabselected')
+            }
+
+
+        if (!showTab)
+            th.parentNode.classList.add('d3tabselected');
+        else th.parentNode.classList.remove('d3tabselected');
+    }
+
+    window.onCallFromParent = (event) => {
+
+        console.log('get from parent :',event);
+
+        if (event.data && event.data.type == 'create')
+            prop.scene.createModel(event.data);
+        if (event.data && event.data.type == 'delete')
+            prop.scene.deleteModel(event.data);
+        if (event.data && event.data.type == 'save')
+            prop.scene.saveTemp(event.data);
+        if (event.data && event.data.type == 'load')
+            prop.scene.loadTemp(event.data);
+
+        if (event.data && event.data.type == 'camera')
+            prop.scene.controlCamera(event.data);
+
+    }
+
+    new $3dsrv().canvas(document.getElementById('renderCanvas'),function (p) {
+
+        p.scene.postMessage = function (msg) {
+            window.postMessage(msg,'*')
+        }
+
+        prop = p;
+
+        canvas_scene = prop.scene;
+
+        window.addEventListener("message",prop.onCallFromParent,false);
+
+
+    },{
+        js: [
+            window.baseURL + '/modelScript/basic.models.js',
+            window.baseURL + '/mode' + window.currVer + '/definition.js',
+            window.baseURL + '/resources/api.js',
+            window.baseURL + '/resources/gbux.js',
+            window.baseURL + '/resources/gbuxtools.js',
+            window.baseURL + '/mode' + window.currVer + '/default.js',
+        ],
+        jsLoaded: (a) => {
+
+            if (a == 1) {
+
+                localDB.all_offices.list().then(function (d) {
+                    first('#office_items').innerHTML = "";
+
+                    localDB.all_offices.setAsDictionary(d.offices,'uuid',function (uuid,item) {
+                        first('#office_items').appendChild(new Option(item.name,uuid));
+                    });
+
+                    /** applty first office as selected */
+                    //canvas_scene.redrawOffice(localDB.all_offices.data.offices[0].uuid);
+
+                });
+
+                return false;
+            }
+            return true;
+        }
+    });
+
+    window.onresize = function () {
+        prop.scene._engine.resize();
+    }
+
+    function makeColor(n,c) {
+        return `.xxx ,.xxx-h:hover ,.xxx-a:active {  background-color: #yyy;   }
+        .xxx-h:hover,.xxx-t-h:hover{ cursor: pointer;}
+        .xxx-t,.xxx-t-h:hover{ color: #yyy ;}
+        .xxx-b,.xxx-b-h:hover{ border-color: #yyy ;}
+        .xxx-i ,.xxx-h-i:hover ,.xxx-a-i:active {  background-color: #yyy !important;   }
+        .xxx-h-i:hover,.xxx-t-h-i:hover{ cursor: pointer !important; }
+        .xxx-t-i,.xxx-t-h-i:hover{ color: #yyy !important;}
+        .xxx-b-i,.xxx-b-h-i:hover{ border-color: #yyy !important;}
+        
+        `.replaceAll('xxx',n).replaceAll('#yyy',c);
+    }
+
+    dn({
+        url: window.baseURL + '/resources/screen.css',
+        success: function (d) {
+            var sty = document.createElement('style');
+
+            /*
+
+            color palet
+
+            Primary
+            Primary-900 
+            
+            Secondary-dark
+            Secondary
+            Secondary- light 
+            
+            Color-Info	
+            Color-Error
+            Color-Success	
+            Color-Warning 
+            
+            
+            Gray-Darken
+            Gray
+            Gray-lighten-1
+            Gray-lighten-2
+            Gray-lighten-3
+            Gray-lighten-4 
+            
+            
+            Green-Dark
+            Green
+            Green-lighten-1
+            Green-lighten-2
+            Green-lighten-3
+            Green-lighten-4 
+
+            */
+
+
+
+            d +=
+                makeColor('co-prm','#2B2E33') +
+                makeColor('co-prm9','#55585c') +
+
+                makeColor('co-secd','#EAAD38') +
+                makeColor('co-sec','#FFBE41') +
+                makeColor('co-secl','#ffd27a') +
+
+                makeColor('co-inf','#09ACD0') +
+                makeColor('co-err','#FFE600') +
+                makeColor('co-suc','#56CA29') +
+                makeColor('co-wrn','#BD5A42') +
+
+                makeColor('co-gryd','#374C6B') +
+                makeColor('co-gry','#5F7089') +
+                makeColor('co-gry1','#8794A6') +
+                makeColor('co-gry2','#D7DBE1') +
+                makeColor('co-gry3','#EBEDF0') +
+                makeColor('co-gry4','#FAFBFC') +
+
+                makeColor('co-grnd','#218377') +
+                makeColor('co-grn','#4D9C92') +
+                makeColor('co-grn1','#7AB5AD') +
+                makeColor('co-grn2','#A6CDC9') +
+                makeColor('co-grn3','#D3E6E4') +
+                makeColor('co-grn4','#E9F3F1') +
+
+                `
+            
+            .d3tab  .d3sub , .d3tab  .d3pop , .d3tab_panel .d3sub{
+              top:-20000px;
+            }
+
+            .d3tab:hover .d3sub{ 
+              top:30px;
+              z-index:50000;
+            }  
+
+            .d3tab:hover>input{ 
+                color:black ;
+               
+            } 
+
+            .d3tabselected>input{ 
+              
+              color:navy !important;
+            } 
+            
+            .d3tabselected .d3sub{ 
+                
+                
+              
+               top:35px !important;
+               z-index:40000;
+            } 
+
+            .d3nasted .ns-sub ,.d3nasted .ns-subf{
+               display:none;
+            } 
+
+            .d3tab:hover .d3pop{ 
+                top:-20000px;
+              z-index:50000;
+            }  
+            .d3tabselected .d3pop{  
+              
+              top:-25px !important;
+             z-index:40000;
+          }  
+          
+          .icon {
+            font-family: Material Icons !important;
+        }
+
+        .shadow1 {
+            box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.15);
+
+        }
+
+        .shadow2 {
+            box-shadow: -1px -2px 8px 1px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: -1px -2px 8px 1px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: -1px -2px 8px 1px rgba(0, 0, 0, 0.15);
+        }
+            
+            `;
+
+            sty.innerHTML = d;
+            document.head.appendChild(sty);
+        }
+    })
+</script>

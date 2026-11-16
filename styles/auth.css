@@ -1,0 +1,8 @@
+@media (min-width:980px) and (min-height: 690px) {
+    #auth_background  {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        background-color: #F5F7FA;
+    }
+}

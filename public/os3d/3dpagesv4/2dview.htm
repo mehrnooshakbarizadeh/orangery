@@ -1,0 +1,2050 @@
+<div class="main3dContainer">
+    <canvas class=" m-00  f-i11" id="renderCanvas" ontouchstart="canvas_scene.touchStart2(event)"
+        ontouchmove="canvas_scene.touchMove(event)" ontouchend="canvas_scene.touchEnd(event)">
+    </canvas>
+</div>
+
+
+<div id='touchWalk' class="fx z10 b-01 mob l-01  h-015  w-015 rad-50 ctrblack" ontouchstart="
+    if(canvas_scene.viewMode =='2D') canvas_scene.to3DView();
+    canvas_scene.apply3dCameraMode('walk')
+    canvas_scene.touchStart(event)" ontouchmove="canvas_scene.touchMove(event)"
+    ontouchend="canvas_scene.touchEnd(event)">
+    <div id='touchWalkFloat' class="rt h-01 w-01 op3 p-00125 m-0025 fs-01 cwhite rad-50 ">
+    </div>
+</div>
+
+<div id="shape-pop" style="left:-20000px;" class="fx    w-0125  z09 f-center  c-twhite   f-c"
+    onselectstart="return false;">
+    <div class="ns  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick="; canvas_scene.removeShape(canvas_scene.selectedMesh); ">
+            close
+        </div>
+    </div>
+    <div class="ns  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick="; canvas_scene.makeRoom(canvas_scene.selectedMesh); ">
+            meeting_room
+        </div>
+    </div>
+    <div class="ns  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick="; canvas_scene.pickMat(canvas_scene.selectedMesh); ">
+            palette
+        </div>
+    </div>
+    <div class="   w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04   co-prm-t-h co-prm   co-secd-h   ">
+        <div oncontextmenu="return false;" onmouseup="if(event.button!= 0){canvas_scene.rclick = 1;this.click();}"
+            class="m-0005 w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon" onclick=";
+
+           canvas_scene.selectedMesh.rotation.y  += (canvas_scene.rclick == 0?1:-1)*15*deg; canvas_scene.rclick=0;
+           canvas_scene.rotation_y = canvas_scene.selectedMesh.rotation.y ; 
+
+
+           canvas_scene.saveShapeMap(canvas_scene.selectedMesh) ">
+            settings_backup_restore
+        </div>
+    </div>
+</div>
+
+<div id="shaperoom-pop" style="left:-20000px;" class="fx    w-0125  z09 f-center  c-twhite   f-c"
+    onselectstart="return false;">
+    <div class="ns  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick="; canvas_scene.removeShape(canvas_scene.selectedMesh); ">
+            close
+        </div>
+    </div>
+    <div class="ns  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick="; canvas_scene.makeRoom(canvas_scene.selectedMesh); ">
+            shape_line
+        </div>
+    </div>
+    <div class="ns  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick="; canvas_scene.pickMat(canvas_scene.selectedMesh); ">
+            palette
+        </div>
+    </div>
+    <div class="   w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04   co-prm-t-h co-prm   co-secd-h   ">
+        <div oncontextmenu="return false;" onmouseup="if(event.button!= 0){canvas_scene.rclick = 1;this.click();}"
+            class="m-0005 w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon" onclick=";
+           canvas_scene.selectedMesh.rotation.y  += (canvas_scene.rclick == 0?1:-1)*15*deg;
+           canvas_scene.rotation_y = canvas_scene.selectedMesh.rotation.y ; 
+          
+           canvas_scene.rclick=0;
+           canvas_scene.saveShapeMap(canvas_scene.selectedMesh) ">
+            settings_backup_restore
+        </div>
+    </div>
+    <div class="ns  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick="; canvas_scene.pickNewShape(canvas_scene.selectedMesh); ">
+            repeat
+        </div>
+    </div>
+    <div class="   w-01125  f-center op3 op-h5    h-01125    rad-50 fs-04    co-prm-t-h co-prm   co-secd-h   ">
+        <div class="m-0005   w-01125  h-01125 owf fl f-center fs-06   c-twhite  material-icons-round icon" onclick="; 
+        if(canvas_scene.selectedMesh && canvas_scene.selectedMesh.isShape && canvas_scene.selectedMesh.conf1.room ){
+        first('#formContainer').classList.remove('hdn-i');first('#formContainer iframe').src=
+            window.baseURL.replace('os3d','')+
+              'os3d/roommap.html?id='+canvas_scene.selectedMesh.map.uuid+'&office='+localDB.officeRef.identity; }
+              else { first('#avl-room-pop').classList.add('hdn-i');} ">
+            settings
+        </div>
+    </div>
+</div>
+
+<div id="shapewall-pop" style="left:-20000px;" class="fx w-0125  z09 f-center  c-twhite  f-c"
+    onselectstart="return false;">
+    <div class="ns  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon" onclick="; canvas_scene.removeShape(canvas_scene.selectedMesh); 
+            
+            ">
+            close
+        </div>
+    </div>
+    <div title='wall depth change '
+        class="   w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04   co-prm-t-h co-prm   co-secd-h   ">
+        <div class="m-0005 w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon" onclick=";
+           canvas_scene.selectedMesh.conf1.d = max(0.5,((canvas_scene.selectedMesh.conf1.d+0.5)%5)); 
+
+           canvas_scene.selectedMesh.conf1.st = canvas_scene.selectedMesh.conf1.d /3.; 
+           
+           canvas_scene.reCreateShape(canvas_scene.selectedMesh,{ },function(d){
+                                    d.cm1.floorSubItem = true;
+                                
+                                    canvas_scene.saveShapeMap(canvas_scene.selectedMesh)
+                                });
+           ">
+            horizontal_split
+        </div>
+    </div>
+    <div title="change material"
+        class="ns  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick="; canvas_scene.pickMat(canvas_scene.selectedMesh); ">
+            palette
+        </div>
+    </div>
+    <div title="switch between wall - door - window"
+        class="   w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04   co-prm-t-h co-prm   co-secd-h   ">
+        <div class="m-0005 w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon" onclick=";
+           canvas_scene.selectedMesh.conf1.dw = ((canvas_scene.selectedMesh.conf1.dw+1)%3);
+           canvas_scene.reCreateShape(canvas_scene.selectedMesh,{ },function(d){
+                                    d.cm1.floorSubItem = true;
+                                    canvas_scene.saveShapeMap(canvas_scene.selectedMesh)
+                                });
+           ">
+            category
+        </div>
+    </div>
+    <div title="clone style and material and you can set it on other walls by click"
+        class="ns  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon" onclick="; 
+         first('.finish_pick_mode').classList.remove('hdn-i') 
+        canvas_scene.pickMultiSetting( {d:canvas_scene.selectedMesh.conf1.d , 
+                st:canvas_scene.selectedMesh.conf1.st,dw:canvas_scene.selectedMesh.conf1.dw}); ">
+            format_paint
+        </div>
+    </div>
+   
+    <div class="ns    w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div title="press h for horzetal and v for vertical direction" class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick=";canvas_scene.wallRotaionCorrect({rd:90*deg}); " oncontextmenu="event.preventDefault();" 
+            onmouseup="if(event.button==2){;canvas_scene.wallRotaionCorrect({rd:180*deg});}">
+            sync_disabled
+        </div>
+    </div>
+
+    <div class="ns    w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick=";canvas_scene.duplicate(canvas_scene.selectedMesh); ">
+            content_copy
+        </div>
+    </div>
+</div>
+
+<div id="avl-room-pop" style="left:-20000px;" class="fx w-0125  z09 f-center  c-ttrans f-c" style="left:-200%;"
+    onselectstart="return false;">
+    <div class="ns  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick="; canvas_scene.removeRoom(canvas_scene.selectedMesh); ">
+            close
+        </div>
+    </div>
+    <div oncontextmenu="return false;" onmouseup="if(event.button!= 0){canvas_scene.rclick = 1;this.click();}"
+        class="   w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04     rad-50 fs-04    co-prm-t-h co-prm   co-secd-h   ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center   c-twhite  material-icons-round icon" onclick=";
+           canvas_scene.selectedMesh.rotation.y  += (canvas_scene.rclick == 0?1:-1)*15*deg;canvas_scene.rclick=0;
+           canvas_scene.rotation_y = canvas_scene.selectedMesh.rotation.y ; 
+          
+           canvas_scene.saveShapeMap(canvas_scene.selectedMesh)
+           ">
+            settings_backup_restore
+        </div>
+    </div>
+    <div class="   w-01125  f-center op3 op-h5    h-01125    rad-50 fs-04    co-prm-t-h co-prm   co-secd-h   ">
+        <div class="m-0005   w-01125  h-01125 owf fl f-center fs-06   c-twhite  material-icons-round icon" onclick="; 
+        if(canvas_scene.selectedMesh && canvas_scene.selectedMesh.isRoom){
+        first('#formContainer').classList.remove('hdn-i');first('#formContainer iframe').src=
+            window.baseURL.replace('os3d','')+
+              'os3d/roommap.html?id='+canvas_scene.selectedMesh.map.uuid+'&office='+localDB.officeRef.identity; }
+              else { first('#avl-room-pop').classList.add('hdn-i');} ">
+            settings
+        </div>
+    </div>
+</div>
+
+<div id="avl-desk-pop" style="left:-20000px;" class="fx w-01125  z09 f-center  c-ttrans f-c" style="left:-200%;"
+    onselectstart="return false;">
+    <div class="  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick="; canvas_scene.removeDesk(); ">
+            close
+        </div>
+    </div>
+    <div class="  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h   ">
+        <div oncontextmenu="return false;" onmouseup="if(event.button!= 0){canvas_scene.rclick = 1;this.click();}"
+            class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon" onclick=";
+           canvas_scene.pickedMesh.parent.rotation.y  += (canvas_scene.rclick == 0?1:-1)*15*deg; canvas_scene.rclick=0;
+           canvas_scene.rotation_y = canvas_scene.selectedMesh.rotation.y ; 
+          
+           if(canvas_scene.pickedMesh.parent.map){
+            canvas_scene.pickedMesh.parent.map.data.rot = def(canvas_scene.pickedMesh.parent.map.data.rot,{x:0,y:0,z:0});
+            canvas_scene.pickedMesh.parent.map.data.rot.y = canvas_scene.pickedMesh.parent.rotation.y ;
+           new entity('mapitem',localDB.officeRef).id(canvas_scene.pickedMesh.parent.map.uuid).set(canvas_scene.pickedMesh.parent.map).then(function(d){
+
+            sysLog('desk rotation saved','info',100);
+            setTimeout(() => {
+                sysLogHide()
+            }, 500);
+            }) }
+           ">
+            settings_backup_restore
+        </div>
+    </div>
+    <div title='desk type'
+        class="  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h   ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick=";
+            if(!canvas_scene.selectedMesh.conf1) 
+            canvas_scene.selectedMesh.conf1 = {type : 0}; 
+
+            canvas_scene.reCreateDesk(canvas_scene.selectedMesh,{size:0,type: (( canvas_scene.selectedMesh.conf1.type +1)%4) }) ;  ">
+            category
+        </div>
+    </div>
+    <div title='desk sizes'
+        class="  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h   ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick=";
+            if(!canvas_scene.selectedMesh.conf1) 
+            canvas_scene.selectedMesh.conf1 = {size : 0}; 
+           canvas_scene.reCreateDesk(canvas_scene.selectedMesh,{size: (( canvas_scene.selectedMesh.conf1.size +1) ) }) ;  ">
+            aspect_ratio
+        </div>
+    </div>
+
+    <div class="    w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h    ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon " onclick=";
+         if(canvas_scene.selectedMesh && canvas_scene.selectedMesh.isDesk){
+             canvas_scene.waitForUpdateDesk = canvas_scene.selectedMesh.id;
+        first('#formContainer').classList.remove('hdn-i');first('#formContainer iframe').src=
+          window.baseURL.replace('os3d','')+
+            '3d/desk/?id='+canvas_scene.selectedMesh.id+'&office='+localDB.officeRef.identity;}
+            else{
+                first('#avl-desk-pop').classList.remove('hdn-i');
+            }">
+            settings
+        </div>
+    </div>
+</div>
+
+<div id="avl-asset-pop" style="left:-20000px;" class="fx w-01125  z09 f-center  c-ttrans f-c" style="left:-200%;"
+    onselectstart="return false;">
+    <div class="  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h  ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick="; canvas_scene.removeAsset(); ">
+            close
+        </div>
+    </div>
+    <div class="  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h   ">
+        <div oncontextmenu="return false;" onmouseup=" if(event.button!= 0){canvas_scene.rclick = 1;this.click();}"
+            class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon" onclick=";
+            
+           canvas_scene.pickedMesh.parent.rotation.y  +=  (canvas_scene.rclick == 0?1:-1)* 15*deg;canvas_scene.rclick=0;
+           canvas_scene.rotation_y = canvas_scene.selectedMesh.rotation.y ; 
+          
+           if(canvas_scene.pickedMesh.parent.map){
+            canvas_scene.pickedMesh.parent.map.data.rot = def(canvas_scene.pickedMesh.parent.map.data.rot,{x:0.,y:0.,z:0.});
+            canvas_scene.pickedMesh.parent.map.data.rot.y = canvas_scene.pickedMesh.parent.rotation.y ;
+           new entity('mapitem',localDB.officeRef).id(canvas_scene.pickedMesh.parent.map.uuid).set(canvas_scene.pickedMesh.parent.map).then(function(d){
+
+            sysLog('asset type saved','info',100);
+            setTimeout(() => {
+                sysLogHide()
+            }, 500);
+            }) }
+             ">
+            settings_backup_restore
+        </div>
+    </div>
+    <div title='Asset type'
+        class="  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h   ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick=";
+            if(!canvas_scene.selectedMesh.conf1) 
+            canvas_scene.selectedMesh.conf1 = {type : 0}; 
+
+            canvas_scene.reCreateAsset(canvas_scene.selectedMesh,{ md: (( canvas_scene.selectedMesh.conf1.md +1)%canvas_scene.selectedMesh.conf1.modeCount) }) ;  ">
+            category
+        </div>
+    </div>
+    <div title='Asset Size'
+        class="  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h   ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon"
+            onclick=";
+        if(!canvas_scene.selectedMesh.conf1) 
+        canvas_scene.selectedMesh.conf1 = {type : 0}; 
+
+        canvas_scene.reCreateAsset(canvas_scene.selectedMesh,{ sz: (( canvas_scene.selectedMesh.conf1.sz +1)%canvas_scene.selectedMesh.conf1.sizeCount) }) ;  ">
+            aspect_ratio
+        </div>
+    </div>
+    <div title='Asset Setting'
+        class="  w-01125 m-0005 op2 op-h5  f-center  h-01125   rad-50   fs-04 co-prm-t-h   co-prm   co-secd-h   ">
+        <div class="m-0005   w-01125  h-01125  owf fl fs-06 f-center  c-twhite  material-icons-round icon" onclick=";
+        
+        if(canvas_scene.selectedMesh && canvas_scene.selectedMesh.map.name == 'asset tooltip'){
+
+            // createCustom 
+            console.log(canvas_scene.selectedMesh.map)
+
+            first('.createCustom').classList.remove('hdn-i'); 
+
+            first('.createCustomWait').classList.add('hdn-i');
+            first('.createCustomContent').classList.remove('hdn-i');
+
+            first('.createCustom .img').src = canvas_scene.selectedMesh.map.data.conf1.path;
+            first('.createCustom .exac').checked = canvas_scene.selectedMesh.map.data.conf1.exac;
+            first('.createCustom .fclr').value = canvas_scene.selectedMesh.map.data.conf1.fclr;
+            first('.createCustom .color').value =  canvas_scene.selectedMesh.map.data.conf1.color ;
+            first('.createCustom .title').value =  canvas_scene.selectedMesh.map.data.conf1.title;  
+
+            var imgs = ''; 
+            first('.createCustom .existList').innerHTML = '';
+            for(var i in canvas_scene.mapsId){
+                i = canvas_scene.mapsId[i];
+                if(i && i.name == 'asset tooltip'){
+                    var img = document.createElement('img');
+                    img.className = ' w-01  h-01  owf rad-50 p-0005 m-0005 c-hnavy ';
+                    img.src = i.data.conf1.path;
+                    img.onclick= function() {
+                         first('.createCustom .img').src = this.src;                        
+                    }
+
+                    if(imgs.indexOf('__'+i.data.conf1.path)==-1){
+                        imgs += '__'+i.data.conf1.path; 
+                        first('.createCustom .existList').appendChild(img);
+                    }
+                }
+            }
+
+            return;
+        } 
+        
+        if(canvas_scene.selectedMesh && canvas_scene.selectedMesh.map.name == 'asset parkingSpot'){
+            canvas_scene.waitForUpdateAsset = canvas_scene.selectedMesh.id;
+       first('#formContainer').classList.remove('hdn-i');first('#formContainer iframe').src=
+         window.baseURL.replace('os3d','')+
+           '3d/parkingsopt/?id='+canvas_scene.selectedMesh.id+'&office='+localDB.officeRef.identity;}
+           else{
+               first('#avl-asset-pop').classList.remove('hdn-i');
+           }">
+            settings
+        </div>
+    </div>
+</div>
+
+<div class="fx z-10 p-00125 rightContent hdn-i rad-03 w-07 h-mx-p50 h-auto f f-c f-at f-ct f-js cwhite shadow1 ba-i-01 c-b-igray"
+    style="top:0px;left:0px;">
+    <div class="f f-r f-at f-ct f-jb bb-i-01 c-b-iwgray">
+        <input type="text" class="p-00125 w-full rad-03 cwhite " />
+        <div class="icon fs-05 c-hred f-center" onclick=";this.parentNode.parentNode.classList.add('hdn-i')">close</div>
+    </div>
+    <div class="h-full cntList owf-x f f-c f-at f-ct f-js">
+
+    </div>
+</div>
+
+<div class="fx w-p10 l-p45 hdn-i --must be totaly remove--  mob-hide  l-00 t-005 f-center">
+
+    <div title='stop pick mode and back to normal view' onclick="canvas_scene.endPickPointMode(); 
+
+popHide();
+
+        canvas_scene.setToMesh = false;
+        canvas_scene.setModelSetting = null;
+        canvas_scene.setToMeshMode =null;
+        canvas_scene.setMaterialId = null;
+            first('.finish_pick_mode').classList.add('hdn-i')
+            "
+        class='finish_pick_mode animated zoomIn p-00125 mr-015 hdn-i fs-08 p-0025 f f-r  coyel3 rad-50 h-1125 w-01125 coyel2-h   material-icons-round icon '>
+        stop_circle
+    </div>
+
+    <div class="f f-r  cwhite addMenu  shrd shadow2  rad-10 p-0005 f-nw f-ac f-ct f-jc">
+        <div class="rt  ns f f-r f-ac f-cc f-jc c-hwgray rad-05 c-hgray   "
+            onclick=" popHide();first('#shapes').classList.remove('hdn-i')">
+            <span
+                class="m-0005  ml-0025 mr-0025   w-01  h-01 owf fl f-center fs-06  c-h-tblack   material-icons-round icon">
+                format_shapes
+            </span>
+            <span
+                class="m-0005 api-0001 fs-03 w-0125 h-0125 fl f-center   p-00125  bb  rad-05   c-htrans    c-h-tblack     ">
+                Add Shape
+            </span>
+        </div>
+        <div class="fs-01 bl-i-01 c-b-itrblack h-0125 m-0005 op2"></div>
+        <div class="rt  ns f f-r f-ac f-cc f-jc c-hwgray rad-05  c-hgray   " onclick=";
+         popHide();
+            first('#matListPop').classList.remove('hdn-i');
+            first('#newMatItemPop').classList.remove('hdn-i');
+            canvas_scene.newMat()">
+            <span
+                class="m-0005  ml-0025 mr-0025   w-01  h-01 owf fl f-center fs-06  c-h-tblack   material-icons-round icon">
+                palette
+            </span>
+            <span
+                class="m-0005 api-0001 fs-03 w-0125 h-0125 fl f-center   p-00125  bb  rad-05   c-htrans    c-h-tblack     ">
+                Add Material
+            </span>
+        </div>
+        <div class="fs-01 bl-i-01 c-b-itrblack h-0125 m-0005 op2"></div>
+        <div class="rt  ns f f-r f-ac f-cc f-jc c-hwgray rad-05  c-hgray    "
+            onclick=" popHide(); canvas_scene.deskIdentity++;canvas_scene.addDesk(null,null,null,null,null,1)">
+            <img [#src]='[#images]/Desk.svg'
+                class="m-0005 ml-0025 mr-0025   w-01  h-01 owf fl f-center fs-05  c-h-tblack  " />
+            <span
+                class="m-0005 api-0001 fs-03 w-0125 h-0125 fl f-center   p-00125  bb  rad-05   c-htrans    c-h-tblack     ">
+                Add Desk
+            </span>
+        </div>
+        <div class="fs-01 bl-i-01 c-b-itrblack h-0125 m-0005 op2"></div>
+        <div class="rt  ns f f-r f-ac f-cc f-jc c-hwgray rad-05  c-hgray   "
+            onclick=" popHide();first('#roomShapes').classList.remove('hdn-i'); ">
+            <span
+                class="m-0005  ml-0025 mr-0025   w-01  h-01 owf fl f-center fs-06  c-h-tblack   material-icons-round icon">
+                meeting_room
+            </span>
+            <span
+                class="m-0005 api-0001 fs-03 w-0125 h-0125 fl f-center   p-00125  bb  rad-05   c-htrans    c-h-tblack     ">
+                Add Room
+            </span>
+        </div>
+        <div class="fs-01 bl-i-01 c-b-itrblack h-0125 m-0005 op2"></div>
+        <div class="rt  ns f f-r f-ac f-cc f-jc c-hwgray rad-05  coyel2-h  " onclick="
+         popHide();
+        ; canvas_scene.addFloor()">
+            <img [#src]='[#images]/floor.svg'
+                class="m-0005 ml-0025 mr-0025   w-01  h-01 owf fl f-center fs-05  c-h-tblack  " />
+
+            <span
+                class="m-0005 api-0001 fs-03 w-0125 h-0125 fl f-center   p-00125  bb  rad-05   c-htrans    c-h-tblack     ">
+                Add Floor
+            </span>
+        </div>
+
+    </div>
+</div>
+
+<div id="newItemsPop" class=" fx  hdn-i mob-hide      w-p20 l-p40   t-02 f-center  f f-c f-at f-ct f-js ">
+    <div class="m-0005 mr-00125 ab t-01 rad-50 r-n05 z10  w-01   h-01   owf fl fs-06 f-center co-sec-t-h co-prm-t  material-icons-round icon"
+        onclick=";first('#newItemsPop').classList.add('hdn-i')">
+        close
+    </div>
+    <div class="m-005  w-mn-15 h-full  p-0025">
+        <div class="f f-c f-at f-ct f-jb     rad-10 cwhite shadow1 p-005">
+            <div class="f f-rr f-at f-ct f-jb">
+                <div
+                    class='h-03  rt owf ba-i-01 c-b-iwgray  rad-05  w-03 fs-03   f-center  f-rr  cwhite co-sec-h co-prm-t   '>
+                    <div class='plnprg fl f-center f-c'>
+                        <img id='patternPath' [#src]='[#images]/temp.png' class="  h-02  " />
+                        <div class="w-full fl f-center   f-c">
+                            <span class='fs-03' id='glbtit'>Upload Plan</span>
+                        </div>
+                    </div>
+                    <div id='pln-upl-prg' class="iprg ab z10 t-00 l-00  ctrblack h-full fs-10 z-10 "></div>
+                    <input type='file' id='patternUpload' onchange="getBase64(this.files[0],canvas_scene.patternChange)"
+                        class='ab c-hwhite t-00 l-00 w-full h-full fs-10 op0' />
+                </div>
+                <div class="f m-00125   fs-03 c-tgray f-r f-at f-cc f-jc">
+                    <input title="opacity" orient="vertical" type="range" id="pattopc"
+                        class="ba-i-01  h-03 fs-03  vrange  c-tblack w-025  m-0005 rad-02  c-b-igray "
+                        onchange="canvas_scene.patternChange()" value="50" />
+                </div>
+                <div class="f m-00125   fs-03 c-tgray  f-c f-at f-cc f-js">
+                    <div class="f f-r f-at f-ct f-js">
+                        <div class="h-01 w-03 p-00125 f-center">
+                            Scale:
+                        </div>
+                        <div><input title="scale"
+                                class="ba-i-01 h-005 fs-03 p-00125  ba-i-01 c-b-iwgray  rad-05  c-tblack w-015 m-0005 rad-02 c-b-igray "
+                                onkeyup="canvas_scene.patternChange()" id="pattscale" value="1.0" /></div>
+                    </div>
+                    <div class="f f-r f-at f-ct f-js">
+                        <div class="h-01 p-00125 w-03 f-center">
+                            Rotate:
+                        </div><input title="rotation"
+                            class="ba-i-01  h-005 fs-03  p-00125  ba-i-01 c-b-iwgray  rad-05   c-tblack w-015  m-0005 ba-i-01 c-b-iwgray  rad-05 rad-02  c-b-igray "
+                            onkeyup="canvas_scene.patternChange()" id="pattrot" value="0.0" />
+                    </div>
+                    <div class="f f-r f-at f-ct f-js">
+                        <div class="h-01 p-00125 w-03 f-center">
+                            Depth :
+                        </div><input title="camera height"
+                            class="ba-i-01  h-005 fs-03  p-00125  ba-i-01 c-b-iwgray  rad-05   c-tblack w-015  m-0005 ba-i-01 c-b-iwgray  rad-05 rad-02  c-b-igray "
+                            onkeyup="canvas_scene.patternChange()" id="canheight" value="0.0" />
+                    </div>
+                </div>
+                <div class="f m-00125 w-04  fs-03 c-tgray  f-c f-at f-cc f-js">
+                    <div class="h-01 f-center">
+                        sort: <input title="floor number"
+                        class="ba-i-01 h-005 fs-03 p-0005 rad-02  c-tblack w-015 m-0005 rad-02 c-b-igray "
+                        onkeyup="canvas_scene.patternChange()" id="fNumber" value="0" />
+                        <img [#src]='[#images]/Vectoric_app.svg' class="p-00125 rad-50 c-hnavy w-005 h-005"
+                         onclick="canvas_scene.patternChange();location.reload()" />
+                    </div>
+                    <div class="fs-03 h-11125 p-0025  ">Clone Shapes </div>
+                    <select id="reffloors" title="selected from floor" onchange="canvas_scene.cloneFloor(this)"
+                        class="p-0025 ba-i-01 c-b-iwgray  rad-05 fs-03">
+                        <option id="-1">
+                            empty floor
+                        </option>
+                    </select>
+                    <input type="button" value="clear" class="mt-0025 p-00125 rad-05 cred c-tblack c-hwgray " />
+
+
+
+                </div>
+
+                <div class="f m-00125  hdn-i  fs-03 c-tgray f-r f-at f-cc f-jc">
+                     
+                    <input title="floor height"
+                        class="ba-i-01  h-005 fs-03  hdn-i  c-tblack w-015  m-0005 rad-02  c-b-igray "
+                        onkeyup="canvas_scene.patternChange()" id="fHeight" value="0.0" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="newMatItemPop"
+    class=" fx animated fadeIn hdn-i  mob-hide      w-p20 l-p40   t-02 f-center  f f-c f-at f-ct f-js ">
+    <div class="m-0005 mr-00125 ab t-01 rad-50 r-n05 z10  w-01   h-01   owf fl fs-06 f-center co-sec-t-h co-prm-t  material-icons-round icon"
+        onclick=";first('#newMatItemPop').classList.add('hdn-i');
+         first('#matListPop').classList.add('hdn-i');
+         if( canvas_scene.matTester)canvas_scene.matTester.visibility = 0;">
+        close
+    </div>
+    <div class="m-005  w-mn-15 h-full  p-0025">
+        <div class="f f-c f-at f-ct f-jb     rad-10 cwhite shadow1 p-005">
+            <div class="f f-rr f-at f-ct f-jb">
+                <div
+                    class='h-03  rt owf ba-i-01 c-b-iwgray  rad-05  w-03 fs-03   f-center  f-rr  cwhite co-sec-h co-prm-t   '>
+                    <div class='plnprg fl f-center f-c'>
+                        <img id='texturePath' [#src]='[#images]/temp.png' class="  h-02  " />
+                        <div class="w-full fl f-center   f-c">
+                            <span class='fs-03' id='glbtit'>Image</span>
+                        </div>
+                    </div>
+                    <div id='pln-upl-prg' class="iprg ab z10 t-00 l-00  ctrblack h-full fs-10 z-10 "></div>
+                    <input type='file' id='textureUpload' onchange="getBase64(this.files[0],canvas_scene.textureChange)"
+                        class='ab c-hwhite t-00 l-00 w-full h-full fs-10 op0' />
+                </div>
+                <div class="f m-00125   fs-03 c-tgray f-r f-at f-cc f-jc">
+                    <input title="glossy" orient="vertical" type="range" id="matmet"
+                        class="ba-i-01  h-03 fs-03  vrange  c-tblack w-025  m-0005 rad-02  c-b-igray "
+                        onchange="canvas_scene.textureChange()" value="50" />
+                </div>
+                <div class="f m-00125   fs-03 c-tgray  f-c f-at f-cc f-js">
+                    <div class="f f-r f-at f-ct f-js">
+                        <div class="h-01 p-00125 w-03 f-center">
+                            Name :
+                        </div><input title="camera height"
+                            class="ba-i-01  h-005 fs-03  p-00125  ba-i-01 c-b-iwgray  rad-05   c-tblack w-015  m-0005 ba-i-01 c-b-iwgray  rad-05 rad-02  c-b-igray "
+                            onkeyup="canvas_scene.textureChange()" placeholder="name" id="matname" value="" />
+                    </div>
+                    <div class="f f-r f-at f-ct f-js">
+                        <div class="h-01 w-03 p-00125 f-center">
+                            Scale:
+                        </div>
+                        <div><input title="scale"
+                                class="ba-i-01 h-005 fs-03 p-00125  ba-i-01 c-b-iwgray  rad-05  c-tblack w-015 m-0005 rad-02 c-b-igray "
+                                onkeyup="canvas_scene.textureChange()" id="matscale" value="1.0" /></div>
+                    </div>
+                    <div class="f f-r f-at f-ct f-js">
+                        <div class="h-01 p-00125 w-03 f-center">
+                            Rotate:
+                        </div><input title="rotation"
+                            class="ba-i-01  h-005 fs-03  p-00125  ba-i-01 c-b-iwgray  rad-05   c-tblack w-015  m-0005 ba-i-01 c-b-iwgray  rad-05 rad-02  c-b-igray "
+                            onkeyup="canvas_scene.textureChange()" id="matrot" value="0.0" />
+                    </div>
+
+                </div>
+                <div class="f m-00125 w-04  fs-03 c-tgray  f-c f-at f-cc f-js">
+                    <div class="f f-r f-at f-ct f-js">
+                        <div class="h-01 p-00125 w-03 f-center">
+                            Theme Color:
+                        </div><input title="Secound Theme Color" type="color"
+                            class="ba-i-01  h-01  fs-03  p-00125  ba-i-01 c-b-iwgray  rad-05   c-tblack w-015  m-0005 ba-i-01 c-b-iwgray  rad-05 rad-02  c-b-igray "
+                            onkeyup="canvas_scene.textureChange()" id="matcolor" value="0.0" />
+                    </div>
+                    <input type="button" value="Save"
+                        onclick="canvas_scene.textureChange(null,1,canvas_scene.selectedMatIden)"
+                        class="mt-0025 p-00125 rad-05 cred c-tblack c-hwgray " />
+                    <input type="button" value="Save As New" onclick="canvas_scene.textureChange(null,1 )"
+                        class="mt-0025 p-00125 rad-05 cred c-tblack c-hwgray " />
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="shapes" class="fx  mob-hide   hdn-i w-p20 l-p40  l-00 t-03 f-center f-c ">
+    <div style="zoom:0.8" class="rt cwhite rad-05 p-00125 shadow2 f f-c f-ac f-ct f-js">
+        <span onclick="first('#shapes').classList.add('hdn-i');" class=" ab z10 c-t-hred t-00 r-00 m-0005 ml-0025 mr-0025 w-01 h-01
+            owf fl f-center fs-06 c-h-tblack material-icons-round icon">
+            close
+        </span>
+        <div class='f f-r f-at f-ct f-js w-full'>
+            <div class="w-03  f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h m-0005 p-0005  "
+                onclick="first('#shapes').classList.add('hdn-i');canvas_scene.beSelect = true;canvas_scene.addFloorPart(1)">
+                <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/Rect.svg' />
+                <div class="f-center fs-04">Rectangle</div>
+            </div>
+            <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h  m-0005 p-0005  "
+                onclick="first('#shapes').classList.add('hdn-i');canvas_scene.beSelect = true;canvas_scene.addFloorPart(3)">
+                <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/trang.svg' />
+                <div class="f-center fs-04">Triangle</div>
+            </div>
+            <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h m-0005 p-0005  "
+                onclick="first('#shapes').classList.add('hdn-i');canvas_scene.beSelect = true;canvas_scene.addFloorPart(11)">
+                <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/Circ.svg' />
+                <div class="f-center fs-04">Circle</div>
+            </div>
+            <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h  m-0005 p-0005  "
+                onclick="first('#shapes').classList.add('hdn-i');canvas_scene.beSelect = true;canvas_scene.addFloorPart(10)">
+                <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/Circ2.svg' />
+                <div class="f-center fs-04">Circule</div>
+            </div>
+            <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h  m-0005 p-0005 "
+                onclick="first('#shapes').classList.add('hdn-i');first('#shapes').classList.add('hdn-i');canvas_scene.addFloorPart(100)">
+                <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/Poly.svg' />
+                <div class="f-center fs-04">Polygon</div>
+            </div>
+            <div class="w-03   f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h m-0005 p-0005 "
+                onclick="canvas_scene.beSelect = true;canvas_scene.addFloorPart(4)"> <img
+                    class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/wall.svg' />
+                <div class="f-center fs-04">Wall</div>
+            </div>
+            <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h m-0005 p-0005 "
+                onclick="first('#shapes').classList.add('hdn-i');canvas_scene.addFloorPart(101)"> <img
+                    class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/Wall2.svg' />
+                <div class="f-center fs-04 ">Multi-Wall</div>
+            </div>
+        </div>
+        <div class=' f f-r f-at f-ct f-js w-full'>
+            <div class="p_005">Assets</div>
+        </div>
+        <div class='f f-r f-at f-ct f-js w-full'>
+            <div class="w-03  f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h m-0005 p-0005  "
+                onclick="first('#shapes').classList.add('hdn-i');canvas_scene.newAssetCount++; canvas_scene.addAsset({md:3,type:'chair',modeCount:4})">
+                <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/chair.svg' />
+                <div class="f-center fs-04">chair</div>
+            </div>
+            <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h  m-0005 p-0005  "
+                onclick="first('#shapes').classList.add('hdn-i');canvas_scene.newAssetCount++;  canvas_scene.addAsset({md:1,type:'table',modeCount:4})">
+                <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/table.svg' />
+                <div class="f-center fs-04">table</div>
+            </div>
+            <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h  m-0005 p-0005  "
+                onclick="first('#shapes').classList.add('hdn-i');canvas_scene.newAssetCount++;  canvas_scene.addAsset({md:1,type:'door',modeCount:1})">
+                <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/door.svg' />
+                <div class="f-center fs-04">door</div>
+            </div>
+            <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h  m-0005 p-0005  "
+                onclick="first('#shapes').classList.add('hdn-i');canvas_scene.newAssetCount++;  canvas_scene.addAsset({md:0,sz:0,type:'parkingSpot',modeCount:2,sizeCount:3})">
+                <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/carview.png' />
+                <div class="f-center fs-04">ParkingSpot</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="roomShapes" class="fx  mob-hide   hdn-i w-p20 l-p40  l-00 t-03 f-center   ">
+
+    <div style="zoom:0.8" class="rt cwhite rad-05 p-00125 shadow2 f f-r f-ac f-ct f-js">
+        <span onclick="first('#roomShapes').classList.add('hdn-i');" class=" ab z10 c-t-hred t-00 r-00 m-0005 ml-0025 mr-0025 w-01 h-01
+            owf fl f-center fs-06 c-h-tblack material-icons-round icon">
+            close
+        </span>
+        <div class="w-03  f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h m-0005 p-0005  "
+            onclick="first('#roomShapes').classList.add('hdn-i');canvas_scene.beSelect = true;canvas_scene.addFloorPart(1,null,null,1)">
+            <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/Rect.svg' />
+            <div class="f-center fs-04">Rectangle</div>
+        </div>
+        <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h  m-0005 p-0005  "
+            onclick="first('#roomShapes').classList.add('hdn-i');canvas_scene.beSelect = true;canvas_scene.addFloorPart(3,null,null,1)">
+            <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/trang.svg' />
+            <div class="f-center fs-04">Triangle</div>
+        </div>
+        <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h m-0005 p-0005  "
+            onclick="first('#roomShapes').classList.add('hdn-i');canvas_scene.beSelect = true;canvas_scene.addFloorPart(11,null,null,1)">
+            <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/Circ.svg' />
+            <div class="f-center fs-04">Circle</div>
+        </div>
+        <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h  m-0005 p-0005  "
+            onclick="first('#roomShapes').classList.add('hdn-i');canvas_scene.beSelect = true;canvas_scene.addFloorPart(10,null,null,1)">
+            <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/Circ2.svg' />
+            <div class="f-center fs-04">Circule</div>
+        </div>
+        <div class="w-03    f f-c f-ac f-cc f-js rad-05 c-tgray c-t-hblack cwhite co-gry3-h  m-0005 p-0005 "
+            onclick="first('#roomShapes').classList.add('hdn-i'); canvas_scene.addFloorPart(100,null,null,1)">
+            <img class="rad-05 w-02 h-02 m-0025 " [#src]='[#images]/Poly.svg' />
+            <div class="f-center fs-04">Polygon</div>
+        </div>
+    </div>
+</div>
+
+<div id="glbListPop" class="fx shrd  hdn-i   z08 w-08 h-full l-00  t-00 f f-c f-at f-ct f-js ">
+    <div class="m-0005 ab z10 t-005 r-n005   w-01   h-0125   owf fl fs-06 f-center co-sec-t-h co-prm-t  material-icons-round icon"
+        onclick="  first('.searchBar').classList.add('shadow2');;this.parentNode.classList.add('hdn-i')">
+        close
+    </div>
+     <div class="m-0005 ab z10 t-005 r-005   w-01   h-0125   owf fl fs-06 f-center co-sec-t-h co-prm-t  material-icons-round icon"
+        onclick=" canvas_scene.getItemList()">
+        cached
+    </div>
+    <div>
+        <input type="text"  class="m-0005 ab bb-i-01 c-b-iwgray z10 t-01 l-01 w-06 ctrans h-01   "
+          onkeyup="   
+
+           filterItemFast(first('#searchValue'))
+                     
+              " id="searchValue" >
+    </div>
+    <div class="m-005 w-full h-full rt rad-10 co-gry4 shadow1 f f-c f-at f-ct f-js ">
+        <div class=" p-0025   ">
+            <loader>templates/glbUploader</loader>
+        </div>
+        <div class="listWait ab z10 t-00 l-00 w-full h-full cwgray rad-05 f-center hdn-i"><img class='rad-50 w-01125 h-01125 mr-005' [#src]='[#images]/loading3d.gif'> Please Wait ... </div>  </div>
+  
+    </div>
+</div> 
+
+<div class="   fx t-00 l-00 w-full   shadow2 h-0005">
+
+  <div class="topSelFloorMenu  hdn-i  p-00125  w-full cwhite   h-0125 f f-r f-at f-ct f-jc">
+
+    <div title='stop pick mode and back to normal view' onclick="canvas_scene.endPickPointMode(); 
+
+      popHide();
+
+      canvas_scene.setToMesh = false;
+      canvas_scene.setModelSetting = null;
+      canvas_scene.setToMeshMode =null;
+      canvas_scene.setMaterialId = null;
+          first('.finish_pick_mode').classList.add('hdn-i');
+         
+          "
+      class='finish_pick_mode animated zoomIn p-00125 mr-015 hdn-i fs-08 p-0025 f f-r  coyel3 rad-50 h-1125 w-01125 coyel2-h   material-icons-round icon '>
+      stop_circle
+    </div>
+
+    <div class="owf f f-r f-at f-ct f-jc rad-05 ba-i-01 c-b-igray">
+      <div class="rt  cwhite c-hwgray  menuTabWall  br-i-01 c-b-igray ns f f-r f-ac f-cc f-jb  "
+        onclick=";chooseMenuTab('Wall') ">
+        <img id="wlsubicon" [#src]='[#images]/Vectoric_wl.svg' class="p-0025 " />
+        <span class="m-0005 w-03 api-0001 fnt-as4   h-0125 fl f-center      bb  rad-50 fs-04    c-tblack     ">
+          Add Wall
+        </span>
+      </div>
+
+      <div class="rt  cwhite c-hwgray menuTabSpace   br-i-01 c-b-igray ns f f-r f-ac f-cc f-jb  "
+        onclick=";chooseMenuTab('Space') ">
+        <img id="spsubicon" [#src]='[#images]/Vectoric_sp.svg' class="p-0025 " />
+        <span class="m-0005 w-03 api-0001 fnt-as4   h-0125 fl f-center      bb  rad-50 fs-04    c-tblack     ">
+          Add Space
+        </span>
+      </div>
+
+      <div class="rt  cwhite c-hwgray menuTabDesk   br-i-01 c-b-igray ns f f-r f-ac f-cc f-jb  "
+        onclick=";;chooseMenuTab('Desk');
+        popHide(); canvas_scene.deskIdentity++;canvas_scene.addDesk(null,null,null,null,null,1)  ">
+        <img [#src]='[#images]/Vectoric_ds.svg' class="p-0025 " />
+        <span class="m-0005 w-03 api-0001 fnt-as4   h-0125 fl f-center      bb  rad-50 fs-04    c-tblack     ">
+          Add Desk
+        </span>
+      </div>
+
+      <div class="rt  cwhite c-hwgray  menuTabObject   ns f f-r f-ac f-cc f-jb  " onclick=";chooseMenuTab('Object')">
+        <img id="crsubicon" [#src]='[#images]/Vectoric_cr.svg' class="p-0025 " />
+        <span class="m-0005 w-03 api-0001 fnt-as4   h-0125 fl f-center      bb  rad-50 fs-04    c-tblack     ">
+          Add Object
+        </span>
+      </div>
+    </div>
+
+  </div>
+  <div class="topSelFloorSubMenu  hdn-i  w-full csub f f-c f-at f-ct f-jc    h-0125">
+
+    <div class="  f f-r f-at f-ct f-jc menuWall hdn-i  ">
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  "
+        onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(4)">
+        <img [#src]='[#images]/Vectoric_sw.svg' class="p-0005 pl-0025 " />
+        <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+          Single Wall
+        </span>
+      </div>
+
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  "
+        onclick="; canvas_scene.addFloorPart(101)">
+        <img [#src]='[#images]/Vectoric_mw.svg' class="p-0005 pl-0025 " />
+        <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+          Multi Wall
+        </span>
+      </div>
+       
+     
+ 
+
+      
+    </div>
+
+    <div class="  f f-r f-at f-ct f-jc menuSpace hdn-i  ">
+      <div class="rt  csub2 c-hwhite   rad-03 m-0005  ns  f f-r f-ac f-cc f-jb  " onclick="; ">
+        <div class="w-full  f f-r f-ac f-cc f-jb p-0005 pl-00125 pr-00125 ">
+          <img [#src]='[#images]/Vectoric_mr.svg' class="p-0005 pl-0025 " />
+          <span class="m-0005 w-04 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+            Meeting Room
+          </span>
+          <img [#src]='[#images]/Vectoric_tw.svg' class="su p-0005 pr-0025 " />
+          <img [#src]='[#images]/Vectoric_dn.svg' class="su-hide p-0005 pr-0025 " />
+        </div>
+        <div
+          class="ab cwhite sub-f z10 f-c animated fst fadeIn an   t-01 mt-0005 w-full     pt-0025   h-mx-12 owf-y rad-05  ">
+
+          
+          <div class="rt   c-hwgray p-0005 pl-0025 pr-0025 bb-i-01 bt-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(1,null,null,null,null,2)">
+            <img [#src]='[#images]/Vectoric_rc.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Rectangle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025  bb-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(3,null,null,null,null,2)">
+            <img [#src]='[#images]/Vectoric_tr.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Triangle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025  bb-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(11,null,null,null,null,2)">
+            <img [#src]='[#images]/Vectoric_crk.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Circle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025  bb-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(10,null,null,null,null,2)">
+            <img [#src]='[#images]/Vectoric_crk.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Pie / Circle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025       ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = false;canvas_scene.addFloorPart(100,null,null,null,null,2)">
+            <img [#src]='[#images]/Vectoric_pg.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Polygon
+            </span>
+          </div> 
+
+        </div>
+      </div>
+
+      <div class="rt  csub2 c-hwhite   rad-03 m-0005  ns  f f-r f-ac f-cc f-jb  " onclick="; ">
+        <div class="w-full  f f-r f-ac f-cc f-jb p-0005 pl-00125 pr-00125 ">
+          <img [#src]='[#images]/Vectoric_rm.svg' class="p-0005 pl-0025 " />
+          <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+            Room
+          </span>
+          <img [#src]='[#images]/Vectoric_tw.svg' class="su p-0005 pr-0025 " />
+          <img [#src]='[#images]/Vectoric_dn.svg' class="su-hide p-0005 pr-0025 " />
+
+        </div>
+        <div
+          class="ab cwhite sub-f z10 f-c animated fst fadeIn an   t-01 mt-0005 w-full     pt-0025   h-mx-12 owf-y rad-05  ">
+
+
+          <div class="rt   c-hwgray p-0005 pl-0025 pr-0025 bb-i-01 bt-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(1,null,null,1,null,1)">
+            <img [#src]='[#images]/Vectoric_rc.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Rectangle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025  bb-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(3,null,null,1,null,1)">
+            <img [#src]='[#images]/Vectoric_tr.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Triangle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025  bb-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(11,null,null,1,null,1)">
+            <img [#src]='[#images]/Vectoric_crk.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Circle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025  bb-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(10,null,null,1,null,1)">
+            <img [#src]='[#images]/Vectoric_crk.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Pie / Circle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025       ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = false;canvas_scene.addFloorPart(100,null,null,1,null,1)">
+            <img [#src]='[#images]/Vectoric_pg.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Polygon
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick=";
+      canvas_scene.newAssetCount++;  canvas_scene.addAsset({md:0,sz:0,type:'parkingSpot',modeCount:2,sizeCount:3})">
+        <img [#src]='[#images]/Vectoric_pk.svg' class="p-0005 pl-0025 " />
+        <span class="m-0005 w-0325 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+          Parking Spot
+        </span>
+      </div>
+      <div class="w-005"></div>
+
+      <div class="rt  csub2 c-hwgray ns  rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick="; canvas_scene.newAssetCount++;
+       canvas_scene.addAsset(
+        {color:'#ffffff', title:'Kitchen' , path:'[#images]/Icons/Frame 10048.png',md:0,sz:1,sizeCount:5,partCount:2,type:'tooltip',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_kc2.svg' class="p-0005 pl-0025 pr-0025 " />
+        <div desk="Kitchen"
+          class="ab t-01125 w-full  w-mn-full cshtop60    sub-f cblack rad-03   f-center c-twhite fs-03 fnt-as4">
+        </div>
+      </div>
+      <div class="rt  csub2 c-hwgray ns   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick="; canvas_scene.newAssetCount++; 
+       canvas_scene.addAsset(
+        {color:'#ffffff', title:'WC' , path:'[#images]/Icons/Frame 10055.png',md:0,sz:1,sizeCount:5,partCount:2,type:'tooltip',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_wc.svg' class="p-0005 pl-0025 pr-0025 " />
+        <div desk="W C"
+          class="ab t-01125 w-full  w-mn-full cshtop40    sub-f cblack rad-03   f-center c-twhite fs-03 fnt-as4">
+        </div>
+      </div>
+      <div class="rt  csub2 c-hwgray ns  rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick="; canvas_scene.newAssetCount++; 
+       canvas_scene.addAsset(
+        {color:'#ffffff', title:'Structure' , path:'[#images]/Icons/Frame 10052.png',md:0,sz:1,sizeCount:5,partCount:2,type:'tooltip',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_t1.svg' class="p-0005 pl-0025 pr-0025 " />
+        <div desk="Structure"
+          class="ab t-01125 w-full  w-mn-full cshtop80    sub-f cblack rad-03   f-center c-twhite fs-03 fnt-as4">
+        </div>
+      </div>
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick="; canvas_scene.newAssetCount++;
+        canvas_scene.addAsset(
+        {color:'#ffffff', title:'GYM' , path:'[#images]/Icons/Frame 10046.png',md:0,sz:1,sizeCount:5,partCount:2,type:'tooltip',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_t2.svg' class="p-0005 pl-0025 pr-0025 " />
+        <div desk="GYM"
+          class="ab t-01125 w-full  w-mn-full cshtop40    sub-f cblack rad-03   f-center c-twhite fs-03 fnt-as4">
+        </div>
+      </div>
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick="; canvas_scene.newAssetCount++;
+        canvas_scene.addAsset(
+        {color:'#ffffff', title:'Stair' , path:'[#images]/Icons/Frame 10054.png',md:0,sz:1,sizeCount:5,partCount:2,type:'tooltip',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_t3.svg' class="p-0005 pl-0025 pr-0025 " />
+        <div desk="Stair"
+          class="ab t-01125 w-full  w-mn-full cshtop60    sub-f cblack rad-03   f-center c-twhite fs-03 fnt-as4">
+        </div>
+      </div>
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick="; canvas_scene.newAssetCount++;
+        canvas_scene.addAsset(
+        {color:'#ffffff', title:'Helpers Area' , path:'[#images]/Icons/Frame 10058.png',md:0,sz:1,sizeCount:5,partCount:2,type:'tooltip',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_t4.svg' class="p-0005 pl-0025 pr-0025 " />
+        <div desk="Helpers Area"
+          class="ab t-01125 w-full  w-mn-full cshtop100    sub-f cblack rad-03   f-center c-twhite fs-03 fnt-as4">
+        </div>
+      </div>
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick="; canvas_scene.newAssetCount++;
+        canvas_scene.addAsset(
+        {color:'#ffffff', title:'Healths Area' , path:'[#images]/Icons/Frame 10047.png',md:0,sz:1,sizeCount:5,partCount:2,type:'tooltip',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_t5.svg' class="p-0005 pl-0025 pr-0025 " />
+        <div desk="Healths Area"
+          class="ab t-01125 w-full  w-mn-full cshtop100    sub-f cblack rad-03   f-center c-twhite fs-03 fnt-as4">
+        </div>
+      </div>
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick=";
+       canvas_scene.newAssetCount++;  canvas_scene.addAsset(
+        {color:'#ffffff', title:'Printers Area' , path:'[#images]/Icons/Frame 10052.png',md:0,sz:1,sizeCount:5,partCount:2,type:'tooltip',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_t6.svg' class="p-0005 pl-0025 pr-0025 " />
+        <div desk="Printers Area"
+          class="ab t-01125 w-full  w-mn-full cshtop80    sub-f cblack rad-03   f-center c-twhite fs-03 fnt-as4">
+        </div>
+      </div>
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick=";
+       canvas_scene.newAssetCount++;  canvas_scene.addAsset(
+        {color:'#ffffff', title:'Locked Area' , path:'[#images]/Icons/Frame 10046.png',md:0,sz:1,sizeCount:5,partCount:2,type:'tooltip',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_lk.svg' class="p-0005 pl-0025 pr-0025 " />
+        <div desk="Locked Area"
+          class="ab t-01125 w-full  w-mn-full cshtop80    sub-f cblack rad-03   f-center c-twhite fs-03 fnt-as4">
+        </div>
+      </div>
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick=";
+       canvas_scene.newAssetCount++;  canvas_scene.addAsset(
+        {color:'#ffffff', title:'Delivery Area' , path:'[#images]/Icons/Frame 10052.png',md:0,sz:1,sizeCount:5,partCount:2,type:'tooltip',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_dl.svg' class="p-0005 pl-0025 pr-0025 " />
+        <div desk="Delivery Area"
+          class="ab t-01125 w-full  w-mn-full cshtop100    sub-f cblack rad-03   f-center c-twhite fs-03 fnt-as4">
+        </div>
+      </div>
+       <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick=";
+       canvas_scene.newAssetCount++;  canvas_scene.addAsset({color:'#ffffff', title:'Custom' , path:'[#images]/Icons/Frame 10049.png',md:0,sz:1,sizeCount:5,partCount:2,type:'tooltip',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_cus.svg' class="p-0005 pl-0025 pr-0025 " />
+        <div desk="Custom Area"
+          class="ab t-01125 w-full  w-mn-full cshtop100    sub-f cblack rad-03   f-center c-twhite fs-03 fnt-as4">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="  f f-r f-at f-ct f-jc menuObject hdn-i   ">
+      <div class="rt  csub2 c-hwhite   rad-03 m-0005  ns  f f-r f-ac f-cc f-jb  " onclick="; ">
+        <div class="w-full  f f-r f-ac f-cc f-jb p-0005 pl-00125 pr-00125 ">
+          <img [#src]='[#images]/Vectoric_sl.svg' class="p-0005 pl-0025 " />
+          <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+            Shapes
+          </span>
+          <img [#src]='[#images]/Vectoric_tw.svg' class="su p-0005 pr-0025 " />
+          <img [#src]='[#images]/Vectoric_dn.svg' class="su-hide p-0005 pr-0025 " />
+        </div>
+        <div
+          class="ab cwhite sub-f z10 f-c animated fst fadeIn an   t-01 mt-0005 w-full     pt-0025   h-mx-12 owf-y rad-05  ">
+
+          <div class="rt   c-hwgray p-0005 pl-0025 pr-0025 bb-i-01 bt-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(1)">
+            <img [#src]='[#images]/Vectoric_rc.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Rectangle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025  bb-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(3)">
+            <img [#src]='[#images]/Vectoric_tr.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Triangle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025  bb-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(11)">
+            <img [#src]='[#images]/Vectoric_crk.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Circle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025  bb-i-01 c-b-iwgray    ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = true;canvas_scene.addFloorPart(10)">
+            <img [#src]='[#images]/Vectoric_crk.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Pie / Circle
+            </span>
+          </div>
+
+          <div class="rt   c-hwgray  p-0005 pl-0025 pr-0025       ns f f-r f-ac f-cc f-jb  "
+            onclick=";canvas_scene.beSelect = false;canvas_scene.addFloorPart(100)">
+            <img [#src]='[#images]/Vectoric_pg.svg' class="p-0005 pl-0025 " />
+            <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+              Polygon
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick=";
+      canvas_scene.newAssetCount++; canvas_scene.addAsset({md:3,type:'chair',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_cr2.svg' class="p-0005  pl-0025 " />
+        <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+          Chair
+        </span>
+      </div>
+
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick=";
+      canvas_scene.newAssetCount++;  canvas_scene.addAsset({md:1,type:'table',modeCount:4})">
+        <img [#src]='[#images]/Vectoric_tb.svg' class="p-0005 pl-0025 " />
+        <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+          Table
+        </span>
+      </div>
+
+      <div class="rt  csub2 c-hwgray   rad-03 m-0005  ns f f-r f-ac f-cc f-jb  " onclick=";
+      canvas_scene.newAssetCount++;  canvas_scene.addAsset({md:1,type:'door',modeCount:1})">
+        <img [#src]='[#images]/Vectoric_dr.svg' class="p-0005 pl-0025 " />
+        <span class="m-0005 w-03 api-0001 fnt-as3   h-01 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+          Door
+        </span>
+      </div>
+    </div>
+
+  </div>
+  <div id="sys-msg"
+    class=' ab r-0025 shrd animated mob-hide slideInRight hdn-i z10  mt-0025   w-09 h-02  cwhite rad-05  ba-i-01 c-b-iwgray owf f f-rr f-as f-cs f-js '>
+    <div class='fs-03 w-full f-center co-prm-t  h-full owf'>
+      ...
+    </div>
+    <prg class='ab h-00125 b-00 l-00 w-p40 co-secl fs-01 owf'>
+
+    </prg>
+    <span class="m-0025 p-00125  co-sec-t rad-05 fs-08   material-icons-round icon">
+      sync
+    </span>
+  </div>
+
+  <div id="sys-stat" class='fx hdn-i shrd z09 t-0025 l-0025  w-09 h-01  '>
+
+  </div>
+
+  <div class=" ab  shrd  mt-0025 l-005   z08   mob-hide    ">
+    <div class="f f-r cwhite   searchBar  rad-05 ba-i-01 c-b-iwgray p-0005 f-nw f-at f-ct f-js">
+
+      <div class="rt  ns "
+        onclick="   canvas_scene.getItemList();first('#glbListPop').classList.remove('hdn-i')">
+        <span
+          class="m-0005  c-hwgray w-0125 h-0125 fl f-center   ba-i-01 c-b-iwhite   bb rad-50 fs-06  c-i-tgray material-icons-round icon  ">
+          search
+        </span>
+      </div>   
+    </div>
+  </div>
+</div>
+
+<div class="selOrCreate fx t-00 hdn-i l-00 w-full h-full  ctrblack f-center z10" onclick="this.classList.add('hdn-i')">
+    <div class="selOrCreateWait w-05 pr-01 cwhite rad-50 p-0025 f f-r f-ac f-cc f-jb"> <img class='rad-50 w-01125 h-01125' [#src]='[#images]/loading3d.gif'> Please Wait ... </div>
+         <div class="selOrCreateContent hdn-i f f-r f-at f-ct"> 
+        <div class="rt  csub2 c-hwhite   rad-03 m-0005  ns  f f-r f-ac f-cc f-jb  " 
+         onclick=";event.stopPropagation();">
+        <div class="w-full  f f-r f-ac f-cc f-jb p-0005 pl-00125 pr-00125 "> 
+          <span class="m-0005 selTitle w-04 api-0001 fnt-as3   h-01125 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+            Assign Meeting Room
+          </span>
+          <img [#src]='[#images]/Vectoric_tw.svg' class="su p-0005 pr-0025 " />
+          <img [#src]='[#images]/Vectoric_dn.svg' class="su-hide p-0005 pr-0025 " />
+        </div>
+        <div
+          class="ab selList cwhite sub-f z10 f-c animated fst fadeIn an   t-01125 mt-0005 w-full     pt-0025   h-mx-11 owf-x rad-05  ">
+ 
+        
+
+        </div>
+        </div> 
+
+           <div class="rt  csub2 c-hwhite   rad-03 m-0005  ns  f f-r f-ac f-cc f-jb  " 
+         onclick=";canvas_scene.selOrCreateCall(); ">
+        <div class="w-full  f f-r f-ac f-cc f-jb p-0005 pl-00125 pr-00125 "> 
+          <span class="m-0005 creTitle w-04 api-0001 fnt-as3   h-01125 fl f-center      bb  rad-03 fs-04    c-tblack     ">
+            Create Meeting Room
+          </span>
+          </div> </div>  
+
+
+    </div>
+</div>
+
+<div class="createCustom fx t-00 hdn-i  l-00 w-full h-full  ctrblack f-center z10" onclick="this.classList.add('hdn-i')">
+        <div class="createCustomWait hdn-i w-05 pr-01 cwhite rad-50 p-0025 f f-r f-ac f-cc f-jb"> <img class='rad-50 w-01125 h-01125' [#src]='[#images]/loading3d.gif'> Please Wait ... </div>
+       <div class="createCustomContent ns   f f-c f-at f-ct"> 
+        
+
+           <div class=" mt-005   w-mx-11 w-mn-11 pl-01 pr-01 f-center   rad-05"> <div class="rt  cwhite c-hwhite w-mx-09 w-mn-09   rad-50 m-0005  ns  f f-r f-ac f-cc f-jb  " 
+         onclick=";event.stopPropagation(); ">
+        <div class="w-full rt f f-r f-ac f-cc f-jb p-0005  pl-00125 pr-0025 "> 
+           <div  class="w-01 h-01 m-00125 p-00125 c-hwgray rt  rad-50 owf "> 
+              <img [#src]='[#images]/Vectoric_cusa.svg'  
+               class="w-01 c-hwgray h-01 img rad-50 " >
+                 <div id='pln-upl-prg' class="iprg ab z10 t-00 l-00  ctrblack h-full fs-10 z-10 "></div>
+                  
+               <input class="ab t-00 l-00 w-05 h-05 fs-08 op0" type="file"  id='iconUpload'
+               onchange="getBase64(this.files[0],canvas_scene.iconChange)" > 
+             
+           </div>
+           <div  class="ab z10 l-01 t-01  w-0025 h-0025 ba-i-01 c-b-inavy m-0005  c-hwgray cred rad-50 owf "> <input title="Show Exact Image otherwise Image Use Solid Color Base on SYstem Background"  class="w-05 h-05 exac cgray  rt t-n01 l-n01 " type="checkbox"  /> </div>
+           <div  class="w-01 h-01 m-00125 c-hwgray  ba-i-01 c-b-igray rad-50 owf "> <input   class="w-05 h-05 color   rt t-n01 l-n01 " type="color"  /> </div>
+           <div  class="w-01 h-01 m-00125 c-hwgray  ba-i-01 c-b-igray rad-50 owf "> <input   class="w-05 h-05 fclr   rt t-n01 l-n01 " type="color"  /> </div>
+          <input class="m-0005 bb  ba-i-01 title c-b-iwhite creTitle w-04 api-0001 fnt-as3   h-01125 fl f-center      bb  rad-03 fs-04    c-tblack     " type="text"  />
+               <img [#src]='[#images]/Vectoric_app.svg' class="w-01 c-hwgray  h-01 p-00125 rad-50 " onclick="canvas_scene.applyIcon()" > 
+          </div> 
+           </div>  </div> 
+
+          <div class=" mt-005 existList  cwhite c-hwhite w-mx-11 w-mn-11 p-01 h-mx-06 owf-x   rad-05" onclick="event.stopPropagation()"> 
+ 
+            
+          </div> 
+        
+        
+
+    </div>
+</div>
+
+<div class="fx w-p10 l-p45 no-icn  l-00 b-005 f-center">
+    <div class="f f-r cwhite shadow2  rad-50 p-0005 f-nw f-at f-ct f-jc">
+        <div class="rt  ns ">
+            <span id="ic2d"
+                class="m-0005 c-hwgray w-0125 h-0125 fl f-center  ba-i-01 c-b-iwhite   bb  rad-50 fs-04  cblack c-twhite      "
+                onclick="; 
+           canvas_scene.to2DView() ">
+                2D
+            </span>
+        </div>
+        <div class="rt  ns ">
+            <span id="ic3d"
+                class="m-0005  c-hwgray w-0125 h-0125 fl f-center   ba-i-01 c-b-iwhite   bb rad-50 fs-04  c-i-tblack  "
+                onclick=";  canvas_scene.to3DView() ">
+                3D
+            </span>
+        </div>
+    </div>
+    <div class="w-mn-01"></div>
+    <div class="f f-r mob-hide cwhite shadow2  rad-50 p-0005 f-nw f-at f-ct f-jc">
+        <div class="rt  ns ">
+            <span id="icwalk" onclick="; 
+            canvas_scene.apply3dCameraMode('walk') "
+                class="m-0005  c-hwgray w-0125 h-0125 fl f-center   ba-i-01 c-b-iwhite   bb rad-50 fs-06 c-i-tblack material-icons-round icon  ">
+                directions_walk
+            </span>
+        </div>
+
+        <div class="rt  ns ">
+            <span id="icfree" onclick="; 
+            canvas_scene.apply3dCameraMode('free') "
+                class="m-0005  c-hwgray w-0125 h-0125 fl f-center   ba-i-01 c-b-iwhite   bb rad-50 fs-04 cblack c-twhite    ">
+                360°
+            </span>
+        </div>
+    </div>
+
+    <div class="w-mn-01  api-0001 mob-hide"></div>
+    <div class="f f-r  api-0001 mob-hide p-0005 f-nw f-at f-ct f-jc">
+        <div class="rt  ns ">
+            <span
+                class="m-0005 cwhite shadow2 rad-50 c-hwgray w-01  h-01  fl f-center  ba-i-01 c-b-iwhite   bb  rad-50 fs-04   c-i-tblack     "
+                onclick="canvas_scene.zoomOut()">
+                -
+            </span>
+        </div>
+        <div class="h-01 f-center pl-0025 pr-0025">zoom</div>
+        <div class="rt  ns ">
+            <span
+                class="m-0005 cwhite shadow2 rad-50  c-hwgray w-01  h-01  fl f-center   ba-i-01 c-b-iwhite   bb rad-50 fs-04  c-i-tblack  "
+                onclick="canvas_scene.zoomIn()">
+                +
+            </span>
+        </div>
+    </div>
+
+    <div class="w-mn-01  api-0001 mob-hide shrd"></div>
+    <div class="f f-r mob-hide cwhite shadow2 shrd  mob-hide rad-50 p-0005 f-nw f-at f-ct f-jc">
+        <div class="rt  ns f f-r f-at f-ct f-jb  ">
+            <span id="shareLink" onclick="window.prepareJsonShareLink()"
+                class="m-0005  c-hwgray w-0125 h-0125 fl f-center   ba-i-01 c-b-iwhite   bb rad-50 fs-06 c-i-tblack material-icons-round icon  ">
+                cloud_download
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="fx  mob-hide shrd  r-005 b-005 f-center rebuild">
+    <div class="f f-r  cwhite shadow2  rad-50 p-0005 f-nw f-at f-ct f-jc">
+        <div class="rt  c-hwgray  rad-50 ns f f-r f-ac f-cc f-jb " onclick="; canvas_scene.reBuildReq() ">
+            <span
+                class="m-0005    w-0125  h-0125  fl f-center     bb rad-50 fs-06   c-tred material-icons-round icon  ">
+                delete
+            </span>
+            <span class="m-0005 w-04 api-0001   h-0125 fl f-center      bb  rad-50 fs-04    c-tred      ">
+                Reset Plan
+            </span>
+        </div>
+    </div>
+</div>
+
+<div id="newFloors" class="w-00  h-full t-00 z10 r-01 fx z10 cred w-mx-00  f-center">
+    <div class="f f-c f-as f-cs f-jc   w-mn-02">
+        <div class="f f-c f-at f-ct f-jc   rad-05 ba-i-01 c-b-iwgray   cwhite shadow2 w-mn-0125">
+            <div class="f-center cfloor fs-03 h-01 fnt-as bb-i-01 c-b-iwgray pt-0005 pb-0005">Floors</div>
+            <div class="f f-c f-at f-ct f-jc  floorsList  fs-03 ">
+
+            </div>
+            <div class="f-center cwhite cfloor-h h-01 addfloorBtn  pt-0005 pb-0005" onclick="
+            popHide();
+           ; canvas_scene.addFloor()">+</div>
+        </div>
+    </div>
+</div>
+
+  
+
+ 
+ 
+
+<div id="pickInfo" class="fx hdn-i  mob-hide  fs-04 b-00 ctrblack c-twhite w-full h-02 l-00  f-center">
+    <div class="bb "> Start Pick Point By Click To Complate Your Polygon</div>
+    * you can exit from this mode use by 'right click' or 'Esc'
+</div>
+
+<div id="deskListPop" class="fx hdn-i animated slideInLeft z08 w-08 h-full l-00  t-00   f f-c f-at f-ct f-js ">
+    <div class="m-0005 ab t-005 r-n01   w-01   h-01   owf fl fs-06 f-center co-sec-t-h co-prm-t  material-icons-round icon"
+        onclick=";this.parentNode.classList.add('hdn-i')">
+        close
+    </div>
+    <div class="m-005 w-full h-full  p-0025   rad-10 co-gry3 shadow1">
+        <div>Emploees</div>
+        <div class="itls-users p-0025">
+        </div>
+        <div>Visitors</div>
+        <div class="itls-visitors p-0025">
+        </div>
+    </div>
+</div>
+
+<div id="formContainer" class=" fx t-p05 hdn-i l-p05 w-p90 h-p90 rad-10 z10 f-center f-c "
+    onclick="this.classList.add('hdn-i')">
+
+
+    <div class='fs-03 co-gry2-t w-20 rt h-15 rad-05   shadow1'>
+        <span
+            class="m-0025  hdn-i ab z10 w-01  h-01  r-n005 t-n005 c-t-hred p-0025 co-sec-t rad-50 fs-05 f-center    material-icons-round icon">
+            close
+        </span>
+        <iframe style="zoom: 0.8;" class="w-full h-full " border="none"
+            onload="if(canvas_scene && canvas_scene.iframeInit)canvas_scene.iframeInit(this)">
+
+        </iframe>
+    </div>
+</div>
+
+<div class="hdn-i">
+    <loader>templates/worker</loader>
+</div>
+
+<div id="sys-msg"
+    class='fx shrd animated mob-hide slideInRight hdn-i z10 t-0025 r-0025  w-09 h-02  cwhite rad-05 shadow1 owf f f-rr f-as f-cs f-js '>
+    <div class='fs-03 w-full f-center co-prm-t  h-full owf'>
+        ...
+    </div>
+    <prg class='ab h-00125 b-00 l-00 w-p40 co-secl fs-01 owf'>
+
+    </prg>
+    <span class="m-0025 p-00125  co-sec-t rad-05 fs-08   material-icons-round icon">
+        sync
+    </span>
+</div>
+<div id="sys-stat" class='fx hdn-i shrd z09 t-0025 l-0025  w-09 h-01  '>
+
+</div>
+
+<div id="map" class="fx hdn-i l-00 b-00 w-20 h-20 ">
+    <canvas id="ai2img" style="zoom:1." class="cnavy" width="512px" height="512px">
+
+    </canvas>
+</div>
+
+<div id="shareLinkView" class="fx hdn-i animated zoomIn   l-p45 b-p45 w-p10 h-p10 f-center ">
+    <div class="p-01 rad-05 cwhite shadow1 w-mn-10 h-04 rt">
+
+        <div class="ab t-0025 icon c-t-hred r-0025" onclick="this.parentNode.parentNode.classList.add('hdn-i')">close
+        </div>
+        <div class="ab cwhite t-00 waitshare l-00 w-full h-full f-center"
+            onclick="this.parentNode.parentNode.parentNode.classList.add('hdn-i')">
+            <h4>please wait ...</h4>
+        </div>
+        <div class="w-mn-10 h-full f f-c f-at f-ct f-jc">
+            <div class="fs-03 p-0025 c-tgray mt-0025">options: [link automaticly updated]</div>
+            <div>
+                <select onchange=" window.makeLink()"
+                    class="camViewShareLink p-0005 fs-03 mt-0005 cwgray mr-0005 rad-03">
+                    <option value="free">3D Free Camera</option>
+                    <option value="walk">3D Walk Camera</option>
+                    <option value="2d">2D Camera</option>
+                </select>
+                <select onchange=" window.makeLink()"
+                    class="floorViewShareLink p-0005 fs-03 mt-0005 cwgray mr-0005 rad-03">
+                    <option value="floors">show floors</option>
+                    <option value="nofloors">hide floors</option>
+                </select>
+                <select onchange=" window.makeLink()"
+                    class=" iconViewShareLink p-0005 fs-03 mt-0005  cwgray mr-0005 rad-03">
+                    <option value="icons">show 2d/3d icons</option>
+                    <option value="noicons">hide 2d/3d icons</option>
+                </select>
+                <select onchange=" window.makeLink()"
+                    class=" scrlViewShareLink p-0005 fs-03 mt-0005  cwgray mr-0005 rad-03">
+                    <option value="scrl">scroll</option>
+                    <option value="noscrl">no scroll</option>
+                </select>
+            </div>
+            <div class="w-full f f-r f-ac f-cc f-jb">
+                <input class="shareLinkcopy w-full fs-04 ba-i-01 c-b-iwgray rad-03 m-0005 p-0005 mt-0025"
+                    value="https://..." />
+                <div class="fs-06 p-00125 c-tblue icon c-t-hnavy  " onclick="; var copyText = first('.shareLinkcopy');
+ 
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+              
+                 // Copy the text inside the text field
+                navigator.clipboard.writeText(copyText.value);">
+                    content_copy
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div style="zoom: 0.5;" onmouseover="this.style.zoom =1.0;" onmouseout="this.style.zoom =0.5;"
+    class="fx hdn-i rad-10 cwgray owf ba-i-02 c-b-itrblack z10 op2 op-h5 l-005 t-005 w-p15 w-mn-08 h-08">
+    <div class="  w-full h-full">
+
+    </div>
+</div>
+
+<div id="matListPop" class="fx animated hdn-i slideInLeft z08 w-08 h-p95 l-00  t-00 f f-c f-at f-ct f-js ">
+    <div class="m-0005 ab z10 t-005 r-n005   w-01   h-0125   owf fl fs-06 f-center co-sec-t-h co-prm-t  material-icons-round icon"
+        onclick=";this.parentNode.classList.add('hdn-i');
+         first('#newMatItemPop').classList.add('hdn-i');
+         if( canvas_scene.matTester)canvas_scene.matTester.visibility = 0;">
+        close
+    </div>
+    <div class="m-005 w-full h-full rad-10 co-gry4 shadow1 f f-c f-at f-ct f-js ">
+
+        <loader>templates/matEditor</loader>
+
+    </div>
+</div>
+
+<div id="loading-wait" class="cwhite  fx t-00 z10 l-00 w-full h-full z10 f-center f-c ">
+    <img [#src]='[#images]/loading3d.gif' class="w-06 h-06" />
+</div>
+<div id='applog' class="fx b-0025 fs-03 op3 l-0025 z10"></div>
+
+
+<style id="animtestCss">
+    @keyframes sys-msg-prg {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 0%;
+        }
+    }
+
+    #sys-msg prg {
+        animation: sys-msg-prg 1s ease 0s 1 forwards;
+    }
+</style>
+
+/// live script
+<script>
+    var prop;
+
+
+    window.sys = function (d) {
+        first('#sys-stat').innerHTML = d;
+    };
+
+    window.popHide = function () {
+        first('#shaperoom-pop').classList.add('hdn-i');
+        first('#shape-pop').classList.add('hdn-i');
+        first('#shapewall-pop').classList.add('hdn-i');
+        first('#avl-room-pop').classList.add('hdn-i');
+        first('#avl-desk-pop').classList.add('hdn-i');
+        first('#avl-asset-pop').classList.add('hdn-i');
+        first('#newItemsPop').classList.add('hdn-i');
+        first('#newMatItemPop').classList.add('hdn-i');
+        first('#shapes').classList.add('hdn-i');
+        first('#roomShapes').classList.add('hdn-i');
+        first('#glbListPop').classList.add('hdn-i');
+        first('#newMatItemPop').classList.add('hdn-i');
+        first('#matListPop').classList.add('hdn-i');
+
+    };
+
+    window.sysLog = function (title,ico,prg) {
+        first('#sys-msg').classList.remove('hdn-i');
+        first('#sys-msg prg').classList.remove('anm'); 
+
+
+        first('#animtestCss').innerHTML = `
+        @keyframes sys-msg-prg {
+            0% {
+                width: `+ (def(first('#sys-msg span').oldPrg,0) == 100 ? 0 : def(first('#sys-msg span').oldPrg,0)) + `%;
+            }
+
+            100% {
+                width: `+ prg + `%;
+            }
+        }
+
+        .anm {
+            animation: sys-msg-prg 1s ease 0s 1 forwards;
+        }
+        `;
+
+
+        first('#sys-msg div').innerHTML = title;
+        first('#sys-msg span').innerHTML = ico;
+
+
+        setTimeout(() => {
+            first('#sys-msg prg').classList.add('anm');
+            first('#sys-msg span').oldPrg = prg;
+        },10);
+    };
+
+    window.sysLogHide = function () {
+        first('#sys-msg').classList.add('hdn-i'); 
+    }; 
+
+    var sizeSet = { height3d: 32.5,height2d: 2650 };
+
+    function getFormData(fun) {
+        var data = [];
+        return all('.rowItem:not(.hdn-i)',function (at) {
+            data.push({
+                uuid: first('#oldid',null,at).value,
+                floor_name: first('#floorName',null,at).value,
+                number_of_desks: first('#deskCount',null,at).value,
+                rooms_count: first('#roomCount',null,at).value,
+            });
+        },function () {
+            return data;
+        });
+    }
+
+    window.stat = function (st,p3,p,p2) {
+        sys('<span class="c-tgray">' + st + ' </span><span class="c-tblue">' + (p || '') + ' </span><span class="c-tgray">' + (p2 || '') + ' </span><br/><span class="c-tgray2">' + (p3 || '') + '</span>');
+    };
+
+    function getBase64(file,fun) {
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function () {
+            fun(reader.result);
+
+        };
+        reader.onerror = function (error) {
+            console.log('Error: ',error);
+        };
+    }
+
+
+    function addEventHandler(obj,evt,handler) {
+        if (obj.addEventListener) {
+            // W3C method
+            obj.addEventListener(evt,handler,false);
+        } else if (obj.attachEvent) {
+            // IE method.
+            obj.attachEvent('on' + evt,handler);
+        } else {
+            // Old school method.
+            obj['on' + evt] = handler;
+        }
+    }
+
+    var clearTempList = function (name,item) {
+        all('.' + item,function (at) {
+            if (at.className.indexOf(name) == -1) at.remove();
+        },function () { },null,first('.' + name).parent);
+    };
+
+    function createTempElement(name,op,par) {
+        var temp = document.querySelector(name);
+        var div = document.createElement('div');
+
+        var sTemp = temp.innerHTML;
+        div.className = temp.className.replace('hdn-i','').replace(name.replace('.',''),'');
+
+        for (var item in op) {
+            sTemp = sTemp.replaceAll('[#' + item + ']',op[item]);
+        }
+
+        sTemp = sTemp.replaceAll('[#src]','src')
+            .replaceAll('[#href]','href')
+            .replaceAll("[#root]",window.baseURL)
+            .replaceAll("[#src]=","src=")
+
+            .replaceAll("[#date]",new Date().getTime())
+            .replaceAll("[#images]",window.baseURL + "/3dimages");
+
+
+        div.innerHTML = sTemp;
+
+        if (op.dragable) {
+
+            div.className += ' rt';
+            var dg = document.createElement('div');
+            dg.className = 'ab t-00 l-00 h-full w-full  z10';
+            dg.innerHTML = ' ';
+            div.appendChild(dg);
+            defDrag(dg,op.dragable);
+
+        } else if (op.click) {
+
+            div.op = op;
+            div.addEventListener('click',op.click);
+        }
+
+        if (par) par.appendChild(div);
+        else temp.parentNode.appendChild(div);
+
+        return div;
+    }
+
+    function stat(a,b,c) {
+
+        first('#status').innerHTML = a + ' ' + def(b,'') + ' ' + def(c,'');
+
+    }
+
+    window.office = location.search.replace('?','');
+
+
+
+    var selectTab = function (th) {
+
+        var showTab = th.parentNode.className.indexOf('d3tabselected') != -1;
+
+        var items = document.querySelectorAll('.d3tabselected');
+        if (items.length > 0)
+            for (var item in items) {
+                if (items[item] && items[item].classList)
+                    items[item].classList.remove('d3tabselected');
+            }
+        if (!showTab)
+            th.parentNode.classList.add('d3tabselected');
+        else th.parentNode.classList.remove('d3tabselected');
+    };
+
+    window.onCallFromParent = (event) => {
+
+        console.log('get from parent :',event);
+
+        if (event.data && event.data.type == 'create')
+            prop.scene.createModel(event.data);
+        if (event.data && event.data.type == 'delete')
+            prop.scene.deleteModel(event.data);
+        if (event.data && event.data.type == 'save')
+            prop.scene.saveTemp(event.data);
+        if (event.data && event.data.type == 'load')
+            prop.scene.loadTemp(event.data);
+
+        if (event.data && event.data.type == 'camera')
+            prop.scene.controlCamera(event.data);
+
+    };
+
+    new $3dsrv().canvas(document.getElementById('renderCanvas'),function (p) {
+
+        p.scene.postMessage = function (msg) {
+            window.postMessage(msg,'*');
+        };
+
+        prop = p;
+
+        canvas_scene = prop.scene;
+
+        window.addEventListener("message",prop.onCallFromParent,false);
+
+
+    },{
+        js: [
+            window.baseURL + '/modelScript' + window.currVer + '/basic.models.js',
+            window.baseURL + '/mode' + window.currVer + '/definition.js',
+            window.baseURL + '/resources/api.js',
+            window.baseURL + '/resources/ailine.js',
+            window.baseURL + '/resources/gbux.js',
+            window.baseURL + '/resources/gbuxtools.js',
+            window.baseURL + '/mode' + window.currVer + '/events.js',
+            window.baseURL + '/mode' + window.currVer + '/create.js',
+            window.baseURL + '/mode' + window.currVer + '/createMaterial.js',
+            window.baseURL + '/mode' + window.currVer + '/cameraController.js',
+            window.baseURL + '/mode' + window.currVer + '/2dview.js',
+            window.baseURL + '/mode' + window.currVer + '/2dinit.js',
+            window.baseURL + '/mode' + window.currVer + '/mapitem.js',
+        ],
+        jsLoaded: (a) => {
+
+            if (a == 1) { 
+
+
+                    if (!isSharedView()){ canvas_scene.officePrepare()}
+                    
+ 
+
+
+                return false;
+            }
+            return true;
+        }
+    });
+
+    window.onresize = function () {
+        prop.scene._engine.resize();
+    };
+
+
+
+    function makeColor(n,c) {
+        return `.xxx ,.xxx-h:hover ,.xxx-a:active {  background-color: #yyy;   }
+        .xxx-h:hover,.xxx-t-h:hover{ cursor: pointer;}
+        .xxx-t,.xxx-t-h:hover{ color: #yyy ;}
+        .xxx-b,.xxx-b-h:hover{ border-color: #yyy ;}
+        .xxx-i ,.xxx-h-i:hover ,.xxx-a-i:active {  background-color: #yyy !important;   }
+        .xxx-h-i:hover,.xxx-t-h-i:hover{ cursor: pointer !important; }
+        .xxx-t-i,.xxx-t-h-i:hover{ color: #yyy !important;}
+        .xxx-b-i,.xxx-b-h-i:hover{ border-color: #yyy !important;} 
+        
+        `.replaceAll('xxx',n).replaceAll('#yyy',c);
+    }
+
+    dn({
+        url: window.baseURL + '/resources/screen.css',
+        success: function (d) {
+            var sty = document.createElement('style');
+
+            /*
+ 
+            color palet
+ 
+            Primary
+            Primary-900 
+            
+            Secondary-dark
+            Secondary
+            Secondary- light 
+            
+            Color-Info	
+            Color-Error
+            Color-Success	
+            Color-Warning 
+            
+            
+            Gray-Darken
+            Gray
+            Gray-lighten-1
+            Gray-lighten-2
+            Gray-lighten-3
+            Gray-lighten-4 
+            
+            
+            Green-Dark
+            Green
+            Green-lighten-1
+            Green-lighten-2
+            Green-lighten-3
+            Green-lighten-4 
+ 
+            */
+            d +=
+                `
+
+               .fnt-as,.fnt-as7 {  
+                      font-family: 'Assistant';
+                      font-style: normal;
+                      font-weight: 700;  
+
+                }
+
+                .fnt-as4 {  
+                      font-family: 'Assistant';
+                      font-style: normal;
+                      font-weight: 400;  
+
+                }
+
+                .ns .su-hide {}
+                .ns .su { display:none ;}
+                .ns:hover .su-hide { display:none;}
+                .ns:hover .su {display:block !important ;}
+                
+
+
+              `+
+
+                makeColor('cfloor','#FFE65599') +
+                makeColor('cflr','#fdcd32ff') +
+                makeColor('csel','#2B2E33') +
+                makeColor('csub','#F9F9FA') +
+                makeColor('csub2','#EDEEF0') +
+
+                makeColor('ccheck','#4D9C92FF') +
+
+
+
+
+
+                makeColor('coyel1','#FFE655') +
+                makeColor('coyel2','#F9D507') +
+                makeColor('coyel3','rgba(1.,1.,1.,0.5)') +
+                makeColor('co-prm','#2B2E33') +
+                makeColor('co-prm9','#55585c') +
+
+                makeColor('co-secd','#EAAD38') +
+                makeColor('co-sec','#FFBE41') +
+                makeColor('cotr-sec','#FFBE4166') +
+                makeColor('co-secl','#ffd27a') +
+
+                makeColor('co-inf','#09ACD0') +
+                makeColor('co-err','#FFE600') +
+                makeColor('co-suc','#56CA29') +
+                makeColor('co-wrn','#BD5A42') +
+
+                makeColor('co-gryd','#374C6B') +
+                makeColor('co-gry','#5F7089') +
+                makeColor('co-gry1','#8794A6') +
+                makeColor('co-gry2','#D7DBE1') +
+                makeColor('co-gry3','#EBEDF0') +
+                makeColor('co-gry4','#FAFBFC') +
+
+                makeColor('co-grnd','#218377') +
+                makeColor('co-grn','#4D9C92') +
+                makeColor('co-grn1','#7AB5AD') +
+                makeColor('co-grn2','#A6CDC9') +
+                makeColor('co-grn3','#D3E6E4') +
+                makeColor('co-grn4','#E9F3F1') +
+
+
+                makeColor('co-flr','#eeeddd') +
+
+                makeColor('co-room-undefined','#0f638e') +
+                makeColor('co-room-Room','#3681c1') +
+                makeColor('co-room-Department','#235f92') +
+                makeColor('co-room-Area','#938e96') +
+                makeColor('co-room-Remote','#673686') +
+
+                makeColor('co-meet','#0f638e') +
+
+                makeColor('co-dsk','#ffffff') +
+
+                (!isSharedView() ? ` .no-shrd  {     display:none !important; }  ` : `.shrd  {     display:none !important; }`) +
+                (!urlicon() ? ` .no-icn  {     display:none !important; }  ` : `.icn  {     display:none !important; }`) +
+                (!urlfloor() ? ` .no-flr  {     display:none !important; }  ` : `.flr  {     display:none !important; }`) +
+
+                (!isMobileView() ? `
+
+                .vrange {
+                        -webkit-appearance: none;
+                        
+                        outline: none;
+                        writing-mode: bt-lr; /* IE */
+                        -webkit-appearance: slider-vertical; /* WebKit */
+                        
+                    }
+                
+                .mob  { 
+                    display:none !important;
+                }
+                .not-mob  { 
+                    display:none !important;
+                }
+                .mob-hide { 
+                }
+                .not-mob-hide { 
+                }
+
+
+                `:
+                    `
+
+                .mob  { 
+                }
+                .not-mob  { 
+                }
+                .mob-hide {
+                    display:none !important;
+                    
+                }
+                .not-mob-hide {
+                    display:none !important;
+                }
+                `) + `
+
+                .ccheck > div {
+                    right:3px;
+                    
+                }
+
+                .c-no-check > div {
+                    left:3px;
+                    
+                }
+
+
+
+                .ns .sub-d { opacity:0; display:none ;}
+                .ns:hover .sub-d { opacity:1; display:block;}
+                
+                .ns2:hover .sub2{ opacity:1; display:block;}
+                .ns2 .sub2{ opacity:1; display:none;}
+               
+                
+               
+
+                input:focus {outline:0;}
+            
+            .d3tab  .d3sub , .d3tab  .d3pop , .d3tab_panel .d3sub{
+              top:-20000px;
+            }
+
+            .d3tab:hover .d3sub{ 
+              top:30px;
+              z-index:50000;
+            }  
+
+            .d3tab:hover>input{ 
+                color:black ;
+               
+            } 
+
+            .d3tabselected>input{ 
+              
+              color:navy !important;
+            } 
+            
+            .d3tabselected .d3sub{ 
+                
+                
+              
+               top:35px !important;
+               z-index:40000;
+            } 
+
+            .d3nasted .ns-sub ,.d3nasted .ns-subf{
+               display:none;
+            } 
+
+            .d3tab:hover .d3pop{ 
+                top:-20000px;
+              z-index:50000;
+            }  
+            .d3tabselected .d3pop{  
+              
+              top:-25px !important;
+             z-index:40000;
+          }  
+          
+          .icon {
+            font-family: Material Icons !important;
+        }
+
+        .shadow1 {
+            box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.15);
+
+        }
+
+        .shadow2 {
+            box-shadow: -1px -2px 8px 1px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: -1px -2px 8px 1px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: -1px -2px 8px 1px rgba(0, 0, 0, 0.15);
+        }
+            
+            `;
+
+            dn({
+                url: window.baseURL + '/resources/anim.css',
+                success: function (d2) {
+                    var sty = document.createElement('style');
+                    sty.innerHTML = d + ' ' + d2;
+                    document.head.appendChild(sty);
+                }
+            });
+
+        }
+    })
+
+      function chooseMenuTab(mode) {
+    first('.menuWall').classList.add('hdn-i');
+    first('.menuObject').classList.add('hdn-i');
+    first('.menuSpace').classList.add('hdn-i');
+    first('.menuTabWall').classList.remove('csel');
+    first('.menuTabObject').classList.remove('csel');
+    first('.menuTabSpace').classList.remove('csel');
+    first('.menuTabDesk').classList.remove('csel');
+
+    first('.menuTabWall span').classList.remove('c-twhite');
+    first('.menuTabObject span').classList.remove('c-twhite');
+    first('.menuTabSpace span').classList.remove('c-twhite');
+    first('.menuTabDesk span').classList.remove('c-twhite');
+    first('#wlsubicon').src = '[#images]/Vectoric_wl.svg';
+    first('#spsubicon').src = '[#images]/Vectoric_sp.svg';
+    first('#crsubicon').src = '[#images]/Vectoric_cr.svg';
+
+
+    first('.topSelFloorSubMenu').classList.add('hdn-i');
+
+    if (mode == 'Desk') {
+      first('.topSelFloorSubMenu').classList.add('hdn-i');
+    } else if (mode == '') {
+      first('.topSelFloorSubMenu').classList.add('hdn-i');
+    } else {
+      first('.topSelFloorSubMenu').classList.remove('hdn-i');
+      first('.menu' + mode).classList.remove('hdn-i');
+      first('.menuTab' + mode).classList.add('csel');
+      first('.menuTab' + mode + ' span').classList.add('c-twhite');
+
+      if (mode == 'Wall') first('#wlsubicon').src = '[#images]/Vectoric_w_wl.svg';
+      if (mode == 'Space') first('#spsubicon').src = '[#images]/Vectoric_w_sp.svg';
+      if (mode == 'Object') first('#crsubicon').src = '[#images]/Vectoric_w_cr.svg';
+
+    }
+
+    
+  }
+
+  var appLog = 0;
+  function appendlog(){
+    appLog ++;
+    if(first('#applog'))first('#applog').innerHTML = '['+appLog+' items ]';
+  }
+
+</script>

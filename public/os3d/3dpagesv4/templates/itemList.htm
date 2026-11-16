@@ -1,0 +1,139 @@
+<div  >
+  
+  <div>
+    <div class='f f-w f-r f-at f-ct f-s mb-0025'>
+      <input type="button" onclick="this.classList.toggle('cnavy');filterItemFast(first('#searchValue'))"
+        value="floors" class='m-0005   hdn-i floorFil c-hgray2 cgray c-twhite rad-03 pl-0025 pr-0025 ' />
+      <input type="button" onclick="this.classList.toggle('cnavy');filterItemFast(first('#searchValue'))"
+        value="rooms" class='m-0005 roomFil c-hgray2 cgray c-twhite rad-03 pl-0025 pr-0025 ' />
+      <input type="button" onclick="this.classList.toggle('cnavy');filterItemFast(first('#searchValue'))"
+        value="desks" class='m-0005 deskFil c-hgray2 cgray c-twhite rad-03 pl-0025 pr-0025 ' />
+      <input type="button" onclick="this.classList.toggle('cnavy');filterItemFast(first('#searchValue'))"
+        value="inventories" class='invFil m-0005 pl-0025 hdn-i c-hgray2 cgray c-twhite rad-03  pr-0025 ' />
+    </div>
+    <div class="ns hdn-i rad-05 p-0025 h-mx-02 mr-00125 rt cwhite p-0005 ba-i-01 co-gry2-b-i ">
+
+      <select class='filterItems' onchange="filterItems(this,first('#searchValue'))">
+        <option>all items</option>
+        <option>floors</option>
+        <option>desks</option>
+        <option>rooms</option>
+        <option>inventories</option>
+      </select>
+
+      <div class="  cwhite ab co-gry2-t t-n0025 fs-03 pl-0025 pr-005 f-center ">filter : <span
+          title="filter items by name , index , type ,identity"
+          class=" sub-d fs-03 co-gry2-t co-secd-t-h  material-icons-round icon" onclick=";alert(this.title);">
+          info
+        </span> </div>
+
+    </div>
+
+    <div title="selected floor" class='filters hdn-i rt mt-00025'>
+      <div class="selFloor h-01 fs-03">
+      </div>
+      <div title='clear selected items for filter'
+        class=" w-mx-01  w-mn-01  h-01   owf fl fs-04 f-center t-00 op2 op-h5  ab r-00 rad-50 co-sec-t-h co-prm-t  material-icons-round icon"
+        onclick=";first('.selFloor').innerText = '';canvas_scene.getItemList() ">
+        close
+      </div>
+    </div>
+
+  </div>
+  <div class="owf-x   ">
+    <div class="itls-floors"> </div>
+    <div class="itls-rooms"> </div>
+    <div class="itls-desks"> </div>
+    <div class="itls-inventories"> </div>
+  </div>
+  <div class='hdn-i'>
+    <div
+      class="itls-item-temp hdn-i searchItem c-hwgray fs-07  rad-05 ns   rt hdn-i mt-00125 rt f f-r f-at f-ct f-jb f-nw">
+      <div title='[#title]' id='itls_[#uuid]' searchAttr="[#name] [#tag]"
+        class="m-0005 p-00125 [#icon] w-mx-[#wd] w-mn-[#wd]  h-mx-[#wd] h-mn-[#wd]    fl f-center   [#color]  rad-02   material-icons-round icon"
+        onclick=";   canvas_scene.removeDesk(); ">
+        [#icon]
+      </div>
+      <img class="m-0005 p-00125 [#img] w-mx-[#wd] w-mn-[#wd]    owf fl fs-10 f-center   [#color]  rad-02 co-prm-t"
+        [#src]="[#image]" />
+
+      <div title='attached in 3d View' class="ab attach3d [#attach3d] w-mx-005  h-mx-005 w-025 h-005  fs-025 f-center ">
+        [#attachText]</div>
+      <div class='w-p70 owf  fs-035 fl f f-r f-nw f-ac f-cc f-js p-00125 pl-00125 pt-00125'
+        title='[[#index]] [#tag]'>
+        [#name]
+      </div>
+      <tag class='fs-03 hdn-i'>[#tag]</tag>
+      <div class="   r-0025 b-00 w-mn-025 w-025 f-i11 p-0005 f f-r f-nw f-at f-ct f-je">
+        <div title="show the item in 3d"
+          class="m-0005 show3d [#show3d] rad-05  w-01  h-01  owf fl fs-05 f-center  co-sec-h co-prm-t  material-icons-round icon"
+          onclick=";[#showscript]">
+          center_focus_strong
+        </div>
+        <div title="add item  to scene"
+          class="m-0005 add3d [#add3d] rad-05  w-01 h-01  owf fl fs-05 f-center co-sec-h co-prm-t  material-icons-round icon"
+          onclick="; [#addscript]">
+          add_location_alt
+        </div>
+        <div title="edit content"
+          class="m-0005 sett3d [#sett3d] rad-05  w-01  h-01  owf fl fs-05 f-center co-sec-h co-prm-t  material-icons-round icon"
+          onclick=";  canvas_scene.reuiredListItemRefresh = 1; first('#formContainer').classList.remove('hdn-i');first('#formContainer iframe').src=
+          window.baseURL.replace('os3d','')+
+            '[#url]?id=[#uuid]&office='+localDB.officeRef.identity; ">
+          settings
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+/// live script
+<script>
+  var filterItems = function (v,t) {
+ 
+    
+   filterItemFast(first('#searchValue'))
+
+
+
+
+  }
+
+  function filterItemFast(t){
+    var f = 0;
+      first('.itls-floors').classList.add('hdn-i');
+    first('.itls-rooms').classList.add('hdn-i');
+    first('.itls-desks').classList.add('hdn-i');
+    first('.itls-inventories').classList.add('hdn-i');
+      if ( first('.floorFil').className.indexOf('cnavy')!=-1) // v.value == 'floors')
+      { f = 1;first('.itls-floors').classList.remove('hdn-i');}
+
+    if (first('.deskFil').className.indexOf('cnavy')!=-1 ) //v.value == 'desks')
+       { f = 1;first('.itls-desks').classList.remove('hdn-i');}
+
+    if (first('.roomFil').className.indexOf('cnavy')!=-1 )//v.value == 'rooms')
+       { f = 1;first('.itls-rooms').classList.remove('hdn-i');}
+
+    if (first('.invFil').className.indexOf('cnavy')!=-1) //v.value == 'inventories')
+      { f = 1; first('.itls-inventories').classList.remove('hdn-i');}
+
+      if(!f){
+           first('.itls-floors').classList.remove('hdn-i');
+          first('.itls-rooms').classList.remove('hdn-i');
+          first('.itls-desks').classList.remove('hdn-i');
+          first('.itls-inventories').classList.remove('hdn-i');
+      }
+
+        all('.searchItem',function (at) {
+      if (t.value != '') {
+        at.classList.add('hdn-i');
+        if (at.innerText.toLocaleLowerCase().indexOf(t.value.toLocaleLowerCase()) != -1) {
+          at.classList.remove('hdn-i');
+        }
+      } else at.classList.remove('hdn-i');
+    });
+
+  }
+</script>

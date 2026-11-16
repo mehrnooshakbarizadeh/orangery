@@ -1,0 +1,127 @@
+[
+  {
+    "uuid": "a16482bb-fca5-464b-bd86-664a62e4541e",
+    "created": "Mon, 15 Aug 2022 19:39:53 GMT",
+    "lock_id": "5d87c084-3018-4d5b-959a-6b2fe344fc77",
+    "lock_name": "Main-Lock_Luebeck",
+    "lock_location": "Luebeck",
+    "lock_location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+    "iq": {
+      "uuid": "5ce5dbaf-3340-43e0-ac41-790259b2d386",
+      "created": "Mon, 15 Aug 2022 19:39:50 GMT",
+      "iq_id": "8cb512e3-18ae-11ed-933c-000d3a46a880",
+      "iq_name": "IQ",
+      "location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+      "connected": true
+    },
+    "office": {
+      "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac",
+      "name": "orangery",
+      "address": "ee",
+      "phone": "+6756776587",
+      "community_manager_phone": "+905148540358",
+      "email": null,
+      "lat": "58.7523778",
+      "lon": "25.3319078",
+      "data": null,
+      "timezone": "Europe/Tallinn",
+      "qr_code": "803096a4-397c-4d61-8261-ccb461e4577a"
+    }
+  },
+  {
+    "uuid": "a16482bb-fca5-464b-bd86-664a62e4541e",
+    "created": "16 Aug 2021 19:39:53 GMT",
+    "lock_id": "5d87c084-3018-4d5b-959a-6b2fe344fc77_2",
+    "lock_name": "ksdjflkdsjf",
+    "lock_location": "Luebeck",
+    "lock_location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+    "iq": {
+      "uuid": "5ce5dbaf-3340-43e0-ac41-790259b2d386",
+      "created": "21 Sep 2022 19:39:50 GMT",
+      "iq_id": "8cb512e3-18ae-11ed-933c-000d3a46a880",
+      "iq_name": "IQ",
+      "location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+      "connected": false
+    }
+  },
+  {
+    "uuid": "a16482bb-fca5-464b-bd86-664a62e4541e",
+    "created": "21 Aug 2022 19:39:53 GMT",
+    "lock_id": "5d87c084-3018-4d5b-959a-6b2fe344fc77_3",
+    "lock_name": "oh my lock",
+    "lock_location": "Luebeck",
+    "lock_location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+    "iq": {
+      "uuid": "5ce5dbaf-3340-43e0-ac41-790259b2d386",
+      "created": "Mon, 15 Aug 2022 19:39:50 GMT",
+      "iq_id": "8cb512e3-18ae-11ed-933c-000d3a46a880",
+      "iq_name": "IQ",
+      "location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+      "connected": true
+    }
+  },
+  {
+    "uuid": "a16482bb-fca5-464b-bd86-664a62e4541e",
+    "created": "Mon, 15 Aug 2022 19:39:53 GMT",
+    "lock_id": "5d87c084-3018-4d5b-959a-6b2fe344fc77_4",
+    "lock_name": "Main-Lock_Luebeck",
+    "lock_location": "Luebeck",
+    "lock_location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+    "iq": {
+      "uuid": "5ce5dbaf-3340-43e0-ac41-790259b2d386",
+      "created": "Mon, 15 Aug 2022 19:39:50 GMT",
+      "iq_id": "8cb512e3-18ae-11ed-933c-000d3a46a880",
+      "iq_name": "IQ",
+      "location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+      "connected": true
+    }
+  },
+  {
+    "uuid": "a16482bb-fca5-464b-bd86-664a62e4541e",
+    "created": "Mon, 15 Aug 2022 19:39:53 GMT",
+    "lock_id": "5d87c084-3018-4d5b-959a-6b2fe344fc77_5",
+    "lock_name": "Main-Lock_Luebeck",
+    "lock_location": "Luebeck",
+    "lock_location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+    "iq": {
+      "uuid": "5ce5dbaf-3340-43e0-ac41-790259b2d386",
+      "created": "Mon, 15 Aug 2022 19:39:50 GMT",
+      "iq_id": "8cb512e3-18ae-11ed-933c-000d3a46a880",
+      "iq_name": "IQ",
+      "location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+      "connected": true
+    }
+  },
+  {
+    "uuid": "a16482bb-fca5-464b-bd86-664a62e4541e",
+    "created": "Mon, 15 Aug 2022 19:39:53 GMT",
+    "lock_id": "5d87c084-3018-4d5b-959a-6b2fe344fc77_6",
+    "lock_name": "Main-Lock_Luebeck",
+    "lock_location": "Luebeck",
+    "lock_location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+    "iq": {
+      "uuid": "5ce5dbaf-3340-43e0-ac41-790259b2d386",
+      "created": "Mon, 15 Aug 2022 19:39:50 GMT",
+      "iq_id": "8cb512e3-18ae-11ed-933c-000d3a46a880",
+      "iq_name": "IQ",
+      "location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+      "connected": true
+    }
+  },
+  {
+    "uuid": "a16482bb-fca5-464b-bd86-664a62e4541e",
+    "created": "Mon, 15 Aug 2022 19:39:53 GMT",
+    "lock_id": "5d87c084-3018-4d5b-959a-6b2fe344fc77_7",
+    "lock_name": "Main-Lock_Luebeck",
+    "lock_location": "Luebeck",
+    "lock_location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+    "iq": {
+      "uuid": "5ce5dbaf-3340-43e0-ac41-790259b2d386",
+      "created": "Mon, 15 Aug 2022 19:39:50 GMT",
+      "iq_id": "8cb512e3-18ae-11ed-933c-000d3a46a880",
+      "iq_name": "IQ",
+      "location_id": "17b62a86-dd1e-4af0-8437-8755b21b119b",
+      "connected": true
+    }
+  }
+]

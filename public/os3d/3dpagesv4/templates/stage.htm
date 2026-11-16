@@ -1,0 +1,74 @@
+<div class="cwgray2 pl-005 pr-005 pt-005">add design element : </div>
+<div class="cwgray2 f f-r f-at f-ct f-js p-005">
+    <div class='stage-temp hdn-i w-02 h-03 f-center f-c'>
+        <img class=' h-02' [#src]='[#images]/[#icon]' />
+        <div class='f-center fs-02'>
+            [#name]
+        </div>
+    </div>
+</div>
+<div class="cwgray2 pl-005 pr-005">add new asset : </div>
+<div class="cwgray2 f f-r f-at f-ct f-js p-005">
+    <div class='asset-temp hdn-i w-02 h-03 f-center f-c'>
+        <img class=' h-02' [#src]='[#images]/[#icon]' />
+        <div class='f-center fs-02'>
+            [#name]
+        </div>
+    </div>
+</div>
+/// live script
+<script>
+    createTempElement('.stage-temp',{
+        icon: 'preload.png',
+        name: 'wall'
+    });
+    createTempElement('.stage-temp',{
+        icon: 'preload.png',
+        name: 'door'
+    });
+    createTempElement('.stage-temp',{
+        icon: 'preload.png',
+        name: 'window'
+    });
+
+    createTempElement('.stage-temp',{
+        icon: 'preload.png',
+        name: 'rect shape'
+    });
+    createTempElement('.stage-temp',{
+        icon: 'preload.png',
+        name: 'circle shape'
+    });
+
+    createTempElement('.asset-temp',{
+        dragable: {
+            model: 'desk_simple',
+            params: {
+                name: 'desk|',
+                exp_seg: 32,
+                width: 1.2,
+                depth: .65,
+                corner: 0.05,
+                height: 0.74,
+                exp_deep: 0.04,
+                exp_down_deep: 0.02,
+                exp_column_scale: 3.5,
+                exp_column_in: 0.05
+            },
+            mode: {
+                default: 0,
+            }
+        },
+        icon: 'preload.png',
+        name: 'desk simple'
+    });
+
+    createTempElement('.asset-temp',{
+        icon: 'preload.png',
+        name: 'chair'
+    });
+    createTempElement('.asset-temp',{
+        icon: 'preload.png',
+        name: 'sofa'
+    });
+</script>

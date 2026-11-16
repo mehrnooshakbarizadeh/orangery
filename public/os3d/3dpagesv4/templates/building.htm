@@ -1,0 +1,75 @@
+<div class=" pl-005 pr-005 pt-005">add new building : </div>
+<div class=" f f-c f-w f-at f-ct f-js">
+    <div class="w-full f f-c f-at f-ct f-js ">
+        <div
+            class='building-temp hdn-i   h-03 p-0025 ml-005 mr-005 mt-00125 mb-00125 rad-05 ba-i-01 c-b-iwgray f-center f-r'>
+            <img class=' h-03 w-03' [#src]='[#images]/[#icon]' />
+            <div class='f-center h-full w-full fs-04'>
+                [#name]
+            </div>
+        </div>
+    </div>
+</div>
+/// live script
+<script>
+
+
+    createTempElement('.building-temp',{
+        dragable: {
+            model: 'building_rect',
+            params: {
+                name: 'unknown',
+                width: 40,
+                depth: 30,
+                exp_stair_width: 2.5,
+                exp_stair_depth: 2.5,
+                exp_stair_position_x: 5,
+                exp_stair_position_z: 5,
+                mul_stages_height_s: [0,6,3]
+            },
+            mode: {
+                default: 0,
+                glassOutWall: 0,
+                asansor: 0,
+                dragBox: 0
+            }
+        },
+        icon: 'preload.png',
+        name: 'rectangle'
+    });
+
+    createTempElement('.building-temp',{
+        dragable: {
+            model: 'building_poly',
+            params: {
+                name: 'unknown',
+                width: 40,
+                depth: 30,
+                exp_segment: 30,
+                exp_stair_seg: 30,
+                exp_stair_width: 2.5,
+                exp_stair_depth: 2.5,
+                exp_stair_position_x: 20,
+                exp_stair_position_z: 15,
+                mul_stages_height_s: [0,6,3,3]
+            },
+            mode: {
+                default: 0,
+                glassOutWall: 0,
+                asansor: 0,
+                dragBox: 0
+            }
+        },
+        icon: 'preload.png',
+        name: 'circle'
+    });
+
+    createTempElement('.building-temp',{
+        icon: 'preload.png',
+        name: '"L" Shape'
+    });
+    createTempElement('.building-temp',{
+        icon: 'preload.png',
+        name: '"U" shape'
+    });
+</script>

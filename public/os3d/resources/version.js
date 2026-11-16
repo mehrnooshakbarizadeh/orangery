@@ -1,0 +1,1 @@
+window.currVer = 'v4';

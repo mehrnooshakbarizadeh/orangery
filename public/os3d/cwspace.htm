@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="resources/loader.js"></script>
+  <script src="resources/base.js"></script>
+  <script src="resources/babylon.4.2.js"></script>
+  <script src="resources/GBv2.0.4.6.js"></script>
+  <script src="resources/version.js?15"></script> 
+  <script src="modev4/zoom.js?version=0.88"></script>
+
+  <style>
+    body {
+      touch-action: none;
+      zoom: 1.0 !important;
+    }
+
+    body,
+    html,
+    * {
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .h-full {
+      height: 100%;
+    }
+
+    .f-center {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    html,
+    body {
+      width: 100% !important;
+      height: 100% !important;
+      overflow: hidden;
+    }
+
+    .main3dContainer,
+    .main3dContainer canvas {
+      width: 100% !important;
+      height: 100% !important;
+      outline: none !important;
+    }
+  </style>
+  <script>
+    var dt = new Date().getTime();
+  </script>
+</head>
+
+<body onresize="window.onresize">
+
+  <div>
+    <div class="fx t-0025 testOffice   fs-03 r-0025  c-tgray z10">[ v 1.2 ]</div>
+    <div class="fx t-01 p-0025  status hdn-i  fs-04 l-00 w-full f-center f-c  c-tblack z10">
+      <div class="w-p80 msg f-center h-03 rad-10 cgray rt">
+        Item Not Found
+      </div>
+      <div class="close fs-04 w-0125 h-0125 cred rad-50 f-center c-hwgray "
+        onclick="first('.status').classList.add('hdn-i')">X</div>
+    </div>
+    <div style="zoom:0.5;">
+      <canvas id='renderCanvas' class="z08 cwgray   fx t-00 l-00 w-full h-full ">
+
+      </canvas>
+      <div class="fx   z09  w-full h-full f-center waitLoader     ">
+        <img src='../os3d/3dimages/loading3d.gif' class="w-06 h-06" />
+      </div>
+
+      <div class="fx hdn-i  z09  w-full h-full f-center wait2Loader     ">
+        <img src='../os3d/3dimages/loading3d.gif' class="rad-05 cwhite p-01 w-04 h-04" />
+      </div>
+
+
+    </div>
+    <div class="fx r-01 b-03 z09  hdn-i  w-01 h-01 f-center " onclick="canvas_scene.moveCenter()">
+      <img src='../os3d/3dimages/Frame.svg' style="background-color:#26292d ;"
+        class="rad-10  c-hblack   p-0025 w-01 h-01" />
+    </div>
+
+    <script>
+
+      var prop = {};
+      var canvas_scene;
+
+
+      window.onresize = function () {
+        if (prop.scene)
+          prop.scene._engine.resize();
+      };
+
+      var sysLog = function (msg,hd) {
+
+        if (!msg) {
+
+          first('.status').classList.add('hdn-i');
+          return;
+        }
+
+        first('.status .msg').innerHTML = msg;
+        first('.status').classList.remove('hdn-i');
+        if (hd) {
+          first('.status .close').classList.add('hdn-i');
+
+        } else
+          first('.status .close').classList.remove('hdn-i');
+
+      };
+
+      var apiInitialized = false;
+
+      var width = 300;
+      var height = 300;
+
+
+      window.onload = function () {
+
+        if (location.toString().indexOf('localhost') != -1) {
+          first('.testOffice').classList.remove('hdn-i');
+        }
+
+        function firstInitApi(event) {
+          var TOKEN_KEY = "__token__";
+
+          first('.wait2Loader').classList.remove('hdn-i');
+
+          localStorage[TOKEN_KEY] = event.data.token;
+          localStorage["NEXT_PUBLIC_BASE_URL"] = event.data.api;
+
+          window.st1 = new Date().getTime();
+         
+          dn({
+            url: 'resources/api.js',
+            type: 'get',
+            success: function (d) {
+
+              window.eval(d);
+              console.log(1,window.st1 - new Date().getTime());
+              window.st1 = new Date().getTime();
+
+             
+
+              canvas_scene.initFirst2D(
+                function () {
+
+                if (!canvas_scene) {
+
+                }
+
+                first('canvas').style.width = 2. * event.data.width + 'px';
+                first('canvas').style.height = 2. * event.data.height + 'px';
+                canvas_scene._engine.resize();
+
+                var listFirstItem = event.data.uuids.split(',')[0];
+
+                var le = 0;
+                for (var i in canvas_scene.mapId) le++;
+
+                console.log(2,window.st1 - new Date().getTime());
+                window.st1 = new Date().getTime();
+
+                canvas_scene.selectItem(listFirstItem,null,event.data.office,event.data.type);
+
+              },event.data.office);
+            }
+          });
+        }
+        var idd = 0;
+        window.onCallFromParent = (event) => {
+          /*first('.result > div').innerHTML = JSON.stringify(event.data);*/
+
+          if (event.data.command == 'center') {
+
+            if (canvas_scene && canvas_scene.cameras) {
+
+              if (canvas_scene.seletedFloor) {
+
+                var mx = 0,mz = 0,nx = 0,nz = 0,inn = 0;
+                for (var i in canvas_scene.seletedFloor.items) {
+
+                  i = canvas_scene.seletedFloor.items[i];
+                  if (i.mesh && i.mesh._children && i.mesh._children[0]) {
+
+                    var bxi = i.mesh._children[0].getBoundingInfo();
+
+                    if (inn) {
+                      mx = bxi.maximum.x;
+                      mz = bxi.maximum.z;
+                      nx = bxi.minimum.x;
+                      nz = bxi.minimum.z;
+                    } else {
+                      mx = max(mx,bxi.maximum.x);
+                      mz = max(mz,bxi.maximum.z);
+                      nx = min(nx,bxi.minimum.x);
+                      nz = min(nz,bxi.minimum.z);
+                    }
+                  }
+                }
+
+                canvas_scene.stablePosX = (nx + mx) / 2;
+
+                canvas_scene.stablePosZ = (nz + mz) / 2;
+                console.log(3333,canvas_scene.stablePosX,canvas_scene.stablePosZ);
+
+              }
+              else {
+
+              }
+
+              canvas_scene.cameras[0]._currentTarget.x = canvas_scene.stablePosX;
+              canvas_scene.cameras[0]._currentTarget.z = canvas_scene.stablePosZ;
+
+              canvas_scene.cameras[0].radius = 350;
+            }
+          }
+
+          if (event.data.command == 'list') {
+
+            // sysLog('Map Initializing ...!',1);
+            // init token  
+
+            window.uuids = event.data.uuids.split(',');
+            window.evnt = event;
+            window.uuid = event.data.uuid;
+            window.office = event.data.office;
+            window.type = event.data.type;
+
+            WTA(function () {
+              idd++;
+
+              return (canvas_scene && canvas_scene.selectItem);
+
+            },function () {
+
+              setTimeout(function () {
+
+
+                if (apiInitialized) {
+
+                  canvas_scene.selectItem(uuid,null,office,type);
+
+                }
+                else {
+                  evnt.data.uuid = uuid;
+                  apiInitialized = true;
+                  firstInitApi(evnt);
+                }
+              },10);
+
+            },100,100,1);
+
+
+          }
+
+          if (canvas_scene && canvas_scene.selectItem && event.data.command == 'select') {
+
+            if (apiInitialized) {
+
+              canvas_scene.selectItem(event.data.uuid,null,event.data.office,event.data.type);
+            }
+            else {
+              apiInitialized = true;
+              firstInitApi(event);
+            }
+          }
+
+        };
+
+        window.addEventListener("message",window.onCallFromParent,false);
+        dn({
+          url: window.baseURL + '/resources/screen.css',
+          success: function (d) {
+            dn({
+              url: window.baseURL + '/resources/anim.css',
+              success: function (d2) {
+                var sty = document.createElement('style');
+                d += d2 + ` 
+                    .icon {
+                        font-family: Material Icons !important;
+                    }
+                    
+                    `;
+                sty.innerHTML = d;
+
+                new $3dsrv().canvas(document.getElementById('renderCanvas'),function (p) {
+
+                  prop = p;
+
+                  canvas_scene = prop.scene;
+
+                },{
+                  js: [
+                    window.baseURL + '/modelScript' + window.currVer + '/basic.models.js',
+                    window.baseURL + '/resources/gbux.js',
+                    window.baseURL + '/mode' + window.currVer + '/definition.js',
+                    window.baseURL + '/mode' + window.currVer + '/bookingScene.js?1.255',
+                  ],
+                  jsLoaded: (a) => {
+
+                    if (a == 1) {
+
+                      first('.waitLoader').classList.add('hdn-i');
+
+                      document.title = new Date().getTime() - dt;
+
+                      canvas_scene.initMats();
+
+                      return false;
+                    }
+                    return true;
+                  }
+                });
+
+                document.body.appendChild(sty);
+              }
+            });
+          }
+        });
+      };
+      /*
+      {token:'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoic3RhZ2luZyIsInV1aWQiOiIzNzNlN2M4OS0yOTU5LTRhYjMtODY4OS03ODdmMGNlNDI2MmYifQ.YbeFuKpjxr6MuoXI9PdPMpEycqNCTpKr1K-K6nsqsVM', api:'https://staging.api.orangeryos.de/', office:'b9422b7d-8b28-4341-8a51-a246e17e9dec', uuid:'2c320950-3131-477e-aeb1-7289333068a8', action:''}
+      */
+
+      if (location.hash.indexOf('test') != -1){
+        setTimeout(() => {
+
+         window.onCallFromParent({data:{ 
+            token:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2RlIjoic3RhZ2luZyIsInV1aWQiOiJmMTUyM2QzMi00YTI1LTRiNDktOWQ1Yi0xNjdjMWRiNzhmZWUifQ.Fmt7XWzoiZXRYrnss5pVYd5Z_XXoTraoSOa0lvS62zQ",
+             api:`https://staging.api.orangeryos.de`,
+              office:'0c80fa5e-d1e8-4cbc-be27-65777d8e35ad',
+               type:'desk', command:'list', uuid:'0', uuids:`76e35a35-046c-46b9-8f91-834605375beb`}}) 
+ 
+
+        },2000); 
+        /* setTimeout(() => {
+         window.onCallFromParent({data:{  office:'0b9d2b01-8a9f-4c2f-8125-d0dbcfa02f1c', type:'meetroom', command:'select', uuid:'f1ca3c9b-db7c-4966-a776-81e179659a17'  }})
+        },5000);  */
+      }
+
+
+    </script>
+
+</body>
+
+</html>

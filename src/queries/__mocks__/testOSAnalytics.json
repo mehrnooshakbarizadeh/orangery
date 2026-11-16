@@ -1,0 +1,135 @@
+[
+    {
+        "uuid": "a9e04d15-0abe-4b67-b4c3-5b1d3ca136c1",
+        "name": "Users",
+        "value": 11,
+        "type": "number"
+    },
+    {
+        "uuid": "cdd3e3b6-e684-4cea-8000-1ce5fadb3bc2",
+        "name": "Customers",
+        "value": 32,
+        "type": "number"
+    },
+    {
+        "uuid": "b4af3c23-ced7-4b70-b0a1-141938221a7c",
+        "name": "Customers with subscription",
+        "value": 20,
+        "type": "number"
+    },
+    {
+        "uuid": "4447eda9-fa24-4bf2-808f-be5b183023a3",
+        "name": "Customers with subscription above 400",
+        "value": 3,
+        "type": "number"
+    },
+    {
+        "uuid": "bd05d602-8382-4dc5-8fdc-6fa63775ee85",
+        "name": "Visitors",
+        "value": 7,
+        "type": "number"
+    },
+    {
+        "uuid": "c2c59190-6bc4-40cf-9fc3-34b54e3832db",
+        "name": "Desks",
+        "value": 120,
+        "type": "number"
+    },
+    {
+        "uuid": "7e402800-39d4-4e8b-a06a-c0da2c535574",
+        "name": "Expected revenue this month",
+        "value": 5421.0,
+        "type": "number"
+    },
+    {
+        "uuid": "ae888834-61d4-4ffc-9582-f74685050362",
+        "name": "Global revenue by months",
+        "value": [
+            {
+                "date": "2022-01-01",
+                "data": 0
+            },
+            {
+                "date": "2022-02-01",
+                "data": 0
+            },
+            {
+                "date": "2022-03-01",
+                "data": 0
+            },
+            {
+                "date": "2022-04-01",
+                "data": 0
+            },
+            {
+                "date": "2022-05-01",
+                "data": 0
+            },
+            {
+                "date": "2022-06-01",
+                "data": 0
+            },
+            {
+                "date": "2022-07-01",
+                "data": 52521
+            },
+            {
+                "date": "2022-08-01",
+                "data": 694484
+            },
+            {
+                "date": "2022-09-01",
+                "data": 520193
+            },
+            {
+                "date": "2022-10-01",
+                "data": 340647
+            },
+            {
+                "date": "2022-11-01",
+                "data": 1461808
+            },
+            {
+                "date": "2022-12-01",
+                "data": 0
+            }
+        ],
+        "type": "bar_chart"
+    },
+    {
+        "uuid": "bd38b16b-f183-40e5-bd66-72a70acd9dcb",
+        "name": "Average revenue per customer per month",
+        "value": 0,
+        "type": "number"
+    },
+    {
+        "uuid": "39ef228f-1318-41a1-a896-9151ae82622b",
+        "name": "Occupancy",
+        "value": 800.0,
+        "type": "number"
+    },
+    {
+        "uuid": "61c2c358-d5aa-4623-ab72-81aaae246e44",
+        "name": "Revenue per desk",
+        "value": 0.008333333333333333,
+        "type": "number"
+    },
+    {
+        "uuid": "ada163ce-3df0-4a88-9989-665cbd2e2957",
+        "name": "Average cost per member",
+        "value": 90.91,
+        "type": "number"
+    },
+    {
+        "uuid": "f6aff5b6-ecae-4b1e-9755-9bab4e68834c",
+        "name": "Monthly cost",
+        "value": 0,
+        "type": "number"
+    },
+    {
+        "uuid": "388cc212-f40d-44b2-94b4-5c145baa7b48",
+        "name": "Leads and conversion rate",
+        "value": 0,
+        "type": "number"
+    }
+]

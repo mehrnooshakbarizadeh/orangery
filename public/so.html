@@ -1,0 +1,27 @@
+<script>
+  const PERMITTED_DOMAINS = [
+    "http://localhost:3000",
+    "https://staging.orangeryos.de",
+    "https://orangeryos.de/",
+  ];
+  /**
+   * Receiving message from other domains
+   */
+
+  window.addEventListener("message", function (event) {
+    if (event.data == "signout") {
+      if (PERMITTED_DOMAINS.includes(event.origin)) {
+        localStorage.removeItem("__token__");
+        window.parent.postMessage("non-token", "*");
+      }
+    }
+
+    if (event.data == "checkuser") {
+      let lS = !!localStorage["__token__"];
+
+      if (PERMITTED_DOMAINS.includes(event.origin)) {
+        window.parent.postMessage({ isLoggedIn: lS }, "*");
+      }
+    }
+  });
+</script>

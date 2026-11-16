@@ -1,0 +1,103 @@
+<div class=" pl-005 pr-0025 co-gry2-t pt-0025">desk wall & assets : </div>
+<div class=" f f-c f-w f-at f-ct f-js">
+    <div class="w-full f f-c f-at f-ct f-js ">
+        <div
+            class='assets-temp hdn-i   h-02 p-0025 ml-005 mr-005 mt-00125 mb-00125 rad-05 ba-i-01 co-gry4-b-i co-sec-b-h-i co-secd-t-h  f-center f-r'>
+            <span class="m-0025 p-0025 rad-05   fs-09   cwhite   material-icons-round icon">
+                [#icon]
+            </span>
+            <div class='f-center h-full w-full fs-04'>
+                [#name]
+            </div>
+        </div>
+    </div>
+</div>
+/// live script
+<script>
+    createTempElement('.assets-temp',{
+        click: function () {
+
+            canvas_scene.iden++;
+
+            first('#floorTmp').classList.remove('d3tabselected');
+
+
+            canvas_scene.createDefaultDesk({
+                uuid: canvas_scene.iden + " dsk"
+            },{
+                x: canvas_scene.cameras[0]._currentTarget.x,
+                y: canvas_scene.cameras[0]._currentTarget.y - 1.23,
+                z: canvas_scene.cameras[0]._currentTarget.z,
+                fun: function (mi) { }
+            });
+
+        },
+        icon: 'border_outer',
+        name: 'create desk'
+    });
+    createTempElement('.assets-temp',{
+        click: function () {
+
+            canvas_scene.iden++;
+
+            first('#floorTmp').classList.remove('d3tabselected');
+
+
+            canvas_scene.createDefaultWall({
+                uuid: canvas_scene.iden + " wall",
+                points: [{
+                    x: 2,
+                    y: 0,
+                    z: 0
+                },{
+                    x: -2,
+                    y: 0,
+                    z: 0
+                }]
+            },{
+                x: canvas_scene.cameras[0]._currentTarget.x,
+                y: canvas_scene.cameras[0]._currentTarget.y - 1.23,
+                z: canvas_scene.cameras[0]._currentTarget.z,
+                fun: function (mi) { }
+            });
+
+        },
+        icon: 'space_bar',
+        name: 'create<br/>simple Wall'
+    });
+
+    createTempElement('.assets-temp',{
+        click: function () {
+
+            canvas_scene.iden++;
+
+            first('#floorTmp').classList.remove('d3tabselected');
+
+
+            canvas_scene.createDefaultWall({
+                uuid: canvas_scene.iden + " wall",
+                points: [{
+                    x: 2,
+                    y: 0,
+                    z: 0
+                },{
+                    x: -2,
+                    y: 0,
+                    z: 0
+                },{
+                    x: -2,
+                    y: 0,
+                    z: 2
+                }]
+            },{
+                x: canvas_scene.cameras[0]._currentTarget.x,
+                y: canvas_scene.cameras[0]._currentTarget.y - 1.23,
+                z: canvas_scene.cameras[0]._currentTarget.z,
+                fun: function (mi) { }
+            });
+
+        },
+        icon: 'border_style',
+        name: 'create<br/>"L" shape Wall'
+    });
+</script>

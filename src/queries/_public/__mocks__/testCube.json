@@ -1,0 +1,62 @@
+{
+  "version": "1.93.4",
+  "success": true,
+  "data": {
+    "id": "01a6aea1-92d0-4ec8-8d82-05083b881679",
+    "name": "Nooka AIR Provada ASK",
+    "country": "NL",
+    "city": "Amsterdam",
+    "address": "Gedempt Hamerkanaal 31 1021 KL Amsterdam",
+    "latitude": 52.34274245926139,
+    "longitude": 4.8881791675924,
+    "description": "Nooka AIR Provada ASK",
+    "thumbnailUrl": "https://d3krgrpilxvb8v.cloudfront.net/workspaces/9ec623110d9c75baa252087d19667eae1aff398be7591135.jpg",
+    "imagesUrls": [
+      {
+        "id": "6cec2750-8fcc-47fc-8962-fb66a9c4cc8b",
+        "url": "https://d3krgrpilxvb8v.cloudfront.net/workspaces/9ec623110d9c75baa252087d19667eae1aff398be7591135.jpg"
+      }
+    ],
+    "pricing": {
+      "price": 0,
+      "tokens": 0,
+      "currency": "EUR",
+      "model": "HOURLY"
+    },
+    "features": [
+      {
+        "id": "12a9a9b2-23bc-43ba-9253-d0030e955dfb",
+        "name": "Terrace",
+        "description": "Take a break or work outside from the compact terrace of your Nooka Space called \"the hut\".",
+        "iconUrl": "https://d23wbsd74bcuuk.cloudfront.net/icons/terrace.svg"
+      },
+      {
+        "id": "2e6b1e9f-98ce-4772-bf9a-270ada822133",
+        "name": "Smart lock",
+        "description": "Enter your Nooka just with a tap, using our mobile app.",
+        "iconUrl": "https://d23wbsd74bcuuk.cloudfront.net/icons/smart-lock.svg"
+      },
+      {
+        "id": "3044f238-a923-4e00-bfdf-00e1bb7bb953",
+        "name": "Smart Ventilation",
+        "description": "smart ventillation",
+        "iconUrl": "https://d23wbsd74bcuuk.cloudfront.net/icons/ventilation.svg"
+      },
+      {
+        "id": "564577b1-5a71-47a8-a1fe-68867af0188f",
+        "name": "Plug in power",
+        "description": "When your devices start losing energy, no worries. There are outlets available throughout the Nooka Space for you to recharge any batteries.",
+        "iconUrl": "https://d23wbsd74bcuuk.cloudfront.net/icons/plug.svg"
+      }
+    ],
+    "installationDate": "2022-06-10T00:00:00.000Z",
+    "constructionDate": "2022-06-10T00:00:00.000Z",
+    "availabilityStatus": "AVAILABLE",
+    "access": {
+      "private": true,
+      "canAccess": false
+    },
+    "dailyOpenedPeriods": null,
+    "product_type": "nooka_cube"
+  }
+}

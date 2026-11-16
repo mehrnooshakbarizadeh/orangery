@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/dashboard/payment/tenantPaymentTab/SendInvoiceButtontsx",
+    "src/components/dashboard/rooms/preview/RoomPreviewOffer.tsx.back",
+    "src/hooks/useInterval.js",
+    "src/components/OrangeryElements/OrangeryFlyout.js",
+    "src/components/OrangeryElements/OrangeryMultiDatepicker_.jss",
+    "src/components/OrangeryElements/OrangeryMultiDatepicker_.jss"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

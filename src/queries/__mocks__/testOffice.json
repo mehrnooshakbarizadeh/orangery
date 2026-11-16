@@ -1,0 +1,25 @@
+{
+    "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac",
+    "name": "o2",
+    "address": "ee",
+    "lat": "58.7523778",
+    "lon": "25.3319078",
+    "data": null,
+    "employee_estimate": 1,
+    "floors": [
+        {
+            "uuid": "2d32e524-14a1-4491-9106-c7c6623124df",
+            "office_uuid": "",
+            "name": "nameisTooLongnameisTooLongnameisTooLongnameisTooLong",
+            "data": {},
+            "desks": [],
+            "map_items": [],
+            "tenant_office_uuid": null
+        }
+    ],
+    "created_by": "null",
+    "created_date": "null",
+    "updated_by": "null",
+    "timestamp": 12,
+    "default_tax_rate": 19
+}

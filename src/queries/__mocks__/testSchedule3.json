@@ -1,0 +1,1726 @@
+{
+  "version": "1.45.5",
+  "success": true,
+  "data": [
+    {
+      "uuid": "293c5498-24b0-4143-9d7e-18ec03ca7e2c",
+      "date": "2022-08-30 14:30:00",
+      "until_time": "2022-08-30 15:30:00",
+      "date_timestamp": 1661869800.0,
+      "user": {
+        "name": "H2 M2",
+        "uuid": "a8b5a68a-9124-49cd-bfce-80967d0993cd",
+        "image": null
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": null,
+      "parking_spot": {
+        "uuid": "99215939-4db2-47f8-a185-b70ed5903850",
+        "name": "test parkingSpottest parkingSpot",
+        "description": "good place on the rocks and behind the crocodiles!",
+        "image": null,
+        "created_at": "Tue, 20 Sep 2022 07:45:28 GMT",
+        "created_by": "Hamid M.",
+        "active": true
+      },
+      "visitor": null,
+      "meeting_room_booking": false,
+      "desk_booking": false,
+      "datetime_display": "2022-08-30 14:30:00 - 2022-08-30 15:30:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-08-30T14:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-08-30T15:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "1c105317-47d8-45a4-9807-ef7c10555fb5",
+      "date": "2032-05-18 00:00:00",
+      "until_time": null,
+      "date_timestamp": 1968451200.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": {
+        "uuid": "1c9f8631-90af-46fa-a2d8-b124dfb65738",
+        "name": "First Desk",
+        "assigned_users": [],
+        "assigned_floor": null,
+        "flex": true,
+        "active": true,
+        "is_physical": true,
+        "capacity": 10,
+        "available": 7,
+        "large": true,
+        "department": "IT-Department",
+        "price": 1500,
+        "tenant_office_uuid": null,
+        "public": false,
+        "created_by": "Hamid",
+        "created_date": "Fri, 26 Aug 2022 07:45:10 GMT",
+        "updated_by": "Server",
+        "timestamp": 1661499910.393089
+      },
+      "product": null,
+      "meeting_room": null,
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": false,
+      "desk_booking": true,
+      "datetime_display": "",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "date": "2032-05-18"
+      },
+      "end": {
+        "date": "2032-05-18"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "9bd4c34a-ed5e-4c4f-97be-5319efe4194a",
+      "date": "2032-05-20 00:00:00",
+      "until_time": null,
+      "date_timestamp": 1968624000.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": {
+        "uuid": "1c9f8631-90af-46fa-a2d8-b124dfb65738",
+        "name": "First Desk",
+        "assigned_users": [],
+        "assigned_floor": null,
+        "flex": true,
+        "active": true,
+        "is_physical": true,
+        "capacity": 10,
+        "available": 7,
+        "large": true,
+        "department": "IT-Department",
+        "price": 1500,
+        "tenant_office_uuid": null,
+        "public": false,
+        "created_by": "Hamid",
+        "created_date": "Fri, 26 Aug 2022 07:45:10 GMT",
+        "updated_by": "Server",
+        "timestamp": 1661499910.393089
+      },
+      "product": null,
+      "meeting_room": null,
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": false,
+      "desk_booking": true,
+      "datetime_display": "",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "date": "2032-05-20"
+      },
+      "end": {
+        "date": "2032-05-20"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "ff450645-9717-4536-9185-60d772abb65e",
+      "date": "2032-04-20 00:00:00",
+      "until_time": null,
+      "date_timestamp": 1966032000.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": {
+        "uuid": "1c9f8631-90af-46fa-a2d8-b124dfb65738",
+        "name": "First Desk",
+        "assigned_users": [],
+        "assigned_floor": null,
+        "flex": true,
+        "active": true,
+        "is_physical": true,
+        "capacity": 10,
+        "available": 7,
+        "large": true,
+        "department": "IT-Department",
+        "price": 1500,
+        "tenant_office_uuid": null,
+        "public": false,
+        "created_by": "Hamid",
+        "created_date": "Fri, 26 Aug 2022 07:45:10 GMT",
+        "updated_by": "Server",
+        "timestamp": 1661499910.393089
+      },
+      "product": null,
+      "meeting_room": null,
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": false,
+      "desk_booking": true,
+      "datetime_display": "",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "date": "2032-04-20"
+      },
+      "end": {
+        "date": "2032-04-20"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "9e015c6d-24d6-47ae-a1e6-f16bffac61df",
+      "date": "2023-06-23 10:30:00",
+      "until_time": "2023-06-23 13:30:00",
+      "date_timestamp": 1687516200.0,
+      "user": {
+        "name": "Bahman Shams",
+        "uuid": "42b510e7-bd53-48b8-99e4-b13f7caf1571",
+        "image": null
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "3eb61a85-89a0-4af2-96b1-98021500d6ae",
+        "name": "test 2",
+        "assigned_floor": {
+          "name": "5",
+          "uuid": "dc53ad8a-6eaf-4285-81a4-3f280117b016"
+        },
+        "tags": [
+          {
+            "uuid": "7bb0db2c-4fcc-48af-b8cf-7f47a85dfa72",
+            "name": "4"
+          },
+          {
+            "uuid": "b0c9de54-1581-403f-95c9-ef5269d8c909",
+            "name": "z"
+          },
+          {
+            "uuid": "f04f0ef4-d69d-429b-84bc-03b633bb0a7d",
+            "name": "deskkkk"
+          },
+          {
+            "uuid": "85d769db-2686-433a-986e-0efb5162f1fe",
+            "name": "hgdcvsjdhvcyuhsd"
+          }
+        ],
+        "active": false,
+        "capacity": 0,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "",
+        "price": 1.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:35 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261735.806561
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2023-06-23 10:30:00 - 2023-06-23 13:30:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2023-06-23T10:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2023-06-23T13:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "d20f28d6-d072-4414-b83b-23e3e7868d97",
+      "date": "2023-05-23 10:30:00",
+      "until_time": "2023-05-23 13:30:00",
+      "date_timestamp": 1684837800.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "3eb61a85-89a0-4af2-96b1-98021500d6ae",
+        "name": "test 2",
+        "assigned_floor": {
+          "name": "5",
+          "uuid": "dc53ad8a-6eaf-4285-81a4-3f280117b016"
+        },
+        "tags": [
+          {
+            "uuid": "7bb0db2c-4fcc-48af-b8cf-7f47a85dfa72",
+            "name": "4"
+          },
+          {
+            "uuid": "b0c9de54-1581-403f-95c9-ef5269d8c909",
+            "name": "z"
+          },
+          {
+            "uuid": "f04f0ef4-d69d-429b-84bc-03b633bb0a7d",
+            "name": "deskkkk"
+          },
+          {
+            "uuid": "85d769db-2686-433a-986e-0efb5162f1fe",
+            "name": "hgdcvsjdhvcyuhsd"
+          }
+        ],
+        "active": false,
+        "capacity": 0,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "",
+        "price": 1.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:35 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261735.806561
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2023-05-23 10:30:00 - 2023-05-23 13:30:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2023-05-23T10:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2023-05-23T13:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "6f8e88a6-936e-4a9f-86cb-f410e6bfe7c8",
+      "date": "2023-05-24 10:30:00",
+      "until_time": "2023-05-24 13:30:00",
+      "date_timestamp": 1684924200.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "3eb61a85-89a0-4af2-96b1-98021500d6ae",
+        "name": "test 2",
+        "assigned_floor": {
+          "name": "5",
+          "uuid": "dc53ad8a-6eaf-4285-81a4-3f280117b016"
+        },
+        "tags": [
+          {
+            "uuid": "7bb0db2c-4fcc-48af-b8cf-7f47a85dfa72",
+            "name": "4"
+          },
+          {
+            "uuid": "b0c9de54-1581-403f-95c9-ef5269d8c909",
+            "name": "z"
+          },
+          {
+            "uuid": "f04f0ef4-d69d-429b-84bc-03b633bb0a7d",
+            "name": "deskkkk"
+          },
+          {
+            "uuid": "85d769db-2686-433a-986e-0efb5162f1fe",
+            "name": "hgdcvsjdhvcyuhsd"
+          }
+        ],
+        "active": false,
+        "capacity": 0,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "",
+        "price": 1.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:35 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261735.806561
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2023-05-24 10:30:00 - 2023-05-24 13:30:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2023-05-24T10:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2023-05-24T13:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "fc602240-75d2-4405-9b97-cb31364f3e6a",
+      "date": "2022-08-05 10:30:00",
+      "until_time": "2022-05-08 13:30:00",
+      "date_timestamp": 1659695400.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "3eb61a85-89a0-4af2-96b1-98021500d6ae",
+        "name": "test 2",
+        "assigned_floor": {
+          "name": "5",
+          "uuid": "dc53ad8a-6eaf-4285-81a4-3f280117b016"
+        },
+        "tags": [
+          {
+            "uuid": "7bb0db2c-4fcc-48af-b8cf-7f47a85dfa72",
+            "name": "4"
+          },
+          {
+            "uuid": "b0c9de54-1581-403f-95c9-ef5269d8c909",
+            "name": "z"
+          },
+          {
+            "uuid": "f04f0ef4-d69d-429b-84bc-03b633bb0a7d",
+            "name": "deskkkk"
+          },
+          {
+            "uuid": "85d769db-2686-433a-986e-0efb5162f1fe",
+            "name": "hgdcvsjdhvcyuhsd"
+          }
+        ],
+        "active": false,
+        "capacity": 0,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "",
+        "price": 1.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:35 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261735.806561
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-08-05 10:30:00 - 2022-08-05 13:30:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-05-08T10:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-05-08T13:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "d0f5f287-a33b-4fdf-bea1-d8723478c07d",
+      "date": "2022-09-01 16:00:00",
+      "until_time": "2022-01-09 18:00:00",
+      "date_timestamp": 1662048000.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "3eb61a85-89a0-4af2-96b1-98021500d6ae",
+        "name": "test 2",
+        "assigned_floor": {
+          "name": "5",
+          "uuid": "dc53ad8a-6eaf-4285-81a4-3f280117b016"
+        },
+        "tags": [
+          {
+            "uuid": "7bb0db2c-4fcc-48af-b8cf-7f47a85dfa72",
+            "name": "4"
+          },
+          {
+            "uuid": "b0c9de54-1581-403f-95c9-ef5269d8c909",
+            "name": "z"
+          },
+          {
+            "uuid": "f04f0ef4-d69d-429b-84bc-03b633bb0a7d",
+            "name": "deskkkk"
+          },
+          {
+            "uuid": "85d769db-2686-433a-986e-0efb5162f1fe",
+            "name": "hgdcvsjdhvcyuhsd"
+          }
+        ],
+        "active": false,
+        "capacity": 0,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "",
+        "price": 1.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:35 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261735.806561
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-09-01 16:00:00 - 2022-09-01 18:00:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-01-09T16:00:00+02:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-01-09T18:00:00+02:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "c2029d7b-f802-4138-8333-4d66a4bad54a",
+      "date": "2022-09-01 21:30:00",
+      "until_time": "2022-09-01 22:30:00",
+      "date_timestamp": 1662067800.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "3eb61a85-89a0-4af2-96b1-98021500d6ae",
+        "name": "test 2",
+        "assigned_floor": {
+          "name": "5",
+          "uuid": "dc53ad8a-6eaf-4285-81a4-3f280117b016"
+        },
+        "tags": [
+          {
+            "uuid": "7bb0db2c-4fcc-48af-b8cf-7f47a85dfa72",
+            "name": "4"
+          },
+          {
+            "uuid": "b0c9de54-1581-403f-95c9-ef5269d8c909",
+            "name": "z"
+          },
+          {
+            "uuid": "f04f0ef4-d69d-429b-84bc-03b633bb0a7d",
+            "name": "deskkkk"
+          },
+          {
+            "uuid": "85d769db-2686-433a-986e-0efb5162f1fe",
+            "name": "hgdcvsjdhvcyuhsd"
+          }
+        ],
+        "active": false,
+        "capacity": 0,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "",
+        "price": 1.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:35 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261735.806561
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-09-01 21:30:00 - 2022-09-01 22:30:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-09-01T21:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-09-01T22:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "d377f5db-96a1-4d06-83b4-16c172b42acd",
+      "date": "2022-09-01 22:00:00",
+      "until_time": "2022-09-01 23:00:00",
+      "date_timestamp": 1662069600.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "3eb61a85-89a0-4af2-96b1-98021500d6ae",
+        "name": "test 2",
+        "assigned_floor": {
+          "name": "5",
+          "uuid": "dc53ad8a-6eaf-4285-81a4-3f280117b016"
+        },
+        "tags": [
+          {
+            "uuid": "7bb0db2c-4fcc-48af-b8cf-7f47a85dfa72",
+            "name": "4"
+          },
+          {
+            "uuid": "b0c9de54-1581-403f-95c9-ef5269d8c909",
+            "name": "z"
+          },
+          {
+            "uuid": "f04f0ef4-d69d-429b-84bc-03b633bb0a7d",
+            "name": "deskkkk"
+          },
+          {
+            "uuid": "85d769db-2686-433a-986e-0efb5162f1fe",
+            "name": "hgdcvsjdhvcyuhsd"
+          }
+        ],
+        "active": false,
+        "capacity": 0,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "",
+        "price": 1.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:35 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261735.806561
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-09-01 22:00:00 - 2022-09-01 23:00:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-09-01T22:00:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-09-01T23:00:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "2656aa46-8e38-4989-b0b3-b1c0f4aa0fc3",
+      "date": "2022-09-05 07:00:00",
+      "until_time": "2022-09-05 08:30:00",
+      "date_timestamp": 1662361200.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "3eb61a85-89a0-4af2-96b1-98021500d6ae",
+        "name": "test 2",
+        "assigned_floor": {
+          "name": "5",
+          "uuid": "dc53ad8a-6eaf-4285-81a4-3f280117b016"
+        },
+        "tags": [
+          {
+            "uuid": "7bb0db2c-4fcc-48af-b8cf-7f47a85dfa72",
+            "name": "4"
+          },
+          {
+            "uuid": "b0c9de54-1581-403f-95c9-ef5269d8c909",
+            "name": "z"
+          },
+          {
+            "uuid": "f04f0ef4-d69d-429b-84bc-03b633bb0a7d",
+            "name": "deskkkk"
+          },
+          {
+            "uuid": "85d769db-2686-433a-986e-0efb5162f1fe",
+            "name": "hgdcvsjdhvcyuhsd"
+          }
+        ],
+        "active": false,
+        "capacity": 0,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "",
+        "price": 1.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:35 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261735.806561
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-09-05 07:00:00 - 2022-09-05 08:30:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-09-05T07:00:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-09-05T08:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "6f3d7738-d467-4fc0-968e-0b2a127f227a",
+      "date": "2022-09-06 17:30:00",
+      "until_time": "2022-09-06 21:30:00",
+      "date_timestamp": 1662485400.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "3eb61a85-89a0-4af2-96b1-98021500d6ae",
+        "name": "test 2",
+        "assigned_floor": {
+          "name": "5",
+          "uuid": "dc53ad8a-6eaf-4285-81a4-3f280117b016"
+        },
+        "tags": [
+          {
+            "uuid": "7bb0db2c-4fcc-48af-b8cf-7f47a85dfa72",
+            "name": "4"
+          },
+          {
+            "uuid": "b0c9de54-1581-403f-95c9-ef5269d8c909",
+            "name": "z"
+          },
+          {
+            "uuid": "f04f0ef4-d69d-429b-84bc-03b633bb0a7d",
+            "name": "deskkkk"
+          },
+          {
+            "uuid": "85d769db-2686-433a-986e-0efb5162f1fe",
+            "name": "hgdcvsjdhvcyuhsd"
+          }
+        ],
+        "active": false,
+        "capacity": 0,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "",
+        "price": 1.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:35 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261735.806561
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-09-06 17:30:00 - 2022-09-06 21:30:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-09-06T17:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-09-06T21:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "d6458f7a-5b86-46a2-a9f4-3713faf3458d",
+      "date": "2022-09-06 07:00:00",
+      "until_time": "2022-09-06 09:00:00",
+      "date_timestamp": 1662447600.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "3eb61a85-89a0-4af2-96b1-98021500d6ae",
+        "name": "test 2",
+        "assigned_floor": {
+          "name": "5",
+          "uuid": "dc53ad8a-6eaf-4285-81a4-3f280117b016"
+        },
+        "tags": [
+          {
+            "uuid": "7bb0db2c-4fcc-48af-b8cf-7f47a85dfa72",
+            "name": "4"
+          },
+          {
+            "uuid": "b0c9de54-1581-403f-95c9-ef5269d8c909",
+            "name": "z"
+          },
+          {
+            "uuid": "f04f0ef4-d69d-429b-84bc-03b633bb0a7d",
+            "name": "deskkkk"
+          },
+          {
+            "uuid": "85d769db-2686-433a-986e-0efb5162f1fe",
+            "name": "hgdcvsjdhvcyuhsd"
+          }
+        ],
+        "active": false,
+        "capacity": 0,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "",
+        "price": 1.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:35 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261735.806561
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-09-06 07:00:00 - 2022-09-06 09:00:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-09-06T07:00:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-09-06T09:00:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "2fd92093-8eec-4836-a3d8-cb2e0a1519d5",
+      "date": "2022-09-06 04:30:00",
+      "until_time": "2022-09-07 01:00:00",
+      "date_timestamp": 1662438600.0,
+      "user": {
+        "name": "Hamid M.",
+        "uuid": "b338d20a-3820-4a2c-9d11-8b004208245f",
+        "image": "befae6a4-c94f-43d9-9caf-dff4ac97fe97"
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "3eb61a85-89a0-4af2-96b1-98021500d6ae",
+        "name": "test 2",
+        "assigned_floor": {
+          "name": "5",
+          "uuid": "dc53ad8a-6eaf-4285-81a4-3f280117b016"
+        },
+        "tags": [
+          {
+            "uuid": "7bb0db2c-4fcc-48af-b8cf-7f47a85dfa72",
+            "name": "4"
+          },
+          {
+            "uuid": "b0c9de54-1581-403f-95c9-ef5269d8c909",
+            "name": "z"
+          },
+          {
+            "uuid": "f04f0ef4-d69d-429b-84bc-03b633bb0a7d",
+            "name": "deskkkk"
+          },
+          {
+            "uuid": "85d769db-2686-433a-986e-0efb5162f1fe",
+            "name": "hgdcvsjdhvcyuhsd"
+          }
+        ],
+        "active": false,
+        "capacity": 0,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "",
+        "price": 1.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:35 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261735.806561
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-09-06 04:30:00 - 2022-09-07 01:00:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-09-06T04:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-09-07T01:00:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "53aa347b-ddba-4401-a9a1-d7a7e1ba03e1",
+      "date": "2022-09-12 00:00:00",
+      "until_time": "2022-09-12 01:00:00",
+      "date_timestamp": 1662940800.0,
+      "user": {
+        "name": "ayda parnan",
+        "uuid": "50f07bca-074d-4320-8f98-37d410028f6f",
+        "image": null
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "0d15504f-2e2b-43f1-ba90-ccbb4f75f738",
+        "name": "test 34test 34test 34test 34test 34test 34test 34test 34",
+        "assigned_floor": {
+          "name": "notrhismuchlongButthismuchLongWeNeed",
+          "uuid": "62f6e209-7b5a-430d-9679-69ca324bc425"
+        },
+        "tags": [
+          {
+            "uuid": "6c464b3f-1d20-40c5-8033-550c5c0053c7",
+            "name": "desk"
+          },
+          {
+            "uuid": "5e4cb346-a60f-4bd9-a234-ccaa3b6e622f",
+            "name": "whiteboard"
+          },
+          {
+            "uuid": "b0d65a35-5626-42fe-b588-84307701ad98",
+            "name": "cooler"
+          },
+          {
+            "uuid": "e649cba1-3cba-444e-905a-ea4c0f547006",
+            "name": "wifi"
+          }
+        ],
+        "active": true,
+        "capacity": 12,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "notrhismuchlongButthismuchLongWeNeed",
+        "price": 0.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:27 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261727.117492
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-09-12 00:00:00 - 2022-09-12 01:00:00",
+      "invitations": [
+        {
+          "uuid": "79ca45a6-8599-4063-9045-99bfba600001",
+          "user": {
+            "uuid": "ab94966a-126c-4dd8-8659-520226a10418",
+            "name": " bahman Shams",
+            "first_name": " bahman",
+            "last_name": "Shams",
+            "email": "b.shams2@orangery.io",
+            "job": null,
+            "role": null,
+            "image": null,
+            "checked_in_at": null,
+            "checked_out_at": null,
+            "biography": null,
+            "linked_in": null,
+            "twitter": null,
+            "github": null,
+            "followers": 1,
+            "follows": 0,
+            "skills": [],
+            "interests": [],
+            "i_follow": false,
+            "organization": "ayda"
+          },
+          "invited_by": {
+            "uuid": "50f07bca-074d-4320-8f98-37d410028f6f",
+            "name": "ayda parnan",
+            "first_name": "ayda",
+            "last_name": "parnan",
+            "email": "ayda.parnan@orangery.io",
+            "job": null,
+            "role": "owner",
+            "image": null,
+            "checked_in_at": null,
+            "checked_out_at": null,
+            "biography": null,
+            "linked_in": null,
+            "twitter": null,
+            "github": null,
+            "followers": 1,
+            "follows": 2,
+            "skills": [],
+            "interests": [],
+            "i_follow": false,
+            "organization": "ayda"
+          },
+          "booking_id": 372,
+          "accepted": null
+        }
+      ],
+      "checked_in_date": null,
+      "gcalendar_event_id": "k2mjn9855e0qq0cn0d9cqhetbo",
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-09-12T00:00:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-09-12T01:00:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "cd8d3c5a-00ac-400c-8d2c-5950a19730eb",
+      "date": "2022-09-21 03:30:00",
+      "until_time": "2022-09-21 04:30:00",
+      "date_timestamp": 1663731000.0,
+      "user": {
+        "name": "Ida par",
+        "uuid": "80d8b991-26cc-4f77-8b52-e282a703221f",
+        "image": "4972b5e8-507b-473e-83ee-b745f8e25766"
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "0d15504f-2e2b-43f1-ba90-ccbb4f75f738",
+        "name": "test 34test 34test 34test 34test 34test 34test 34test 34",
+        "assigned_floor": {
+          "name": "notrhismuchlongButthismuchLongWeNeed",
+          "uuid": "62f6e209-7b5a-430d-9679-69ca324bc425"
+        },
+        "tags": [
+          {
+            "uuid": "6c464b3f-1d20-40c5-8033-550c5c0053c7",
+            "name": "desk"
+          },
+          {
+            "uuid": "5e4cb346-a60f-4bd9-a234-ccaa3b6e622f",
+            "name": "whiteboard"
+          },
+          {
+            "uuid": "b0d65a35-5626-42fe-b588-84307701ad98",
+            "name": "cooler"
+          },
+          {
+            "uuid": "e649cba1-3cba-444e-905a-ea4c0f547006",
+            "name": "wifi"
+          }
+        ],
+        "active": true,
+        "capacity": 12,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "notrhismuchlongButthismuchLongWeNeed",
+        "price": 0.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid",
+        "created_date": "Tue, 23 Aug 2022 13:35:27 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1661261727.117492
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-09-21 03:30:00 - 2022-09-21 04:30:00",
+      "invitations": [
+        {
+          "uuid": "c71472e8-c821-49a3-9e47-767d0cd05546",
+          "user": {
+            "uuid": "50f07bca-074d-4320-8f98-37d410028f6f",
+            "name": "ayda parnan",
+            "first_name": "ayda",
+            "last_name": "parnan",
+            "email": "ayda.parnan@orangery.io",
+            "job": null,
+            "role": "owner",
+            "image": null,
+            "checked_in_at": null,
+            "checked_out_at": null,
+            "biography": null,
+            "linked_in": null,
+            "twitter": null,
+            "github": null,
+            "followers": 1,
+            "follows": 2,
+            "skills": [],
+            "interests": [],
+            "i_follow": false,
+            "organization": "ayda"
+          },
+          "invited_by": {
+            "uuid": "80d8b991-26cc-4f77-8b52-e282a703221f",
+            "name": "Ida par",
+            "first_name": "Ida",
+            "last_name": "par",
+            "email": "aydaparnan@gmail.com",
+            "job": "Developer",
+            "role": "owner",
+            "image": "4972b5e8-507b-473e-83ee-b745f8e25766",
+            "checked_in_at": null,
+            "checked_out_at": null,
+            "biography": "Live in istanbul",
+            "linked_in": null,
+            "twitter": null,
+            "github": null,
+            "followers": 1,
+            "follows": 1,
+            "skills": [
+              "Social Media",
+              "Backend",
+              "Frontend",
+              "Programming"
+            ],
+            "interests": [
+              "Books",
+              "Music",
+              "Basketball",
+              "Jogging"
+            ],
+            "i_follow": false,
+            "organization": "ayda"
+          },
+          "booking_id": 527,
+          "accepted": null
+        }
+      ],
+      "checked_in_date": null,
+      "gcalendar_event_id": "0vlb4erq3f3jo2uppaficqk1cc",
+      "mscalendar_event_id": "AQMkADAwATNiZmYAZC01NGE4LTAwAGE3LTAwAi0wMAoARgAAA5lTsxsmZCVJl_eqog9pnagHADSm0ob-N31EgZKMCOTkAGJbAAACAQ0AAAA0ptKG-zd9RIGSjAjk5ABiWwAAAg01AAAA",
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-09-21T03:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-09-21T04:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "11c82d24-085b-41e7-8e61-a3e77413fff5",
+      "date": "2022-09-23 10:30:00",
+      "until_time": "2022-09-23 13:30:00",
+      "date_timestamp": 1663929000.0,
+      "user": {
+        "name": "Bahman Shams",
+        "uuid": "42b510e7-bd53-48b8-99e4-b13f7caf1571",
+        "image": null
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "569c7f2e-bb79-4567-81e7-eda33b538b9f",
+        "name": "Test 34",
+        "assigned_floor": {
+          "name": "10",
+          "uuid": "16920100-8168-4ae2-b2c2-9443a62c9235"
+        },
+        "tags": [],
+        "active": false,
+        "capacity": 1,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "tyty",
+        "price": 12.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid M.",
+        "created_date": "Sun, 11 Sep 2022 14:51:21 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1662907881.373195
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-09-23 10:30:00 - 2022-09-23 13:30:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-09-23T10:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-09-23T13:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "4dbd7a5b-91d2-4d7c-8b43-642a27534a1a",
+      "date": "2022-09-23 07:14:11.260000",
+      "until_time": null,
+      "date_timestamp": 1663917251.26,
+      "user": {
+        "name": "22 22",
+        "uuid": "c7aff983-3252-4b75-a5fc-a1aefe125413",
+        "image": null
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": null,
+      "parking_spot": null,
+      "visitor": {
+        "uuid": "40a8de99-20fb-4b04-8365-99a10097ac7d",
+        "visitor": {
+          "uuid": "c7aff983-3252-4b75-a5fc-a1aefe125413",
+          "email": "22@22.22",
+          "name": "22",
+          "image": null,
+          "checked_in_at": "Fri, 23 Sep 2022 10:14:00 GMT",
+          "checked_out_at": false
+        },
+        "host": {
+          "uuid": "a1701b2d-4f16-4bc6-9f55-0191c622c89e",
+          "name": "ff ff",
+          "first_name": "ff",
+          "last_name": "ff",
+          "email": "f@f.ff",
+          "job": null,
+          "role": null,
+          "image": null,
+          "checked_in_at": null,
+          "checked_out_at": null,
+          "biography": null,
+          "linked_in": null,
+          "twitter": null,
+          "github": null,
+          "followers": 0,
+          "follows": 0,
+          "skills": [],
+          "interests": [],
+          "i_follow": false,
+          "organization": "orangery"
+        },
+        "public_note": "",
+        "private_note": "",
+        "arrival": "2022-09-23T07:14:11.260000",
+        "created_by": "Hamid M.",
+        "created_date": "Fri, 23 Sep 2022 07:14:24 GMT",
+        "updated_by": "Server",
+        "timestamp": 1663917264.980707
+      },
+      "meeting_room_booking": false,
+      "desk_booking": false,
+      "datetime_display": "",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "date": "2022-09-23"
+      },
+      "end": {
+        "date": "2022-09-23"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "9a2b0cb3-5f94-4281-b202-0f4cc7b66e07",
+      "date": "2022-09-20 10:30:00",
+      "until_time": "2022-09-20 13:30:00",
+      "date_timestamp": 1663669800.0,
+      "user": {
+        "name": "Bahman Shams",
+        "uuid": "42b510e7-bd53-48b8-99e4-b13f7caf1571",
+        "image": null
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": {
+        "uuid": "569c7f2e-bb79-4567-81e7-eda33b538b9f",
+        "name": "Test 34",
+        "assigned_floor": {
+          "name": "10",
+          "uuid": "16920100-8168-4ae2-b2c2-9443a62c9235"
+        },
+        "tags": [],
+        "active": false,
+        "capacity": 1,
+        "office": {
+          "name": "orangery",
+          "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+        },
+        "department": "tyty",
+        "price": 12.0,
+        "tenant_office_uuid": null,
+        "created_by": "Hamid M.",
+        "created_date": "Sun, 11 Sep 2022 14:51:21 GMT",
+        "updated_by": "Hamid M.",
+        "timestamp": 1662907881.373195
+      },
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": true,
+      "desk_booking": false,
+      "datetime_display": "2022-09-20 10:30:00 - 2022-09-20 13:30:00",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "dateTime": "2022-09-20T10:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "end": {
+        "dateTime": "2022-09-20T13:30:00+03:00",
+        "timeZone": "Europe/Tallinn"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "dfe10c6d-2c5a-4757-8831-62b9d47cd0ed",
+      "date": "2022-09-28 06:05:00",
+      "until_time": null,
+      "date_timestamp": 1664345100.0,
+      "user": {
+        "name": "Oho! ",
+        "uuid": "38164b90-8b2f-4183-a884-a466f4f5327f",
+        "image": null
+      },
+      "desk": null,
+      "product": null,
+      "meeting_room": null,
+      "parking_spot": null,
+      "visitor": {
+        "uuid": "043813db-6eb4-4b9a-808c-363c335aa941",
+        "visitor": {
+          "uuid": "38164b90-8b2f-4183-a884-a466f4f5327f",
+          "email": "o@m.com",
+          "name": "Oho!",
+          "image": null,
+          "checked_in_at": "Wed, 28 Sep 2022 05:35:00 GMT",
+          "checked_out_at": false
+        },
+        "host": {
+          "uuid": "04a65c50-0057-46a3-a43e-5ea53e64ce90",
+          "name": "Hamid",
+          "first_name": "Hamid",
+          "last_name": "M.",
+          "email": "h@m.co",
+          "job": null,
+          "role": "owner",
+          "image": "5b80a767-5577-48a7-9b93-5ba279b3e503",
+          "checked_in_at": null,
+          "checked_out_at": null,
+          "biography": null,
+          "linked_in": null,
+          "twitter": null,
+          "github": null,
+          "followers": 0,
+          "follows": 0,
+          "skills": [],
+          "interests": [],
+          "i_follow": false,
+          "organization": "orangery"
+        },
+        "public_note": "",
+        "private_note": "",
+        "arrival": "2022-09-28T06:05:00",
+        "created_by": "Hamid M.",
+        "created_date": "Wed, 28 Sep 2022 02:35:57 GMT",
+        "updated_by": "Server",
+        "timestamp": 1664332557.558526
+      },
+      "meeting_room_booking": false,
+      "desk_booking": false,
+      "datetime_display": "",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "date": "2022-09-28"
+      },
+      "end": {
+        "date": "2022-09-28"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "b32eb29d-7017-4b3e-8ae3-950d0b6c4b9b",
+      "date": "2022-09-28 00:00:00",
+      "until_time": null,
+      "date_timestamp": 1664323200.0,
+      "user": {
+        "name": "HH MM",
+        "uuid": "84ae52b2-bbed-4738-b2d6-07557eb059cd",
+        "image": null
+      },
+      "desk": null,
+      "product": {
+        "uuid": "83573c93-d81f-40e6-9dbe-4d8b702d0ac3",
+        "name": "test",
+        "description": "",
+        "quantity": 12,
+        "type": "day-pass"
+      },
+      "meeting_room": null,
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": false,
+      "desk_booking": false,
+      "datetime_display": "",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "date": "2022-09-28"
+      },
+      "end": {
+        "date": "2022-09-28"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "5b8b5a3c-477c-48df-aa51-7a10194ed5ab",
+      "date": "2022-09-29 00:00:00",
+      "until_time": null,
+      "date_timestamp": 1664409600.0,
+      "user": {
+        "name": "HH MM",
+        "uuid": "84ae52b2-bbed-4738-b2d6-07557eb059cd",
+        "image": null
+      },
+      "desk": null,
+      "product": {
+        "uuid": "83573c93-d81f-40e6-9dbe-4d8b702d0ac3",
+        "name": "test",
+        "description": "",
+        "quantity": 12,
+        "type": "day-pass"
+      },
+      "meeting_room": null,
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": false,
+      "desk_booking": false,
+      "datetime_display": "",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "date": "2022-09-29"
+      },
+      "end": {
+        "date": "2022-09-29"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "5435222d-f4f6-451a-9120-a667d9c73828",
+      "date": "2022-09-30 00:00:00",
+      "until_time": null,
+      "date_timestamp": 1664496000.0,
+      "user": {
+        "name": "HH MM",
+        "uuid": "84ae52b2-bbed-4738-b2d6-07557eb059cd",
+        "image": null
+      },
+      "desk": null,
+      "product": {
+        "uuid": "83573c93-d81f-40e6-9dbe-4d8b702d0ac3",
+        "name": "test",
+        "description": "",
+        "quantity": 12,
+        "type": "day-pass"
+      },
+      "meeting_room": null,
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": false,
+      "desk_booking": false,
+      "datetime_display": "",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "date": "2022-09-30"
+      },
+      "end": {
+        "date": "2022-09-30"
+      },
+      "broker": null,
+      "reference_username": null
+    },
+    {
+      "uuid": "411d0f07-2f89-41d2-b460-57e05b1a5d8b",
+      "date": "2022-10-02 00:00:00",
+      "until_time": null,
+      "date_timestamp": 1664668800.0,
+      "user": {
+        "name": "HH MM",
+        "uuid": "84ae52b2-bbed-4738-b2d6-07557eb059cd",
+        "image": null
+      },
+      "desk": null,
+      "product": {
+        "uuid": "83573c93-d81f-40e6-9dbe-4d8b702d0ac3",
+        "name": "test",
+        "description": "",
+        "quantity": 12,
+        "type": "day-pass"
+      },
+      "meeting_room": null,
+      "parking_spot": null,
+      "visitor": null,
+      "meeting_room_booking": false,
+      "desk_booking": false,
+      "datetime_display": "",
+      "invitations": [],
+      "checked_in_date": null,
+      "gcalendar_event_id": null,
+      "mscalendar_event_id": null,
+      "office": {
+        "name": "orangery",
+        "uuid": "2ea3ebcc-aab8-456c-a04a-e803652ebfac"
+      },
+      "start": {
+        "date": "2022-10-02"
+      },
+      "end": {
+        "date": "2022-10-02"
+      },
+      "broker": null,
+      "reference_username": null
+    }
+  ]
+}

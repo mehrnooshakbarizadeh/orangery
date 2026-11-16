@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="resources/babylon.4.2.js"></script>
+    <script src="resources/GBv2.0.4.6.js"></script>
+    <script src="resources/loader.js"></script>
+    <script src="resources/base.js"></script>
+    <script src="resources/version.js?11"></script>
+    <style href="resources/screen.css"></style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        body,
+        html,
+        * {
+            border: none;
+            margin: 0px;
+            padding: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        html,
+        body {
+            width: 100% !important;
+            height: 100% !important;
+            overflow: hidden;
+        }
+
+        .main3dContainer,
+        .main3dContainer canvas {
+            width: 100% !important;
+            height: 100% !important;
+            outline: none !important;
+        }
+    </style>
+    <script>
+        var canvas_scene = null;
+    </script>
+</head>
+
+<body onresize="window.onresize" onkeydown="if(canvas_scene && canvas_scene.keyApply)canvas_scene.keyApply(event)">
+    <img src="3dimages/preload.png" onload="; var th = this;
+       ;
+       /*enable production 3d Part*/
+       if(1==1 || location.hash.indexOf('rahman')!=-1)
+       dn({  url: '3dpages'+window.currVer+'/2dview.htm', success: function (d) {
+            initInnerContent(d, function (d1) {  th.parentNode.innerHTML = d1 ; }  );
+        }})  
+        " />
+        <div style="width: 100%; text-align: center;color:darkgoldenrod;font-size: 14pt;" class="pl-05 w-20 f-center">[ 3D Part Temporarily Disabled - Update in 2 hours ] <br/> <br/> Thanks For Waiting </div>
+</body>
+
+</html>

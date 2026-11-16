@@ -1,0 +1,1214 @@
+{
+    "version": "1.103.1",
+    "success": true,
+    "data": {
+        "events": [
+            {
+                "uuid": "e9cd691c-b37d-427d-b18c-3999cff1d8ab",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2037",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-07-08T09:00:00",
+                "end_time": "2023-07-08T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": false,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Tue, 02 May 2023 08:49:10 GMT",
+                "assets": [
+                    {
+                        "price": 10,
+                        "asset_type": "Optional",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "725516d3-b2ca-439d-bc97-30fb9d83c9fd",
+                            "cf5af61d-df88-453e-8639-2b84d23b4440",
+                            "3e50ccfd-0e76-45c5-8ecf-53c506d88635"
+                        ],
+                        "quantity": 3
+                    },
+                    {
+                        "price": 0,
+                        "asset_type": "Included",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "f7c27969-efd5-4425-8052-893ec66cb61f",
+                            "cb438de0-bb57-49e1-bf7e-61d2ab7778c0"
+                        ],
+                        "quantity": 2
+                    }
+                ],
+                "meeting_rooms": [
+                    {
+                        "price": 100,
+                        "name": "78th Meeting Room",
+                        "uuid": "c50e4a2a-1173-436d-b0ba-1fa71365293d",
+                        "event_meeting_room_uuid": "f255f7e8-e6da-4e7f-b42d-3e81ed04b38f",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "4ebc65f5-4582-4a16-a5ed-cf6d4f50fe26",
+                                    "9d98d95e-5f65-41a2-85e7-468a894af5f1",
+                                    "1021df5b-2b4d-4835-8348-15b09ebe10fd"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "9460b7d6-10b7-44e2-a747-579798b7b521",
+                                    "77cfb912-01b8-4202-b871-39900981127e"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "price": 200,
+                        "name": "73th Meeting Room",
+                        "uuid": "73dfd625-c6f1-4e14-976c-c7d09ff6c77c",
+                        "event_meeting_room_uuid": "fa676b36-dafd-4ada-90db-6c6b15e897ee",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "a03743af-6092-4bd8-853b-f6320975246c",
+                                    "478b2f51-b8d7-4ce2-9827-ec3c60d2e271",
+                                    "7fce9b72-a6fa-4c1d-8ccd-79f232a07d48"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "e5dfc89e-1f22-477d-bde9-e6d20d0ca5af",
+                                    "babb7718-6fb1-4a40-9eda-0fe536fc7cb8"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uuid": "8d07ddf0-8191-4253-ad53-2b7ad81c5f83",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2036",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-05-13T09:00:00",
+                "end_time": "2023-05-13T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": false,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Tue, 02 May 2023 08:12:00 GMT",
+                "assets": [
+                    {
+                        "price": 10,
+                        "asset_type": "Optional",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "5b5031c7-a72f-4d7d-93fd-310f542f7eb2",
+                            "bc77cc6d-e125-4e27-a148-c03ac7496253",
+                            "e06246de-e839-4df1-981b-150c9b850e7f"
+                        ],
+                        "quantity": 3
+                    },
+                    {
+                        "price": 0,
+                        "asset_type": "Included",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "580a4ec6-1da5-44da-a702-284c65dabfc4",
+                            "98dccdb7-31ee-4d66-be21-3dde0a7aa912"
+                        ],
+                        "quantity": 2
+                    }
+                ],
+                "meeting_rooms": [
+                    {
+                        "price": 100,
+                        "name": "78th Meeting Room",
+                        "uuid": "c50e4a2a-1173-436d-b0ba-1fa71365293d",
+                        "event_meeting_room_uuid": "01ffd657-3c4f-4456-b1af-63cbbc8326b2",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "4ebc65f5-4582-4a16-a5ed-cf6d4f50fe26",
+                                    "9d98d95e-5f65-41a2-85e7-468a894af5f1",
+                                    "1021df5b-2b4d-4835-8348-15b09ebe10fd"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "9460b7d6-10b7-44e2-a747-579798b7b521",
+                                    "77cfb912-01b8-4202-b871-39900981127e"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "price": 200,
+                        "name": "73th Meeting Room",
+                        "uuid": "73dfd625-c6f1-4e14-976c-c7d09ff6c77c",
+                        "event_meeting_room_uuid": "f491e263-a8c2-4405-9d2c-23c727e2888e",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "a03743af-6092-4bd8-853b-f6320975246c",
+                                    "478b2f51-b8d7-4ce2-9827-ec3c60d2e271",
+                                    "7fce9b72-a6fa-4c1d-8ccd-79f232a07d48"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "e5dfc89e-1f22-477d-bde9-e6d20d0ca5af",
+                                    "babb7718-6fb1-4a40-9eda-0fe536fc7cb8"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uuid": "7e932914-1c91-4c5c-8073-b7f09ac3b894",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2035",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-04-15T09:00:00",
+                "end_time": "2023-04-15T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Tue, 02 May 2023 07:17:22 GMT",
+                "assets": [
+                    {
+                        "price": 10,
+                        "asset_type": "Optional",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "e78be5ee-6892-46bc-a9b9-dedb263eead5",
+                            "8a1b2b2a-eca2-44aa-a552-ae000ae25fa1",
+                            "8c8c8dcf-e145-4ba7-a4fe-4b899c073c73"
+                        ],
+                        "quantity": 3
+                    },
+                    {
+                        "price": 0,
+                        "asset_type": "Included",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "43ef39fa-3795-4e3e-bc1d-3f3a015d1317",
+                            "d12f4223-4c0c-4af1-811d-047bf2c81171"
+                        ],
+                        "quantity": 2
+                    }
+                ],
+                "meeting_rooms": [
+                    {
+                        "price": 100,
+                        "name": "78th Meeting Room",
+                        "uuid": "c50e4a2a-1173-436d-b0ba-1fa71365293d",
+                        "event_meeting_room_uuid": "a3e98435-f2c7-4a4c-bed0-1ad0c4984688",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "4ebc65f5-4582-4a16-a5ed-cf6d4f50fe26",
+                                    "9d98d95e-5f65-41a2-85e7-468a894af5f1",
+                                    "1021df5b-2b4d-4835-8348-15b09ebe10fd"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "9460b7d6-10b7-44e2-a747-579798b7b521",
+                                    "77cfb912-01b8-4202-b871-39900981127e"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "price": 200,
+                        "name": "73th Meeting Room",
+                        "uuid": "73dfd625-c6f1-4e14-976c-c7d09ff6c77c",
+                        "event_meeting_room_uuid": "943224be-7aed-4893-a602-19f3293645de",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "a03743af-6092-4bd8-853b-f6320975246c",
+                                    "478b2f51-b8d7-4ce2-9827-ec3c60d2e271",
+                                    "7fce9b72-a6fa-4c1d-8ccd-79f232a07d48"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "e5dfc89e-1f22-477d-bde9-e6d20d0ca5af",
+                                    "babb7718-6fb1-4a40-9eda-0fe536fc7cb8"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uuid": "f8586a3f-b66d-4558-8ea1-7a326ddf3214",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2034",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-04-29T09:00:00",
+                "end_time": "2023-04-29T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Tue, 02 May 2023 07:14:50 GMT",
+                "assets": [
+                    {
+                        "price": 10,
+                        "asset_type": "Optional",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "689ec2fe-902b-4518-a030-35c042ce4786",
+                            "cfd82e5c-d72c-4706-9f57-557e585ecff6",
+                            "638d6292-ba48-424f-9d4f-d6a59de4b121"
+                        ],
+                        "quantity": 3
+                    },
+                    {
+                        "price": 0,
+                        "asset_type": "Included",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "7d0759fd-ca63-4cd0-bc5a-002ed4307a7e",
+                            "b927b317-7131-4b64-bd8e-0c15001e2c08"
+                        ],
+                        "quantity": 2
+                    }
+                ],
+                "meeting_rooms": [
+                    {
+                        "price": 100,
+                        "name": "78th Meeting Room",
+                        "uuid": "c50e4a2a-1173-436d-b0ba-1fa71365293d",
+                        "event_meeting_room_uuid": "cb3d8fc2-637a-4dc9-89b7-f8db06a37a1f",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "4ebc65f5-4582-4a16-a5ed-cf6d4f50fe26",
+                                    "9d98d95e-5f65-41a2-85e7-468a894af5f1",
+                                    "1021df5b-2b4d-4835-8348-15b09ebe10fd"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "9460b7d6-10b7-44e2-a747-579798b7b521",
+                                    "77cfb912-01b8-4202-b871-39900981127e"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "price": 200,
+                        "name": "73th Meeting Room",
+                        "uuid": "73dfd625-c6f1-4e14-976c-c7d09ff6c77c",
+                        "event_meeting_room_uuid": "371c0fe0-e351-4eb6-8c90-54cbf738540b",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "a03743af-6092-4bd8-853b-f6320975246c",
+                                    "478b2f51-b8d7-4ce2-9827-ec3c60d2e271",
+                                    "7fce9b72-a6fa-4c1d-8ccd-79f232a07d48"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "e5dfc89e-1f22-477d-bde9-e6d20d0ca5af",
+                                    "babb7718-6fb1-4a40-9eda-0fe536fc7cb8"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uuid": "d5e3c845-4908-4994-a442-507e6f48e748",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2033",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-04-30T09:00:00",
+                "end_time": "2023-03-30T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Tue, 02 May 2023 07:11:12 GMT",
+                "assets": [
+                    {
+                        "price": 10,
+                        "asset_type": "Optional",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "9fcc1c0f-1d8b-4193-ad87-8f3f78d5addb",
+                            "42a6b66b-7ba2-41d5-86e4-93efedc274a0",
+                            "5c179c71-cc9d-4bae-9b96-44892e11dad1"
+                        ],
+                        "quantity": 3
+                    },
+                    {
+                        "price": 0,
+                        "asset_type": "Included",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "fd894788-a2de-49f7-b18f-80e199841489",
+                            "bac4e9b7-b00c-4df9-94fd-cab8435693e3"
+                        ],
+                        "quantity": 2
+                    }
+                ],
+                "meeting_rooms": [
+                    {
+                        "price": 100,
+                        "name": "78th Meeting Room",
+                        "uuid": "c50e4a2a-1173-436d-b0ba-1fa71365293d",
+                        "event_meeting_room_uuid": "2bff42dd-9c8d-49cd-b559-def0afd1c876",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "4ebc65f5-4582-4a16-a5ed-cf6d4f50fe26",
+                                    "9d98d95e-5f65-41a2-85e7-468a894af5f1",
+                                    "1021df5b-2b4d-4835-8348-15b09ebe10fd"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "9460b7d6-10b7-44e2-a747-579798b7b521",
+                                    "77cfb912-01b8-4202-b871-39900981127e"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "price": 200,
+                        "name": "73th Meeting Room",
+                        "uuid": "73dfd625-c6f1-4e14-976c-c7d09ff6c77c",
+                        "event_meeting_room_uuid": "97f1db3c-9cb2-48f5-8763-9bb7a70e43c0",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "a03743af-6092-4bd8-853b-f6320975246c",
+                                    "478b2f51-b8d7-4ce2-9827-ec3c60d2e271",
+                                    "7fce9b72-a6fa-4c1d-8ccd-79f232a07d48"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "e5dfc89e-1f22-477d-bde9-e6d20d0ca5af",
+                                    "babb7718-6fb1-4a40-9eda-0fe536fc7cb8"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uuid": "61c79224-2da9-4d3b-ae54-2d0ea4812c9a",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2032",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-01-10T09:00:00",
+                "end_time": "2023-01-10T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Tue, 02 May 2023 07:01:11 GMT",
+                "assets": [
+                    {
+                        "price": 10,
+                        "asset_type": "Optional",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "67236aa2-4891-4a7a-adbe-be555d01aa5a",
+                            "a3f8b11f-8f80-4658-9eba-001135e3ce58",
+                            "b98aae8d-7eb3-40d6-a2e5-c3ba5cfecf3b"
+                        ],
+                        "quantity": 3
+                    },
+                    {
+                        "price": 0,
+                        "asset_type": "Included",
+                        "grouped_name": "laptop-11",
+                        "uuids": [
+                            "3078ec7c-dbb0-47f3-91b2-ec5f6b1942a0",
+                            "c0f19f23-8d51-4971-9088-0d44e781f18a"
+                        ],
+                        "quantity": 2
+                    }
+                ],
+                "meeting_rooms": [
+                    {
+                        "price": 100,
+                        "name": "78th Meeting Room",
+                        "uuid": "c50e4a2a-1173-436d-b0ba-1fa71365293d",
+                        "event_meeting_room_uuid": "0c803efd-0dd2-41d7-923a-72476eb0c5d8",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "4ebc65f5-4582-4a16-a5ed-cf6d4f50fe26",
+                                    "9d98d95e-5f65-41a2-85e7-468a894af5f1",
+                                    "1021df5b-2b4d-4835-8348-15b09ebe10fd"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-11",
+                                "uuids": [
+                                    "9460b7d6-10b7-44e2-a747-579798b7b521",
+                                    "77cfb912-01b8-4202-b871-39900981127e"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    },
+                    {
+                        "price": 200,
+                        "name": "73th Meeting Room",
+                        "uuid": "73dfd625-c6f1-4e14-976c-c7d09ff6c77c",
+                        "event_meeting_room_uuid": "8aebfae3-8960-4842-8ac0-d843294c2efe",
+                        "assets": [
+                            {
+                                "price": 10,
+                                "asset_type": "Optional",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "a03743af-6092-4bd8-853b-f6320975246c",
+                                    "478b2f51-b8d7-4ce2-9827-ec3c60d2e271",
+                                    "7fce9b72-a6fa-4c1d-8ccd-79f232a07d48"
+                                ],
+                                "quantity": 3
+                            },
+                            {
+                                "price": 0,
+                                "asset_type": "Included",
+                                "grouped_name": "laptop-10",
+                                "uuids": [
+                                    "e5dfc89e-1f22-477d-bde9-e6d20d0ca5af",
+                                    "babb7718-6fb1-4a40-9eda-0fe536fc7cb8"
+                                ],
+                                "quantity": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uuid": "78772b3d-b2f5-4031-b4db-df9b1e2df21e",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2031",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-01-09T09:00:00",
+                "end_time": "2023-01-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Fri, 28 Apr 2023 10:30:17 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "25b946c9-b380-4ac2-9383-689108f0adf8",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2031",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-12-09T09:00:00",
+                "end_time": "2023-12-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": false,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Fri, 28 Apr 2023 10:28:54 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "e89bc0a8-57be-4d88-a145-15a4c6ed31c3",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2031",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-11-09T09:00:00",
+                "end_time": "2023-11-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": false,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Fri, 28 Apr 2023 10:25:59 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "e3af3551-f003-4796-b519-5f7084b272c2",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2031",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-10-09T09:00:00",
+                "end_time": "2023-10-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": false,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Fri, 28 Apr 2023 10:09:42 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "4f47ac7f-20f0-4a18-842f-ed70e8c9f8d5",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2030",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-10-09T09:00:00",
+                "end_time": "2023-10-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": false,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 10:16:47 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "280cc600-2f48-4fa1-b72f-e4aa9ad5b0c0",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2030",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-09-09T09:00:00",
+                "end_time": "2023-09-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": false,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 10:13:59 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "dc5f0de4-7eac-49eb-b12b-7ff884d036a3",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2030",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-08-09T09:00:00",
+                "end_time": "2023-08-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": false,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 10:06:13 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "742bdd0a-437a-4eda-b98e-d3cbfda957f8",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2030",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-07-09T09:00:00",
+                "end_time": "2023-07-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": false,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 10:05:18 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "47f00dd2-52a0-4d8b-9b0f-54067b891388",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2029",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-06-09T09:00:00",
+                "end_time": "2023-06-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": false,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 09:55:35 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "1ac79598-049b-4620-a2d8-a97adc93e723",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2029",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-05-09T09:00:00",
+                "end_time": "2023-05-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": false,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 09:33:38 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "0bf482f8-db57-478c-ac1b-97a40c09e0e5",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2029",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-04-09T09:00:00",
+                "end_time": "2023-04-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 09:31:02 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "45089be0-d414-4994-ad26-8f0d72314270",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2029",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-04-09T09:00:00",
+                "end_time": "2023-04-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 09:28:49 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "9306435b-80fe-4d71-a4c9-33f5579a5897",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2029",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-04-09T09:00:00",
+                "end_time": "2023-04-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 09:23:57 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "0d161f3d-d0d3-48cc-9662-ec1f149b1d9e",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2028",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-04-09T09:00:00",
+                "end_time": "2023-04-09T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 09:15:55 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "8d09f7c9-07c0-4d50-88ec-0cb0de65a612",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2027",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-03-28T09:00:00",
+                "end_time": "2023-03-28T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 08:30:02 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "27e22edd-c312-47b6-ade9-31311bee1d20",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2027",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-03-28T09:00:00",
+                "end_time": "2023-03-28T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 08:29:12 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "77e319dc-4abd-4740-aa65-876dd2d8347e",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2027",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-03-28T09:00:00",
+                "end_time": "2023-03-28T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 08:26:44 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "5049ef53-de56-413d-9782-0f5a3f4b1214",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2027",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-03-28T09:00:00",
+                "end_time": "2023-03-28T12:00:00",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Thu, 27 Apr 2023 08:25:29 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "331acf9a-c7b8-4718-b4a2-29873bae2410",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2026",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-03-28T09:11:33",
+                "end_time": "2023-03-28T11:11:33",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Tue, 25 Apr 2023 08:21:52 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "c407b22e-77c2-4cf5-a0df-96d58384dbff",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2024",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-03-28T09:11:33",
+                "end_time": "2023-03-28T11:11:33",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Tue, 25 Apr 2023 08:15:05 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "f7f0872f-f882-4ec4-82eb-636e80644976",
+                "title": null,
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-03-28T09:11:33",
+                "end_time": "2023-03-28T11:11:33",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Tue, 25 Apr 2023 08:03:02 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "80138be9-c977-47fb-9455-2ed01bf8c095",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2023",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-03-28T09:11:33",
+                "end_time": "2023-03-28T11:11:33",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Tue, 25 Apr 2023 08:02:41 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "8759a7dc-1971-4c61-9e97-9621ace3200b",
+                "title": "Netherlands' Virtual Tech Jobs Fair 2022",
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-03-28T09:11:33",
+                "end_time": "2023-03-28T11:11:33",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Mon, 24 Apr 2023 13:20:05 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            },
+            {
+                "uuid": "c4bf3807-6436-440f-ab70-ea8df971602c",
+                "title": null,
+                "description": "Netherlands Virtual TJF 2022 is a great opportunity to look for a new job while growing your network and meeting other like-minded people.\nFOR JOBSEEKERS :\n- Build your network: TJF Netherlands is the right opportunity to grow your network and build long term relationships with companies. Networking with different corporations - learn about what is going on in the market and interact with a broad selection of companies.\n- Connect and interact with recruiters virtually: Meeting and interacting with recruiters virtually - better than sending a regular email application with resume and motivation letter attached. Unique opportunity to make personal and impactful connections - shows your real value as a motivated applicant and makes a great first impression.\n- Opportunity for Onsite & Remote jobs: TJF may be particularly attractive to you if you work in technology, a digital field or are interested in remote job opportunities. An employer that is willing to recruit via an online career fair is probably more digitally sophisticated and open to flexible jobs or has open positions where technology skills are prized.\nFOR COMPANIES:\n- Access to a large number of candidates: Recruiting organizations and potential employees can enroll online and access the TJF from any Electronic device using internet access. Regardless of location around the globe, the absence of movement and time limits.\n- Meet candidates with diverse backgrounds and skills in a one-stop environment. Meet candidates virtually and establish a connection right away to do a clear and better assessment of their profiles.\n- Increase brand awareness: We will reach a wider scope of audience to raise your brand awareness. We have a strong social media network and your brand will continue to promote among 200k+ followers. Increase brand awareness and remember - stay ahead of the game, if you will not be there, your competitors will be!",
+                "office_name": "Ocado Technology",
+                "location": "Berlin",
+                "event_link": "localhost:8080",
+                "start_time": "2023-03-28T09:11:33",
+                "end_time": "2023-03-28T11:11:33",
+                "price": 15,
+                "event_is_free": false,
+                "active": true,
+                "expired": true,
+                "organizers": [],
+                "organizer_media": "instagram/orangery",
+                "images": [],
+                "attendees": [],
+                "presenters": [],
+                "is_booked": false,
+                "is_recommended": false,
+                "created_date": "Tue, 28 Mar 2023 11:12:30 GMT",
+                "assets": [],
+                "meeting_rooms": []
+            }
+        ]
+    }
+}

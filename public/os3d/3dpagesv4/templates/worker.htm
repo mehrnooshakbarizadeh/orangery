@@ -1,0 +1,45 @@
+/// live script
+<script>
+    function startWorker() {
+        if (typeof(Worker) !== "undefined") {
+
+            if (typeof(w) == "undefined") {
+                w = new Worker(window.baseURL + "/resources/worker.js?" + (new Date().getTime()));
+            }
+
+            w.onmessage = function(event) {
+                d = event.data;
+
+                if (d && d.d && d.d.mode && d.d.mode == "geoReady") {
+
+
+                } else if (d && d.d && d.d.mode && d.d.mode == "modelReady") {
+
+                    canvas_scene.modelCommand.import(d.ref, d.res, canvas_scene.items[d.ref.id] ? canvas_scene.items[d.ref.id].mesh : null);
+
+                } else console.log(d);
+
+            };
+        } else {
+            resu("worker not support");
+        }
+    }
+
+    window.callBack = [];
+
+    function callWorker(d, f) {
+        if (callWorker)
+            if (f) window.callBack[d.id] = f;
+        w.postMessage(d);
+    }
+
+    function stopWorker() {
+        if (w)
+            w.terminate();
+        w = undefined;
+    }
+
+    startWorker();
+
+    console.log('worker request v.0.102.1')
+</script>

@@ -1,0 +1,285 @@
+<div class="mt-005 f f-r f-at f-ct f-jb">
+
+</div>
+<div class='tab_p1  hdn-i'>
+  <div class='c-tgray fs-03 mt-005 mb-005'>3d fiels and Templpates :</div>
+  <div class='h-02 rt owf ba-i-01 c-b-iwgray  rad-05  w-full fs-03   f-center   cwhite co-sec-h co-prm-t   '>
+    <div class='prg fl f-center f-r'>
+
+      <span class="   rad-05   fs-09   material-icons-round icon">
+        file_upload
+      </span>
+      <div class="w-full fl f-center ml-005 f-c">
+        <span class='fs-04' id='glbtit'>Upload GLB</span>
+        <span class="f f-r f-at f-ct f-jc" id='glbdsc'>[Browse From Your
+          Device]</span>
+      </div>
+
+    </div>
+    <div id='glp-upl-prg' class="iprg ab z10 t-00 l-00  ctrblack h-full fs-10 z-10 "></div>
+    <input type='file' onchange="GUXFile.upload(event,function(d){
+    var idn = JSON.parse(d).data;
+    var path = new entity('file/glb').id(idn).makeUrl();
+
+     createTempElement('.model-temp', {
+        iden: idn,
+        path:path,
+        glbname: '[unknown]'
+    });
+    
+    } )" class='ab c-hwhite t-00 l-00 w-full h-full fs-10 op0' />
+  </div>
+
+
+  <div class=" pl-0025 pr-0025 co-gry2-t pt-0025">Models : </div>
+  <div class=" h-p80   owf-x f f-c f-w f-at f-ct f-js">
+    <div class="w-full f f-c f-at f-ct f-js">
+
+      <div class='model-temp hdn-i ns rt   p-0025 ml-0025 mr-0025 mt-00125 mb-00125 rad-05   co-secd-t-h  f-center f-c'>
+        <div
+          class="ns  w-p90   rad-05 p-0025 h-03 pb-0005 mr-00125 rt cwhite p-0005 ba-i-01 co-gry2-b-i f f-r f-at f-ct f-jb">
+          <div class="  cwhite ab co-gry2-t t-n0025 fs-03 pl-0025 pr-005 f-center ">model </div>
+          <div class="ba-i-01 c-b-igray rad-05 owf w-025 f-i11 f-center"><img class='w-02 ' src='3dimages/logo.jpg' />
+          </div>
+
+          <div class="w-03 ml-00125"><input id="glbname" placeholder="name" title='[#path]'
+              class="inp w-full ba-i-01 c-b-itrans fs-03 " value="[#glbname]"> <br />
+            <span class="c-tgray fs-03"> scale:
+            </span> <input id="glbsize" title='scale' value="3.0"
+              class="bb-i-02 c-b-igray inp w-p20 ba-i-01 c-b-itrans fs-03 ">
+            <br />
+            <select class="type">
+              <option value='Assets'>Asset</option>
+              <option value='Inventory'>Inventory</option>
+              <option value='Desk'>Desk</option>
+            </select>
+          </div>
+        </div>
+        <div class="ab sub-f r-005 b-005 f f-rr w-p40 f-at f-ct f-je">
+          <div path='#[path]' id='[iden]' onclick=";
+        var th = this;
+         var cm1 = canvas_scene.loadGlb('[#iden]',canvas_scene,function(mdl){
+          
+           mdl.position.y = 0;
+           mdl.parent = canvas_scene.floors[canvas_scene.selectedFloor].mesh;
+           mdl.position.x = canvas_scene.cameras[0]._currentTarget.x;
+           mdl.position.z = canvas_scene.cameras[0]._currentTarget.z;
+
+           mdl.isGLB = true;
+
+           var size = first('#glbsize',null,th.parentNode.parentNode);
+
+           mdl.scaling.x = size.value.valueOf()*1.0;
+           mdl.scaling.y = size.value.valueOf()*1.0;
+           mdl.scaling.z = size.value.valueOf()*1.0; 
+           
+
+         }); 
+        
+        " title='import model to the floor'
+            class="    p-0005 rad-05 w-mx-01 owf m-0005  fs-05  co-sec-t-h co-prm-t     material-icons-round icon">
+            place_item </div>
+          <div title="save name and type"
+            class="       p-0005 rad-05 w-mx-01 owf m-0005 fs-05 co-sec-t-h co-gry1-t    material-icons-round icon">
+            save</div>
+          <div
+            class="       p-0005 rad-05  w-mx-01 owf  m-0005  fs-05  co-sec-t-h co-gry1-t    material-icons-round icon">
+            delete
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='tab_p2 p-005'>
+
+</div>
+<div class='tab_p3 f f-c f-at f-ct f-js h-full '>
+  <loader>templates/itemList</loader>
+</div>
+
+/// live script
+<script>
+  var GUXFile = {
+    dataURLtoFile: function (dataurl,filename) {
+
+      var arr = dataurl.split(','),
+        mime = arr[0].match(/:(.*?);/)[1],
+        bstr = atob(arr[1]),
+        n = bstr.length,
+        u8arr = new Uint8Array(n);
+
+      while (n--) {
+        u8arr[n] = bstr.charCodeAt(n);
+      }
+
+      return new File([u8arr],filename,{ type: mime });
+    },
+    upload: function (evt,fn,files,apipath) {
+
+      if (first('#glbtit').innerHTML == 'please wait ...') return;
+
+      first('#glbtit').innerHTML = 'please wait ...';
+      first('#glbdsc').innerHTML = '';
+
+      ctl = evt.currentTarget;
+
+      if (files) {
+        evt.currentTarget.files = files;
+      }
+
+      var change = def(fn,function (a,b) { });
+
+      if (GUX.file.state != 'ready') {
+        if (confirm('another upload in progress .please wait and cancel this confirm to finish and try again. or you can cancel ?')) {
+          GUXFile.state = 'ready';
+        };
+      }
+      else {
+        GUXFile.state = 'start';
+        try {
+
+          GUXFile.xhr(evt,change,apipath);
+        }
+        catch (e) {
+
+          GUXFile.state = 'ready';
+        }
+      }
+    },
+    postFile: function (path,success,op) {
+
+      function processData(data) {
+        // taking care of data
+        if (def(success)) {
+
+          success(data);
+        }
+      }
+
+      function handler() {
+        if (this.readyState == this.DONE) {
+          if (this.status == 200) {
+            // success!
+            processData(this.responseText);
+          }
+          else {
+            // something went wrong
+
+            alert(this.responseText);
+          }
+        }
+      }
+
+      var client = new XMLHttpRequest();
+      client.onreadystatechange = handler;
+
+      if ("withCredentials" in client) {
+
+        // Check if the XMLHttpRequest object has a "withCredentials" property.
+        // "withCredentials" only exists on XMLHTTPRequest2 objects.
+
+        client.open("POST",path,true);
+        client.setRequestHeader("Authorization","Bearer " + window.os3dapi.sample.token);
+
+        client.upload.onprogress = function (pe) {
+          if (pe.lengthComputable) {
+            op.progress = def(op.progress,function (p) { });
+            op.progress(pe.loaded * 100. / pe.total);
+          }
+        }
+
+      } else if (typeof XDomainRequest != "undefined") {
+
+        // Otherwise, check if XDomainRequest.
+        // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+        client = new XDomainRequest();
+        client.onreadystatechange = handler;
+
+        client.open("POST",path);
+        client.setRequestHeader("Authorization","Bearer " + window.os3dapi.sample.token);
+
+        client.upload.onprogress = function (pe) {
+          if (pe.lengthComputable) {
+            op.progress = def(op.progress,function (p) { });
+            op.progress(pe.loaded * 100. / pe.total);
+          }
+        }
+      }
+
+      if (def(op.file)) {
+
+        var data = new FormData();
+
+        _for(op.file,function (at,i) {
+          data.append("file",at.data);
+
+        },function () {
+          client.setRequestHeader("content",JSON.stringify(op.data));
+          client.send(data);
+        });
+      }
+    },
+    xhr: function (evt,change,apipath) {
+      ctl = evt.currentTarget;
+      var rd = new FileReader();
+      _tid = 0;
+      embeds = [];
+
+      var files = evt.currentTarget.files;
+      GUXFile.state = 'reading';
+      new th_for(files,
+        function (tid,it) {
+          _tid = tid;
+
+          rd.onload = function (ev) {
+
+            if (!GUXFile.embeds) GUXFile.embeds = [];
+            GUXFile.embeds.push({ url: ev.target.result,data: null });
+
+            n_1(GUXFile.embeds).data = it.item;
+            th_e(_tid);
+            change(evt.currentTarget,{ type: 'reading' });
+          }
+
+          rd.readAsDataURL(it.item);
+
+        },
+        function () {
+          GUXFile.state = 'sending';
+
+          // xhr req
+
+          var service = os3dapi.domain + '/file' + def(apipath,'/glb');
+          // api/xmp3/1?obj=1&prp=mvideo&tlt=unknown&P1=xmp3
+
+          GUXFile.postFile(service,function (d) {
+
+            console.log('dddddd',d)
+
+            change(d);
+
+
+            GUXFile.embeds = new Array();
+            GUXFile.state = 'ready';
+            ctl.title = "100%";
+
+            first('.iprg',null,ctl.parentNode).style.width = '0%';
+
+            first('#glbtit').innerHTML = 'Upload ';
+            first('#glbdsc').innerHTML = 'Browse From Your Device';
+
+
+          },{
+            file: GUXFile.embeds,data: {},progress: function (p) {
+              first('.iprg',null,ctl.parentNode).style.width = p + '%';
+              ctl.title = p + "%";
+
+              first('#glbdsc').innerHTML = floor(p * 100.) / 100. + " %";
+            }
+          });
+        }).start();
+    }
+  }
+
+</script>

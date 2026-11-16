@@ -1,0 +1,43 @@
+<div class="rt  p-0025 f f-c f-at f-ct f-jb" style="max-height:calc( 100% - 40px );">
+  <div class="pt-005 pb-005">
+    materials : <input type="button"  value="new" class="p-0025 rad-50 c-htrwhite w-03 cgray " onclick="; popHide();
+            first('#matListPop').classList.remove('hdn-i');
+            first('#newMatItemPop').classList.remove('hdn-i');
+            canvas_scene.newMat()" >
+  </div>
+  <div class='rt ns m-0005 hdn-i save-mat-temp rad-03 f f-r f-at f-ct f-jb mat_[#iden] c-hgray p-00125'>
+    <img onclick="canvas_scene.selectedMatIden = '[#iden]';canvas_scene.editMat('[#iden]')" [#src2]='[#path]'
+      class='  w-01125 h-01125 rad-50' style="border: 5px solid [#coc] !important;" />
+    <div onclick="canvas_scene.selectedMatIden = '[#iden]';canvas_scene.editMat('[#iden]')"
+      class='w-full f f-r f-ac f-cc f-js pl-005'>[#name]</div>
+    <div onclick=" first('.finish_pick_mode').classList.remove('hdn-i');canvas_scene.editMat('[#iden]',1); "
+      class='ab sub-f r-03 b-0005 fs-03  p-0005 rad-02 co-prm co-sec-t co-secd-h co-prm-t-h '>edit Mat</div>
+  <div onclick=" first('.finish_pick_mode').classList.remove('hdn-i');canvas_scene.pickMultiMat('[#iden]'); "
+      class='ab sub-f r-0005 b-0005 fs-03  p-0005 rad-02 co-prm co-sec-t co-secd-h co-prm-t-h '>set to meshes</div>
+  </div>
+
+  <div class='mattemplist h-full owf-x'>
+
+  </div>
+
+  /// live script
+  <script>
+
+    window.popHide = function () {
+      first('#shaperoom-pop').classList.add('hdn-i')
+      first('#shape-pop').classList.add('hdn-i')
+      first('#shapewall-pop').classList.add('hdn-i')
+      first('#avl-room-pop').classList.add('hdn-i')
+      first('#avl-desk-pop').classList.add('hdn-i')
+      first('#avl-asset-pop').classList.add('hdn-i')
+      first('#newItemsPop').classList.add('hdn-i')
+      first('#newMatItemPop').classList.add('hdn-i')
+      first('#shapes').classList.add('hdn-i')
+      first('#roomShapes').classList.add('hdn-i')
+      first('#glbListPop').classList.add('hdn-i')
+      first('#newMatItemPop').classList.add('hdn-i')
+
+
+    }
+
+  </script>

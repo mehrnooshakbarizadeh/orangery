@@ -1,0 +1,51 @@
+{
+  "version": "1.91.0",
+  "success": true,
+  "data": [
+    {
+      "title": "Locking",
+      "iconPath": "/icons/lock-off.svg",
+      "widgets": [
+        {
+          "id": "door-lock",
+          "title": "Lock",
+          "type": "BOOLEAN",
+          "group": null,
+          "dependsOn": null,
+          "value": true,
+          "metadata": {
+            "iconOn": "/icons/lock-off.svg",
+            "iconOff": "/icons/lock-on.svg",
+            "titleOn": "Tap to lock the door",
+            "statusOn": "Unlocked",
+            "titleOff": "Tap to unlock the door",
+            "statusOff": "Locked",
+            "offDisabled": false
+          }
+        }
+      ]
+    },
+    {
+      "title": "Lighting",
+      "iconPath": "/icons/light-on.svg",
+      "widgets": [
+        {
+          "id": "light-interior",
+          "title": "Interior",
+          "type": "BOOLEAN",
+          "group": "lights",
+          "dependsOn": null,
+          "value": true,
+          "metadata": {
+            "iconOn": "/icons/light-on.svg",
+            "iconOff": "/icons/light-off.svg",
+            "titleOn": "Tap to turn off the light",
+            "statusOn": "On",
+            "titleOff": "Tap to turn on the light",
+            "statusOff": "Off"
+          }
+        }
+      ]
+    }
+  ]
+}
